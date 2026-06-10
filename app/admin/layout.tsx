@@ -15,9 +15,9 @@ export default function AdminRootLayout({
           Admin panel not connected yet
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-slate-600">
-          The public site is running on built-in demo data. To enable the
-          admin panel (manage bookings, listings and photos), connect a free
-          Supabase project:
+          The public site is running on the imported Beevaa Maldives content.
+          To enable the admin panel (manage enquiries, properties and photos),
+          connect a free Supabase project:
         </p>
         <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm text-slate-700">
           <li>

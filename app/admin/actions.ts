@@ -3,203 +3,172 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import {
-  adminGetBooking,
-  adminUpdateBookingStatus,
+  adminGetEnquiry,
+  adminGetProperty,
+  adminSetEnquiryStatus,
   requireAdmin,
 } from "@/lib/admin";
-import { sendBookingStatusEmail } from "@/lib/email";
+import { sendEnquiryReplyEmail } from "@/lib/email";
 import { createDataClient } from "@/lib/supabase/server";
 
 function revalidateAll() {
   revalidatePath("/", "layout");
 }
 
-/* ------------------------------ bookings ------------------------------ */
+/* ------------------------------ enquiries ------------------------------ */
 
-export async function setBookingStatus(formData: FormData) {
+export async function setEnquiryStatus(formData: FormData) {
   await requireAdmin();
   const id = String(formData.get("id"));
   const status = String(formData.get("status"));
-  if (!["confirmed", "declined", "cancelled", "completed"].includes(status)) {
+  if (!["new", "replied", "closed"].includes(status)) {
     throw new Error("Invalid status");
   }
-  await adminUpdateBookingStatus(
-    id,
-    status as "confirmed" | "declined" | "cancelled" | "completed"
-  );
-  if (status === "confirmed" || status === "declined") {
-    const booking = await adminGetBooking(id);
-    if (booking) await sendBookingStatusEmail(booking, status);
-  }
-  revalidatePath("/admin/bookings");
+  await adminSetEnquiryStatus(id, status as "new" | "replied" | "closed");
+  revalidatePath("/admin/enquiries");
   revalidatePath("/admin");
 }
 
-/* ----------------------------- guesthouses ---------------------------- */
-
-function parseAmenities(raw: FormDataEntryValue | null): string[] {
-  return String(raw ?? "")
-    .split(",")
-    .map((s) => s.trim())
-    .filter(Boolean);
+export async function replyToEnquiry(formData: FormData) {
+  await requireAdmin();
+  const id = String(formData.get("id"));
+  const message = String(formData.get("message") ?? "").trim();
+  if (!message) throw new Error("Write a reply first");
+  const enquiry = await adminGetEnquiry(id);
+  if (!enquiry) throw new Error("Enquiry not found");
+  await sendEnquiryReplyEmail(enquiry, message);
+  await adminSetEnquiryStatus(id, "replied");
+  revalidatePath("/admin/enquiries");
+  revalidatePath("/admin");
 }
 
-function slugify(name: string): string {
+/* ------------------------------ properties ----------------------------- */
+
+function slugify(name: string) {
   return name
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 }
+function csv(raw: FormDataEntryValue | null): string[] {
+  return String(raw ?? "")
+    .split(/[,\n]/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+function parseJsonField(raw: FormDataEntryValue | null) {
+  const s = String(raw ?? "").trim();
+  if (!s) return [];
+  try {
+    const v = JSON.parse(s);
+    return Array.isArray(v) ? v : [];
+  } catch {
+    throw new Error("Invalid JSON in rooms/dining field");
+  }
+}
 
-export async function saveGuesthouse(formData: FormData) {
+export async function saveProperty(formData: FormData) {
   await requireAdmin();
   const db = createDataClient();
   const id = String(formData.get("id") ?? "");
   const name = String(formData.get("name") ?? "").trim();
   if (!name) throw new Error("Name is required");
+  const priceRaw = String(formData.get("from_price_usd") ?? "").trim();
 
   const record = {
     name,
     slug: String(formData.get("slug") || slugify(name)),
-    island_id: String(formData.get("island_id")),
+    category: String(formData.get("category")),
+    atoll: String(formData.get("atoll") ?? "Maldives"),
     description: String(formData.get("description") ?? ""),
-    amenities: parseAmenities(formData.get("amenities")),
-    rating: Number(formData.get("rating") ?? 0),
-    review_count: Number(formData.get("review_count") ?? 0),
-    contact_email: String(formData.get("contact_email") ?? ""),
-    contact_phone: String(formData.get("contact_phone") ?? ""),
+    short_description: String(formData.get("short_description") ?? ""),
+    tags: csv(formData.get("tags")),
+    facilities: csv(formData.get("facilities")),
+    accommodations: parseJsonField(formData.get("accommodations")),
+    dining: parseJsonField(formData.get("dining")),
+    from_price_usd: priceRaw ? Number(priceRaw) : null,
     status: formData.get("status") === "live" ? "live" : "draft",
   };
 
-  let guesthouseId = id;
+  let propertyId = id;
   if (id) {
-    const { error } = await db.from("guesthouses").update(record).eq("id", id);
+    const { error } = await db.from("properties").update(record).eq("id", id);
     if (error) throw new Error(error.message);
   } else {
     const { data, error } = await db
-      .from("guesthouses")
-      .insert(record)
+      .from("properties")
+      .insert({ ...record, gallery: [], cover: "" })
       .select("id")
       .single();
     if (error) throw new Error(error.message);
-    guesthouseId = data.id;
+    propertyId = data.id;
   }
   revalidateAll();
-  redirect(`/admin/guesthouses/${guesthouseId}`);
+  redirect(`/admin/properties/${propertyId}`);
 }
 
-export async function deleteGuesthouse(formData: FormData) {
+export async function deleteProperty(formData: FormData) {
   await requireAdmin();
   const db = createDataClient();
   const { error } = await db
-    .from("guesthouses")
+    .from("properties")
     .delete()
     .eq("id", String(formData.get("id")));
   if (error) throw new Error(error.message);
   revalidateAll();
-  redirect("/admin/guesthouses");
+  redirect("/admin/properties");
 }
 
-/* -------------------------------- rooms ------------------------------- */
+/* -------------------------- property gallery --------------------------- */
 
-export async function saveRoom(formData: FormData) {
-  await requireAdmin();
-  const db = createDataClient();
-  const id = String(formData.get("id") ?? "");
-  const guesthouseId = String(formData.get("guesthouse_id"));
-  const record = {
-    guesthouse_id: guesthouseId,
-    name: String(formData.get("name") ?? "").trim(),
-    description: String(formData.get("description") ?? ""),
-    max_guests: Math.max(1, Number(formData.get("max_guests") ?? 2)),
-    beds: String(formData.get("beds") ?? ""),
-    base_price_usd: Number(formData.get("base_price_usd") ?? 0),
-    amenities: parseAmenities(formData.get("amenities")),
-  };
-  if (!record.name) throw new Error("Room name is required");
-
-  const { error } = id
-    ? await db.from("rooms").update(record).eq("id", id)
-    : await db.from("rooms").insert(record);
-  if (error) throw new Error(error.message);
-  revalidateAll();
+async function getGallery(propertyId: string): Promise<string[]> {
+  const p = await adminGetProperty(propertyId);
+  return (p?.gallery as string[]) ?? [];
 }
 
-export async function deleteRoom(formData: FormData) {
-  await requireAdmin();
+async function saveGallery(propertyId: string, gallery: string[]) {
   const db = createDataClient();
+  const cover = gallery[0] ?? "";
   const { error } = await db
-    .from("rooms")
-    .delete()
-    .eq("id", String(formData.get("id")));
+    .from("properties")
+    .update({ gallery, cover })
+    .eq("id", propertyId);
   if (error) throw new Error(error.message);
   revalidateAll();
 }
 
-/* ------------------------------- photos ------------------------------- */
-
-export async function addPhotoRecord(input: {
-  guesthouseId?: string;
-  roomId?: string;
+export async function addPropertyPhoto(input: {
+  propertyId: string;
   url: string;
-  alt: string;
 }) {
   await requireAdmin();
-  if (!input.url || !/^(https:\/\/|\/)/.test(input.url)) {
+  if (!/^(https:\/\/|\/)/.test(input.url)) {
     throw new Error("Photo URL must start with https:// or /");
   }
-  const db = createDataClient();
-  const { error } = await db.from("photos").insert({
-    guesthouse_id: input.guesthouseId ?? null,
-    room_id: input.roomId ?? null,
-    url: input.url,
-    alt: input.alt,
-    sort_order: 999,
-  });
-  if (error) throw new Error(error.message);
-  revalidateAll();
+  const gallery = await getGallery(input.propertyId);
+  gallery.push(input.url);
+  await saveGallery(input.propertyId, gallery);
 }
 
-export async function deletePhoto(formData: FormData) {
+export async function deletePropertyPhoto(formData: FormData) {
   await requireAdmin();
-  const db = createDataClient();
-  const { error } = await db
-    .from("photos")
-    .delete()
-    .eq("id", String(formData.get("id")));
-  if (error) throw new Error(error.message);
-  revalidateAll();
+  const propertyId = String(formData.get("property_id"));
+  const url = String(formData.get("url"));
+  const gallery = (await getGallery(propertyId)).filter((u) => u !== url);
+  await saveGallery(propertyId, gallery);
 }
 
-export async function movePhoto(formData: FormData) {
+export async function movePropertyPhoto(formData: FormData) {
   await requireAdmin();
-  const db = createDataClient();
-  const id = String(formData.get("id"));
-  const direction = String(formData.get("direction"));
-  const guesthouseId = formData.get("guesthouse_id");
-  const roomId = formData.get("room_id");
-
-  let query = db.from("photos").select("id, sort_order");
-  query = roomId
-    ? query.eq("room_id", String(roomId))
-    : query.eq("guesthouse_id", String(guesthouseId)).is("room_id", null);
-  const { data: photos, error } = await query.order("sort_order");
-  if (error) throw new Error(error.message);
-
-  const idx = (photos ?? []).findIndex((p) => p.id === id);
-  const swapWith = direction === "up" ? idx - 1 : idx + 1;
-  if (idx < 0 || swapWith < 0 || swapWith >= photos!.length) return;
-
-  // Re-number the whole set so legacy 999s normalize, then swap.
-  const ordered = photos!.map((p, i) => ({ id: p.id, sort_order: i }));
-  [ordered[idx].sort_order, ordered[swapWith].sort_order] = [
-    ordered[swapWith].sort_order,
-    ordered[idx].sort_order,
-  ];
-  for (const p of ordered) {
-    await db.from("photos").update({ sort_order: p.sort_order }).eq("id", p.id);
-  }
-  revalidateAll();
+  const propertyId = String(formData.get("property_id"));
+  const url = String(formData.get("url"));
+  const dir = String(formData.get("direction"));
+  const gallery = await getGallery(propertyId);
+  const i = gallery.indexOf(url);
+  const j = dir === "up" ? i - 1 : i + 1;
+  if (i < 0 || j < 0 || j >= gallery.length) return;
+  [gallery[i], gallery[j]] = [gallery[j], gallery[i]];
+  await saveGallery(propertyId, gallery);
 }
 
 /* -------------------------------- auth -------------------------------- */

@@ -1,119 +1,181 @@
 import Link from "next/link";
-import { Suspense } from "react";
-import { GuesthouseCard } from "@/components/GuesthouseCard";
-import { SearchBar } from "@/components/SearchBar";
-import { getGuesthouses, getIslands } from "@/lib/data";
+import { PropertyCard } from "@/components/PropertyCard";
+import {
+  getArticles,
+  getBanners,
+  getCategories,
+  getFeaturedProperties,
+} from "@/lib/data";
 
 export default async function HomePage() {
-  const [islands, guesthouses] = await Promise.all([
-    getIslands(),
-    getGuesthouses({ sort: "rating" }),
+  const [banners, categories, featured, articles] = await Promise.all([
+    getBanners(),
+    getCategories(),
+    getFeaturedProperties(6),
+    getArticles(),
   ]);
-  const featured = guesthouses.slice(0, 4);
+  const hero = banners[0] ?? "/import/banner/banner_image_003.jpg";
 
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-teal-700 via-teal-600 to-cyan-500 pb-20 pt-10 text-white sm:pt-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <h1 className="max-w-2xl text-3xl font-extrabold leading-tight sm:text-5xl">
-            The Maldives, the local way
-          </h1>
-          <p className="mt-3 max-w-xl text-sm text-teal-50 sm:text-base">
-            Stay in family-run guesthouses on real inhabited islands — whale
-            sharks, sandbanks and bikini beaches at a fraction of resort
-            prices.
-          </p>
+      <section className="relative">
+        <div className="relative h-[78vh] min-h-[460px] w-full overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={hero} alt="" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+          <div className="absolute inset-0 flex items-end">
+            <div className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6">
+              <p className="animate-fade-up text-sm font-semibold uppercase tracking-[0.25em] text-white/80">
+                Your gateway to the Maldives
+              </p>
+              <h1 className="animate-fade-up mt-3 max-w-2xl font-display text-4xl font-medium leading-[1.05] text-white sm:text-6xl">
+                Find your perfect island.
+              </h1>
+              <p className="animate-fade-up mt-4 max-w-xl text-base text-white/85">
+                Hand-picked resorts, liveaboards and local island hotels —
+                booked with a local team who knows every atoll.
+              </p>
+              <div className="animate-fade-up mt-7 flex flex-wrap gap-3">
+                <Link
+                  href="/category/resorts"
+                  className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:bg-brand hover:text-white"
+                >
+                  Browse stays
+                </Link>
+                <Link
+                  href="/enquire"
+                  className="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Plan my trip
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Search card overlapping the hero, booking.com style */}
-      <div className="mx-auto -mt-12 max-w-6xl px-4">
-        <Suspense>
-          <SearchBar islands={islands} />
-        </Suspense>
-      </div>
-
-      {/* Islands */}
-      <section id="islands" className="mx-auto mt-14 max-w-6xl scroll-mt-20 px-4">
-        <h2 className="text-xl font-bold text-slate-900 sm:text-2xl">
-          Explore local islands
-        </h2>
-        <p className="mt-1 text-sm text-slate-600">
-          Each island has its own personality — pick yours.
-        </p>
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-          {islands.map((island) => (
+      {/* Categories */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="flex items-end justify-between">
+          <div>
+            <h2 className="font-display text-2xl font-medium sm:text-3xl">
+              Three ways to stay
+            </h2>
+            <p className="mt-1 text-muted">From private islands to safari boats.</p>
+          </div>
+        </div>
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          {categories.map((c) => (
             <Link
-              key={island.id}
-              href={`/islands/${island.slug}`}
-              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+              key={c.slug}
+              href={`/category/${c.slug}`}
+              className="group relative aspect-[3/4] overflow-hidden rounded-2xl sm:aspect-[4/5]"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={island.hero_url}
-                alt={island.name}
-                className="h-24 w-full object-cover sm:h-28"
+                src={c.image}
+                alt={c.name}
                 loading="lazy"
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
-              <div className="p-3">
-                <div className="font-bold text-slate-900 group-hover:text-teal-700">
-                  {island.name}
-                </div>
-                <div className="text-xs text-slate-500">{island.atoll}</div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent" />
+              <div className="absolute bottom-0 p-5 text-white">
+                <h3 className="font-display text-2xl font-medium">{c.name}</h3>
+                <p className="mt-1 text-sm text-white/80">{c.tagline}</p>
+                <span className="mt-3 inline-block text-sm font-semibold text-white">
+                  Explore →
+                </span>
               </div>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* Featured guesthouses */}
-      <section className="mx-auto mt-14 max-w-6xl px-4">
+      {/* Featured properties */}
+      <section className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-end justify-between">
-          <div>
-            <h2 className="text-xl font-bold text-slate-900 sm:text-2xl">
-              Top-rated guesthouses
-            </h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Loved by travellers, run by locals.
-            </p>
-          </div>
+          <h2 className="font-display text-2xl font-medium sm:text-3xl">
+            Featured stays
+          </h2>
           <Link
-            href="/search"
-            className="text-sm font-semibold text-teal-700 hover:underline"
+            href="/category/resorts"
+            className="text-sm font-semibold text-brand hover:text-brand-ink"
           >
-            See all →
+            View all →
           </Link>
         </div>
-        <div className="mt-4 grid gap-4 lg:grid-cols-2">
-          {featured.map((g) => (
-            <GuesthouseCard key={g.id} guesthouse={g} />
+        <div className="mt-6 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          {featured.map((p) => (
+            <PropertyCard key={p.id} property={p} />
           ))}
         </div>
       </section>
 
-      {/* Why book local */}
-      <section className="mx-auto mt-14 max-w-6xl px-4">
-        <div className="grid gap-4 rounded-2xl bg-slate-50 p-6 sm:grid-cols-3">
+      {/* Why us */}
+      <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
+        <div className="grid gap-8 rounded-3xl bg-surface p-8 sm:grid-cols-3 sm:p-12">
           {[
-            {
-              title: "Pay a fraction of resort prices",
-              body: "Beautiful rooms from ~$40/night, steps from the same turquoise water.",
-            },
-            {
-              title: "Real island life",
-              body: "Local cafés, fishing harbours, island schools — experience the Maldives Maldivians live in.",
-            },
-            {
-              title: "No prepayment needed",
-              body: "Request your dates, the guesthouse confirms within 24h. Pay on arrival or by transfer.",
-            },
+            { t: "Local expertise", b: "Based in the Maldives — we know the islands, transfers and seasons first-hand." },
+            { t: "Best-value rates", b: "Direct relationships with resorts, liveaboards and guesthouses across the atolls." },
+            { t: "One team, end to end", b: "From your first question to your seaplane transfer, one team handles it all." },
           ].map((f) => (
-            <div key={f.title}>
-              <div className="font-bold text-slate-900">{f.title}</div>
-              <p className="mt-1 text-sm text-slate-600">{f.body}</p>
+            <div key={f.t}>
+              <div className="font-display text-xl font-medium text-ink">{f.t}</div>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{f.b}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Guide teaser */}
+      {articles.length > 0 && (
+        <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
+          <div className="flex items-end justify-between">
+            <h2 className="font-display text-2xl font-medium sm:text-3xl">
+              Maldives guide
+            </h2>
+            <Link href="/guide" className="text-sm font-semibold text-brand hover:text-brand-ink">
+              All articles →
+            </Link>
+          </div>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {articles.slice(0, 4).map((a) => (
+              <Link key={a.id} href={`/guide/${a.slug}`} className="group block">
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-surface">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={a.images[0] ?? "/import/about/about_image_001.jpg"}
+                    alt={a.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <h3 className="mt-3 font-display text-lg font-medium group-hover:text-brand">
+                  {a.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* CTA */}
+      <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
+        <div className="overflow-hidden rounded-3xl bg-ink px-8 py-14 text-center text-white sm:px-12">
+          <h2 className="font-display text-3xl font-medium sm:text-4xl">
+            Not sure where to start?
+          </h2>
+          <p className="mx-auto mt-3 max-w-lg text-white/80">
+            Tell us your dates and what you love — we&apos;ll design a Maldives
+            trip around you, with a quote in 24 hours.
+          </p>
+          <Link
+            href="/enquire"
+            className="mt-7 inline-block rounded-full bg-white px-7 py-3 text-sm font-semibold text-ink transition hover:bg-brand hover:text-white"
+          >
+            Start your enquiry
+          </Link>
         </div>
       </section>
     </div>

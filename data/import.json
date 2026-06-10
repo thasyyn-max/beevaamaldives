@@ -1,0 +1,2519 @@
+{
+  "categories": [
+    {
+      "slug": "resorts",
+      "name": "Resorts",
+      "image": "/import/category/category_image_001.jpg",
+      "tagline": "Private-island luxury — one island, one resort."
+    },
+    {
+      "slug": "liveaboards",
+      "name": "Liveaboards",
+      "image": "/import/category/category_image_002.jpeg",
+      "tagline": "Sail the atolls — dive, surf and explore aboard."
+    },
+    {
+      "slug": "city-hotels",
+      "name": "City Hotels",
+      "image": "/import/category/category_image_003.png",
+      "tagline": "Stay local — guesthouses and hotels on inhabited islands."
+    }
+  ],
+  "banners": [
+    "/import/banner/banner_image_003.jpg",
+    "/import/banner/banner_image_004.jpg",
+    "/import/banner/banner_image_005.jpg"
+  ],
+  "properties": [
+    {
+      "legacy_id": 1,
+      "name": "CROSSROADS Maldives",
+      "slug": "crossroads-maldives",
+      "category": "resorts",
+      "atoll": "North Male Atoll",
+      "tags": [
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Surfing",
+        "Wedding",
+        "Wellness"
+      ],
+      "description": "ITS NOT A RESORT…A WORLD-CLASS DESTINATION\nJust 15 minutes from Velana International Airport and Malé, CROSSROADS Maldives invites you to go beyond the typical “one-island, one-resort” experience and enter a fully integrated lifestyle destination. With three resorts, a 30-berth quay, the legendary Hard Rock Cafe, diverse retail and dining, thrilling excursions and blissful spa offerings, this is where memories are made.\nAN INSPIRING HISTORY\nDeveloped by S Hotels and Resorts Public Company Limited and Singha Estate Public Company Limited, CROSSROADS is a destination for modern world voyagers. Inspired by the Maldives’ maritime history as a waypoint at the centre of the world, CROSSROADS was designed in the spirit of an island village where travellers can rest, recharge and reconnect. From its architecture and design to the way its features blend with nature, CROSSROADS echoes the past while bringing visitors into an exciting future.\n360 DEGREES OF HAPPENINGS\nGoing beyond the traditional “one-island, one resort” concept that typifies the region, Crossroads Maldives offers a new integrated experience. The multi-island lifestyle destination includes two resorts – the vibrant SAii Lagoon Maldives, Curio Collection by Hilton and the iconic Hard Rock Hotel.",
+      "short_description": "ITS NOT A RESORT…A WORLD-CLASS DESTINATION",
+      "facilities": [
+        "Bluetooth Speakers",
+        "Telephone",
+        "Free WiFi",
+        "Video on demand",
+        "Ceiling Fan",
+        "Outdoor Shower",
+        "Air Conditioning",
+        "Reading Light",
+        "Bath Tub",
+        "Private Digital Safe",
+        "Swimming Pool",
+        "Bathroom Amenities",
+        "Mosque",
+        "Bean bags",
+        "Boutique",
+        "Laundry Service",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "Kids Club",
+        "24 hour Guest Services",
+        "24-hour Security",
+        "Water Sports Center",
+        "Beach Volley Court",
+        "Certified Dive Centres",
+        "Basketball Court",
+        "Billiards",
+        "Badmington Court"
+      ],
+      "accommodations": [
+        {
+          "title": "UNFORGETTABLE GETAWAYS",
+          "description": "UNFORGETTABLE GETAWAYS\nIn a multi-resort paradise, you can take your pick of three world-class resorts, each with its own character and flair. Choose your perfect holiday haven, settle in and live it up at a fully integrated destination where everything is connected.",
+          "image": "/import/accommodation/accommodation_image_001.jpg"
+        },
+        {
+          "title": "Saii Lagoon Maldives",
+          "description": "Settle into your boho chic tropical retreat, surrounded by the azure waters of the Indian Ocean. With dreamy rooms and villas just steps from the sand, barefoot relaxation awaits.\nStarting from rate $250",
+          "image": "/import/accommodation/accommodation_image_009.jpg"
+        },
+        {
+          "title": "Hard Rock Hotel Maldives",
+          "description": "Kick back with the whole crew in an iconic destination designed for music-lovers and pleasure-seekers. With non-stop fun, the memories you make are like a melody you can’t shake.\nStarting from rate $320",
+          "image": "/import/accommodation/accommodation_image_010.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "INTERNATIONALLY INSPIRED DINING",
+          "description": "For centuries, traders and explorers brought their recipes to The Maldives, blending their delectable delights with the irresistible local cuisine. At CROSSROADS, that exquisite collision of culinary cultures is reflected in a smorgasbord of delicious dining destinations.",
+          "image": "/import/dining/"
+        },
+        {
+          "title": "Hard Rock Cafe",
+          "description": "Located at The Marina @ CROSSROADS, this is a taste that needs no introduction. The iconic rock-inspired beach front restaurant offers a slice of life on the red carpet in the Maldives. Complete with legendary music memorabilia, signature cocktails, and a full menu of fresh, handmade American classics, including the Legendary® Burger, savoury sides and delicious salads. Our expert chefs use only the freshest ingredients to prepare culinary greatness on every plate.\n12:00 PM - Midnight\nClosed on Tuesdays",
+          "image": "/import/dining/dining_image_009.jpg"
+        },
+        {
+          "title": "The Beach Club",
+          "description": "Located at SAii Lagoon Maldives, SAii Beach Club offers the ultimate leisure experience with an infinity pool with ocean views, a gelato counter, a private access beach, premium casual restaurants, a boutique shop, specialty bars and poolside dining. This sun-dappled spot promises chic vibes and chilled, yet playful atmosphere with an upbeat soundtrack and a multi-cuisine menu designed by our culinary experts. Drift barefoot by the sea, enjoying relaxed cuisine complemented by the fresh salt air.\nMiss Olive Oyl Restaurant A playful eatery that takes its inspiration from the fresh familiar flavours of the Mediterranean with a distinct dining space.\n11:00 AM - Midnight\nOpen Daily",
+          "image": "/import/dining/dining_image_010.jpg"
+        },
+        {
+          "title": "Nihonbashi Blue",
+          "description": "Nihonbashi Blue is casual by the sea Japanese restaurant by Sri Lanka’s Nihonbashi Restaurant (Asia’s 50 Best Restaurants 2013-2018) founder Dharshan Munidasa. Emulating its Colombo branch, with its sake bar, sushi counter with dedicated sushi chefs, Nihonbashi Blue also houses Maldives’s first Tatami seating area for families and larger gatherings to enjoy a more true Japanese experience.\nLunch: 02:00PM - 05:30PM\nDinner: 05:30PM - 11:00PM\nClosed on Wednesday",
+          "image": "/import/dining/dining_image_011.jpg"
+        },
+        {
+          "title": "Ministry of Crab",
+          "description": "One of Asia’s 50 Best Restaurants in Sri Lanka, unsurpassed in its celebration of the legendary Sri Lankan Mud Crab. These world famous crabs are flown in twice a week, with the smallest size being 500 grams, right up to the mammoth 2kg Crabzilla! A haven for crustacean fans, Ministry of Crab Maldives also offers up a selection of Freshwater Prawns, Oysters and Clams from Sri Lanka.\nLunch: 12:00 PM - 03:00 PM\nDinner: 05:30 PM - 11:00 PM\nOpen Daily",
+          "image": "/import/dining/dining_image_012.png"
+        },
+        {
+          "title": "Jiao Wu",
+          "description": "Delight in exquisite Cantonese cuisine combined with sumptuous nutritious seafood soups; Jiao Wu is inspired by the culture of food for health. Savour the rich and authentic flavours set in a theatrical show kitchen. Make your choice with half of the restaurant dedicated to rich, spicy hot-pot tables, and half to al a carte Chinese-style fare.\nLunch: 12:30 PM - 03:00 PM\nDinner: 06:30 PM - 10:30 PM\nClosed on Sunday",
+          "image": "/import/dining/dining_image_013.jpg"
+        },
+        {
+          "title": "Kinkao - Thai Bistro",
+          "description": "Experience traditional Thai cuisine served with a creative modern twist. At Kinkao we showcase the very best of Thailand’s varied culinary cultures using only the freshest and most delicious ingredients. Abundant choice defines the full-service menu for an exquisite, casual and comfortable dining experience.\nLunch: 12:30 PM - 03:00 PM\nDinner: 06:30 PM - 10:30 PM\nClosed on Wednesdays",
+          "image": "/import/dining/dining_image_014.jpg"
+        },
+        {
+          "title": "Kebab & Kurry",
+          "description": "The colours and vibrancy of Indian cuisine are an essential part of your Indian Ocean experience, and this chic and casual grill has among its offerings the famous Tandoori Kebab. Succulent and bursting with flavour, it perfectly complements the full, traditional curry menu.\nLunch: 12:30 PM - 03:00 PM\nDinner: 06:30 PM - 10:30 PM\nClosed on Mondays",
+          "image": "/import/dining/dining_image_015.jpg"
+        },
+        {
+          "title": "Carne Diem Grill by Dharshan",
+          "description": "A unique grill oven created by Chef Dharshan Munidasa, firing at 750 Celsius, creates the Best Steak Ever, using Westholme Australian Wagyu Steak.\nLunch: 12:00 PM - 03:00 PM\nDinner: 05:30 PM - 11:00 PM\nOpens Daily",
+          "image": "/import/dining/dining_image_016.jpg"
+        },
+        {
+          "title": "Kalhu Odi",
+          "description": "From folklore passed down through generations in the islands of the Maldives, is the tale of Dhon-Hiyala and Alifulhu. The star-crossed lovers that fought desperately to be with each other, never to be thwarted by the jealousy and envy of the king.\nAfternoon Tea 04:30 PM - 05:30 PM\nDinner 06:00 PM - 10:30 PM\nOpen Daily",
+          "image": "/import/dining/dining_image_017.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_013.jpg",
+        "/import/gallery/gallery_image_014.jpg",
+        "/import/gallery/gallery_image_015.jpg",
+        "/import/gallery/gallery_image_017.jpg",
+        "/import/gallery/gallery_image_018.jpg",
+        "/import/gallery/gallery_image_019.jpg",
+        "/import/gallery/gallery_image_020.jpg",
+        "/import/gallery/gallery_image_028.jpg",
+        "/import/gallery/gallery_image_029.jpg",
+        "/import/gallery/gallery_image_030.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_013.jpg",
+      "from_price_usd": 250
+    },
+    {
+      "legacy_id": 3,
+      "name": "Cocoon Maldives",
+      "slug": "cocoon-maldives",
+      "category": "resorts",
+      "atoll": "Lhaviyani Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Surfing",
+        "Wedding",
+        "Wellness"
+      ],
+      "description": "Crystal clear water, beautiful sunsets and relax. Where contemporary taste is blended with the beauty of the Indian Ocean, beaches and tropical weather, creating a unique resort, the very first design hotel in Maldives. LAGO design furnishing combines naturally with the Maldivian ambience, creating a welcoming and hospitable environment for an unforgettable holiday. The resort is located in the Lhaviyani Atoll, a scenic 30-minute seaplane journey from Malé, Velana International Airport.\n​\n60 Overwater Villas & Suites | 90 Beach Villas & Suites | 3 Restaurants | 2 Bars | Spa\nCocoon Dining Experience:\nOctopus Restaurant | Manta Restaurant | Japanese Garden | Kurum-Bar | Loabi Loabi Bar",
+      "short_description": "Crystal clear water, beautiful sunsets and relax. Where contemporary taste is blended with the beauty of the Indian Ocean, beaches and tropical weather, creating a unique resort, the very first design hotel in Maldives. LAGO design furnishing combines naturally with the Maldivian ambience, creating a welcoming and hospitable environment for an unforgettable holiday. The resort is located in the Lhaviyani Atoll, a scenic 30-minute seaplane journey from Malé, Velana International Airport.",
+      "facilities": [
+        "Telephone",
+        "Free WiFi",
+        "Ceiling Fan",
+        "Outdoor Shower",
+        "Air Conditioning",
+        "Reading Light",
+        "Private Digital Safe",
+        "Swimming Pool",
+        "Bathroom Amenities",
+        "Mosque",
+        "Boutique",
+        "Laundry Service",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "Kids Club",
+        "24 hour Guest Services",
+        "24-hour Security",
+        "Water Sports Center",
+        "Certified Dive Centres",
+        "Fitness Center"
+      ],
+      "accommodations": [
+        {
+          "title": "Beach Suite",
+          "description": "Enjoy unparalleled suites in the Maldives in the Beach Suite. Wildwood is two-hundred-year-old wood. A piece of the past for a contemporary interior becomes a headboard for the bed in the middle of the room and a suspended wash basin in the bathroom.\nFrom every point in the room guests are treated to views that maintain a constant visual relationship with the landscape. Materials and colors change in tune with the various sensations. A window inside the room. You are immediately in the center of vegetation and the ocean. Beds that float in the air. Rustic wildwood tables.\nServices:\nFree WiFi | Air conditioning | Ceiling fan | Outdoor Shower | Mini-bar | Flat screen TV | Tea/coffee making facilities | Reading light and desk | Hair-dryer | Telephone | Private digital safe",
+          "image": "/import/accommodation/accommodation_image_004.jpg"
+        },
+        {
+          "title": "Beach Suite with Pool",
+          "description": "One of the most recent resorts in Maldives, the exclusive Beach Suite with Pool offers elegant accommodation with private pool and stylish Italian design.\nFrom every point in the room guests are treated to views that maintain a constant visual relationship with the landscape. Materials and colours change in tune with the various sensations.\nA window inside the room. You are immediately in the centre of vegetation and the ocean. Beds that float in the air. Rustic wildwood tables. Every Suite boasts the following amenities\nServices:\nFree WiFi | Air conditioning | Ceiling fan | Outdoor Shower | Mini-bar | Flat screen TV | Tea/coffee making facilities | Reading light and desk | Hair-dryer | Telephone | Private digital safe",
+          "image": "/import/accommodation/accommodation_image_005.jpg"
+        },
+        {
+          "title": "Lagoon Villa",
+          "description": "Discover the exclusive design and comforts of the Lagoon Villas. The mood for Cocoon Maldives is exclusive. Every element, from the complementary pieces and the fabrics for the curtains to the greenery, makes the perception of this space, sartorially designed, unique.\nFrom every point in the room guests are treated to views that maintain a constant visual relationship with the landscape. Materials and colors change in tune with the various sensations. A window inside the room. You are immediately in the center of vegetation and the ocean. Beds that float in the air. Rustic wildwood tables.",
+          "image": "/import/accommodation/accommodation_image_006.jpg"
+        },
+        {
+          "title": "Beach Villa",
+          "description": "One of the best resort in Maldives, the 50 Beach Villas offer exclusive accommodation with stylish settings and elegant Italian design. With direct access to the beach and all modern comforts.\nFrom every point in the room guests are treated to views that maintain a constant visual relationship with the landscape. Materials and colors change in tune with the various sensations. A window inside the room. You are immediately in the center of vegetation and the ocean. Beds that float in the air. Rustic wildwood tables.\nServices:\nFree WiFi | Air conditioning/Ceiling fan | Outdoor Shower | Mini-bar | Flat screen TV | Tea/coffee making facilities | Reading light and desk | Hair-dryer | Telephone | Private digital safe",
+          "image": "/import/accommodation/accommodation_image_007.jpg"
+        },
+        {
+          "title": "Family Beach Villa",
+          "description": "One of the best family resort in Maldives, the Family Beach Villas are the perfect option for families of three or more with an interconnecting door through the terrace which guarantees total privacy for everyone in the family, offering stylish accommodation with direct access to the beach as well as all modern comforts.\nFrom every point in the room guests are treated to views that maintain a constant visual relationship with the landscape. Materials and colors change in tune with the various sensations. A window inside the room. You are immediately in the centre of vegetation and the ocean. Beds that float in the air. Rustic wildwood tables. Every Villa boasts the following amenities\nFree WiFi | Air conditioning | Ceiling fan | Outdoor Shower | Mini-bar | Flat screen TV | Tea/coffee making facilities | Reading light and desk | Hair-dryer | Telephone | Private digital safe",
+          "image": "/import/accommodation/accommodation_image_008.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "Dinning Experience",
+          "description": "With a selection of three restaurants and two bars, you will be spoilt for choice. The resort offers Restaurant with Buffet Meals, Coffee Shop and Beach Bars.\n​The main Restaurant, OCTOPUS, serves themed buffet with interactive live stations. For those seeking a romantic dinner by candlelight to the rising lovers’ moon, MANTA Restaurant offers à la carte dining in the lagoon. JAPANESE GARDEN is dedicated to authentic Japanese flavors with a breathtaking view of the Indian Ocean. KURUM-BAR is a laid-back space for sunset drinks, while the LOABI LOABI pool Bar is a convivial meeting place hosting parties every evening.",
+          "image": "/import/dining/dining_image_002.jpg"
+        },
+        {
+          "title": "Octopus Restaurant",
+          "description": "Showcasing culinary highlights from around the world the Resort Buffet Restaurant, the OCTOPUS serves Breakfast, Lunch and Dinner. Enjoy weekly themed nights such as Asian and Sushi Night, Maldivian Night, Italian Night, Mediterranean Night, Indian Night, Moroccan Night which transform the atmosphere of the Octopus restaurant into a great dining experience.\n​Breakfast: 0730hrs- 1000hrs Lunch:1230hrs- 1430hrs Dinner:1930hrs- 2130hrs",
+          "image": "/import/dining/dining_image_003.jpg"
+        },
+        {
+          "title": "Loabi Loabi Bar",
+          "description": "The Resort main bar, the LOABI LOABI is available throughout the day for all our customers and offers refreshing beverages along with Maldivian cocktails. Cocoon’s pool-side bar and a convivial meeting spot, Loabi Loabi Bar hosts weekly entertainments such as DJ, Live Music, Latino Night, White Party, Maldivian Night and Karoke to keep you engaged and grooving all night!\nOpening hours: 10:00-00:00hrs",
+          "image": "/import/dining/dining_image_004.jpg"
+        },
+        {
+          "title": "Manta Restaurant",
+          "description": "MANTA Restaurant located over-water is opened for lunch and dinner for A la Carte dining experience. Enjoy Candlelight romantic dining in the Maldivian lagoon for all rising lovers’ moon. It’s absolutely a culinary journey.\nLunch: 1230 - 1430hrs Dinner: 1930hrs - 2130hrs",
+          "image": "/import/dining/dining_image_005.jpg"
+        },
+        {
+          "title": "Japanese Garden",
+          "description": "The unique experience of Teppanyaki is awaiting you. Experience authentic Japanese flavors in a Maldives rustic Jungle setting with a breathtaking view of the Indian Ocean.\nJapanese Garden is open for lunch and dinner with curated à la carte menus to soothe\nyour taste buds!",
+          "image": "/import/dining/dining_image_006.jpg"
+        },
+        {
+          "title": "Kurum - Bar",
+          "description": "Kurum-Bar offers daily refreshments and beverages within idyllic settings and close to the best sunset view on the island. Come and enjoy a delicious lunch every day with our BBQ Chef's Experience. We cook fresh fish from our lagoon and offer a variety of tasty brunch options that will satisfy your taste buds.\n​Opening hours: 1000hrs -1830hrs",
+          "image": "/import/dining/dining_image_007.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/property_3_401.jpg",
+        "/import/gallery/property_3_402.jpg",
+        "/import/gallery/property_3_403.jpg",
+        "/import/gallery/property_3_405.jpg",
+        "/import/gallery/property_3_406.jpg",
+        "/import/gallery/property_3_407.jpg",
+        "/import/gallery/property_3_408.jpg",
+        "/import/gallery/property_3_410.jpg",
+        "/import/gallery/property_3_411.jpg",
+        "/import/gallery/property_3_413.jpg"
+      ],
+      "cover": "/import/gallery/property_3_401.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 4,
+      "name": "Joy Island Maldives",
+      "slug": "joy-island-maldives",
+      "category": "resorts",
+      "atoll": "North Male Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Surfing",
+        "Wedding",
+        "Wellness"
+      ],
+      "description": "Joy Island, a name could never be more fitting for a joyful place.\nAn island of happiness, full of activities and services for the most fun holiday in Maldives.\nFeaturing 151 villas on the beach and in the lagoon, Joy Island is located in North Malé Atoll close from Velana International Airport, only 40 minutes away by speedboat. The shape of this beautiful island resembles a butterfly with its wide white sand beach, surrounded by a stunning turquoise lagoon.\nFrom spacious villas to elegantly luxurious suites, 60 rooms located overwater with breathtaking views of the Indian Ocean, and 91 rooms on the beach surrounded by beautiful tropical vegetation; each accommodation is thoughtfully designed to ensure your utmost comfort. Savor the added luxury of private plunge pools for an intimate for an intimate experience for a refreshing dip.\nDining at Joy Island is a culinary experience with selection of 3 restaurants and 1 bar to choose from, The Market, Palm Beach, Il Basilico and Rainbow Bar.\nJoy Island is celebrating 1 year anniversary with fireworks, artists and fun activities. Join us in this celebration.",
+      "short_description": "Joy Island, a name could never be more fitting for a joyful place.",
+      "facilities": [
+        "Telephone",
+        "Free WiFi",
+        "Air Conditioning",
+        "Reading Light",
+        "Swimming Pool",
+        "Bathroom Amenities",
+        "Mosque",
+        "Boutique",
+        "Laundry Service",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "24 hour Guest Services",
+        "Water Sports Center",
+        "Certified Dive Centres"
+      ],
+      "accommodations": [
+        {
+          "title": "Beach Villa",
+          "description": "Our entry level room, 50-square meters Beach Villas of Joy Island are located on the east side of the\nisland with an amazing sunrise view. Each villa includes a typical open air Maldivian bathroom for an\nauthentic experience.",
+          "image": "/import/accommodation/accommodation_image_012.jpg"
+        },
+        {
+          "title": "Beach Suite",
+          "description": "Beach Suites at 70-square meters, offers more space with larger living rooms and bathrooms. They are\nlocated on the opposite side of the island with respect to Beach Villas, promising a stunning sunset view.\nEach Beach Suite includes a typical open air Maldivian bathroom.",
+          "image": "/import/accommodation/accommodation_image_013.jpg"
+        },
+        {
+          "title": "Family Beach Villa",
+          "description": "Joy’s huge 100-square meters Family Beach Villas are the perfect option for families of three or more with an inter-connecting door from the veranda. They are ideal for parents who wants to stay close to their children but also want their own privacy.",
+          "image": "/import/accommodation/accommodation_image_014.jpg"
+        },
+        {
+          "title": "Lagoon Suite",
+          "description": "Joy Island’s 70-square meters Lagoon Suites provide direct access to the turquoise lagoon, and guests enjoy stunning views over the ocean, complete with outrageous evening sunsets. From every point in the room guests are treated to views that maintain a constant visual relationship with the landscape.",
+          "image": "/import/accommodation/accommodation_image_015.jpg"
+        },
+        {
+          "title": "Lagoon Suite Pool",
+          "description": "Joy Island’s 100-square meters Lagoon suite pool are a step-up in extravagant luxury, these suites come with a wade-in private pool on the sundeck. Ideal for couples who wants to enjoy a romantic escape in an amazing landscape.",
+          "image": "/import/accommodation/accommodation_image_016.jpg"
+        },
+        {
+          "title": "Beach Residence",
+          "description": "Joy Island’s 300-square meters Beach Residence is the ultimate in lux comfort, and is the largest guest suite on the island. It has 2 bedrooms, 2 bathrooms and a magnificent living room. It also presents an outdoor dining area, with a private plunge pool. Its stunning beachfront setting affords a jaw dropping view of the lagoon and of the sunset.",
+          "image": "/import/accommodation/accommodation_image_017.jpg"
+        },
+        {
+          "title": "Lagoon Residence",
+          "description": "Our largest overwater suite, 280-square meters; this luxurious villa features modern furniture with colours that complements the amazing landscape. This corner of heaven is ideal for submerging in a special retreat, far from the busy life. It has a big private deck with sunbeds, a gorgeous lagoon setting with a private pool and sunset view. The suite offers everything you could want for an exclusive, romantic and unforgettable holiday in the Maldives.",
+          "image": "/import/accommodation/accommodation_image_018.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "The Market",
+          "description": "Indulge in our culinary haven, where your taste buds embark on a remarkable expedition of flavors from around the world. Our main restaurant is a splendid paradise for foodies. Step into our lively restaurant and immerse yourself in a world of culinary delights, offering a wide variety of vibrant food stations where you can select from an array of well-loved cuisines paying tribute to the diversity of flavors and cultures. Our menu is a symphony of taste sensations that will leave your taste buds singing with joy.\nJoin us at The Market for a culinary adventure like no other, where every bite is a journey to a new and exciting destination.\nOpening Hours Breakfast: 07:30 to 10:00 | Lunch: 12:30 to 14:30 | Dinner: 19:30 to 21:30",
+          "image": "/import/dining/dining_image_019.jpg"
+        },
+        {
+          "title": "Il Basilico",
+          "description": "Embark on a captivating voyage to the Italian Riviera, where every dish is a harmonious blend of flavors, tradition, and passion. Immerse yourself in the charming ambiance as you savor scrumptious wood-fired oven-baked pizzas that capture the essence of Italy. And, of course, don’t miss out on the divine Tiramisu, the ultimate finale of your culinary adventure.\nBuon Appetito!\nOpening Hours 11:00 – 23:00",
+          "image": "/import/dining/dining_image_020.jpg"
+        },
+        {
+          "title": "Palm Beach",
+          "description": "Nestled at the island tip, Palm Beach, is a charming blend of restaurant and bar, perfect for relishing fascinating sunsets. Savor an exquisite Paella - the classic Spanish dish under sailed shades surrounded by palms, or drop in for a relaxed outdoor lunch. As the evening falls, this oasis metamorphoses into an enhancing escape, inviting you to relish freshly grilled barbeque under the velvety night sky.\nOpening Hours Bar: 10:00 – 21:30 | Lunch: 12:30 – 14:30 | Snacks: 14:30 – 18:30\nAfternoon Tea: 16:30- 17:30 | Dinner: 19:30 – 21:30",
+          "image": "/import/dining/dining_image_021.jpg"
+        },
+        {
+          "title": "Rainbow Bar",
+          "description": "Shared happiness is the essence! Elevate your experience at Rainbow Bar with our meticulously crafted JOY drinks menu, perfect for sipping or quaffing. And, of course, don’t forget to indulge in our impressive selection of swanky wines.\nNestled beside the Rainbow Bar, our inviting swimming pool offers a refreshing escape. It is accessible for your leisure every day.\nOpening Hours: 10:00 – 00:00",
+          "image": "/import/dining/dining_image_022.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/property_4_529.jpg",
+        "/import/gallery/property_4_530.jpg",
+        "/import/gallery/property_4_531.jpg",
+        "/import/gallery/property_4_532.jpg",
+        "/import/gallery/property_4_533.jpg",
+        "/import/gallery/property_4_534.jpg",
+        "/import/gallery/property_4_535.jpg",
+        "/import/gallery/property_4_536.jpg",
+        "/import/gallery/property_4_537.jpg",
+        "/import/gallery/property_4_538.jpg"
+      ],
+      "cover": "/import/gallery/property_4_529.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 5,
+      "name": "You & Me Maldives",
+      "slug": "you-me-maldives",
+      "category": "resorts",
+      "atoll": "Raa Atoll",
+      "tags": [
+        "Adults Only",
+        "All Inclusive",
+        "Diving",
+        "Honeymoon",
+        "Surfing",
+        "Wedding",
+        "Wellness"
+      ],
+      "description": "Love is in the Air\nYou & Me is a private, rustic and romantic island, in a beautiful, untouched corner of the Maldives. A world away from the stresses of everyday life, You & Me is the place to relax, curl up, and spend some quality ‘us time’.\nYou & Me is located in Raa Atoll, Northern Maldives, just 20 minutes by speed boat from Ifuru domestic airport, or a 45 minute, scenic seaplane ride from Male’ / Velana International Airport. Adults only island, targeting couples, honeymooners and friends, the resort is a quiet, relaxing retreat, far away from other hotels.\nYou & Me has 109 rooms and 99 of them are overwater, with unique rustic style never seen before in the Maldives. In all the rooms you will find handmade furnishings; made of natural wood with echoes to African traditions and fully equipped bathroom with luxury products and refined details.\nYou & Me introduces Dine Around concept whereby guests on Half Board, Full Board, and All-Inclusive packages can choose to eat lunch and dinner in any of the à la carte restaurants (except H2O underwater restaurant), and breakfast in the main restaurant.",
+      "short_description": "You & Me is a private, rustic and romantic island, in a beautiful, untouched corner of the Maldives. A world away from the stresses of everyday life, You & Me is the place to relax, curl up, and spend some quality ‘us time’.",
+      "facilities": [
+        "Bluetooth Speakers",
+        "Telephone",
+        "Free WiFi",
+        "Outdoor Shower",
+        "Air Conditioning",
+        "Reading Light",
+        "Bath Tub",
+        "Private Digital Safe",
+        "Swimming Pool",
+        "Bathroom Amenities",
+        "Mosque",
+        "Boutique",
+        "Laundry Service",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "24 hour Guest Services",
+        "24-hour Security",
+        "Water Sports Center",
+        "Certified Dive Centres",
+        "Fitness Center"
+      ],
+      "accommodations": [
+        {
+          "title": "Manta Villa",
+          "description": "Location: Lagoon View: Sunrise Size: 55 sqm Rooms: 42\nOverlooking the ocean with a sunrise view, these water villas have a rustic, luxury feel. The Manta Villas offer polished wooden floors, a king sized bed overlooking the ocean, rain shower, and a seaside deck with an infinite view of the beautiful lagoon.",
+          "image": "/import/accommodation/accommodation_image_019.jpg"
+        },
+        {
+          "title": "Dolphin Villas",
+          "description": "Location: Lagoon View: Sunset Size: 55 sqm Rooms: 15\nThese rustic water villas enjoy unparalleled views of the sunset; they come with polished wooden floors, a king sized bed overlooking the ocean, comfortable sofa, rain shower, and a seaside deck with lagoon views.",
+          "image": "/import/accommodation/accommodation_image_020.jpg"
+        },
+        {
+          "title": "Dolphin Villa with Pool",
+          "description": "Location: Lagoon View: Sunset Size: 55 sqm Rooms: 15\nThese rustic water villas enjoy unparalleled views of the sunset; they come with polished wooden floors, a king sized bed overlooking the ocean, comfortable sofa, rain shower, and a seaside deck with lagoon views.",
+          "image": "/import/accommodation/accommodation_image_021.jpg"
+        },
+        {
+          "title": "Beach Suite with Pool",
+          "description": "Location: Beach View: Sunrise Size: 85 sqm Rooms: 10\nLocated on the beach, these spacious rooms enjoy a luxurious and rustic feel, with a beautiful bathroom including a couple’s bathtub and rain shower, a king size bed overlooking the beach, sofa, deck, and private pool with private beach and sea views.",
+          "image": "/import/accommodation/accommodation_image_022.jpg"
+        },
+        {
+          "title": "Aqua Suite with Slide",
+          "description": "Location: Lagoon View: Sunrise Size: 65 sqm Rooms: 10\nThese water villas enjoy polished wooden floors, a bathroom with rain shower and couple’s bath tub, a king sized bed overlooking the ocean, sofa, a large outdoor deck to relax and sunbathe with lagoon access and breathtaking sunrise views.\nWith the newly-installed water slide, getting into the water is double the fun.",
+          "image": "/import/accommodation/accommodation_image_023.jpg"
+        },
+        {
+          "title": "Aqua Suite with Pool",
+          "description": "Location: Lagoon View: Sunset Size: 80 sqm Rooms: 12\nThese large water villas with breathtaking sunset views with a beautiful, private infinity pool has a large sundeck with lagoon access where you can easily swim in the ocean. The rooms enjoy polished wooden floors, a sofa, a large bathroom with rain shower and a couple’s bath tub, and overlooks the ocean.",
+          "image": "/import/accommodation/accommodation_image_024.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "H2O by Andrea Berton",
+          "description": "Location: Underwater View: 360 Degrees\nFirst of it’s kind, You & Me by Cocoon's stand out feature is a fully submerged underwater restaurant that gives diners a view of the Maldives' breathtaking marine environment, bringing a unique Michelin star dining experience to Maldives. Serving for only 20 pax at a time, a set menu is provided to indulge this luxury experience.\nH20 Underwater Restaurant Menu price (Subject to change)\nLunch - 4 course USD 200 per person (excluding beverage)\nDinner - 4 course USD 280 per person (excluding beverage)\n​PRIOR RESERVATION REQUIRED.",
+          "image": "/import/dining/dining_image_023.jpg"
+        },
+        {
+          "title": "The Sand",
+          "description": "Open For: Breakfast and Dinner Highlights: Live Cooking Stations\nOpen for breakfast and dinner, serving freshly cooked dishes prepared at several bespoke live cooking stations catering international cuisine, where the guest chooses between variety of delicious food option, served to the table by our personal waiters. Immersed in nature’s flooring and in rustic elegant design, restaurant houses a wine cellar with varieties of wineries, champagne all waiting for you.",
+          "image": "/import/dining/dining_image_024.jpg"
+        },
+        {
+          "title": "Green Carpet",
+          "description": "Location: Near the pool Concept: Lunch\nLooking to lunch in an urban-chic, fun-filled environment around the pool? Try Green Carpet for healthy and mouthwatering lunche\n​Opened Daily: 12:30hrs- 15:00hrs",
+          "image": "/import/dining/dining_image_025.jpg"
+        },
+        {
+          "title": "Rising Sun: Japanese fine dining",
+          "description": "Food: Fresh Japanese Delights Experience: Teppanyaki\nThe unique experience of Teppanyaki is waiting to bring you into Asian flavor, option of juicy mouthwatering meat, fish and the rich Japanese delights freshly prepared for you.",
+          "image": "/import/dining/dining_image_026.jpg"
+        },
+        {
+          "title": "La Pasta",
+          "description": "Location: Beach Shores Cuisines: Authentic Italian\nA ‘restaurant around the beach shores’, Italians do it better…la pasta is a communal beachside restaurant, serving Italian’s finest cuisines with Italian special pasta and pizzerias for lunch and dinner.",
+          "image": "/import/dining/dining_image_027.jpg"
+        },
+        {
+          "title": "Cheers Bar",
+          "description": "Location: Near the pool Concept: Nightly Entertainment and Fresh Cocktails\nClose to the main pool area, is the Cheers Bar, replete with sofas and chairs. Serving freshly made cocktails and wide varieties of wine, champagne and live music performances and entertainments every night.",
+          "image": "/import/dining/dining_image_028.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/property_5_569.jpg",
+        "/import/gallery/property_5_570.jpg",
+        "/import/gallery/property_5_571.jpg",
+        "/import/gallery/property_5_572.jpg",
+        "/import/gallery/property_5_573.jpg",
+        "/import/gallery/property_5_574.jpg",
+        "/import/gallery/property_5_575.jpg",
+        "/import/gallery/property_5_576.jpg",
+        "/import/gallery/property_5_577.jpg",
+        "/import/gallery/property_5_578.jpg"
+      ],
+      "cover": "/import/gallery/property_5_569.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 6,
+      "name": "Hard Rock Hotel Maldives",
+      "slug": "hard-rock-hotel-maldives",
+      "category": "resorts",
+      "atoll": "North Male Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays"
+      ],
+      "description": "Hard Rock Hotel Maldives is situated in Emboodhoo Lagoon, a 20-minute boat ride from Velana International Airport. It features 178 spacious rooms, including family suites, beach villas, and overwater villas. The hotel's design blends local culture with modern aesthetics and showcases music memorabilia. Guests enjoy unique amenities such as the Sound of Your Stay program with free Fender guitars and Crosley record players, a full-service Rock Spa®, a Rock Shop®, and clubs for kids and teens.\nDining options include a Pool Bar, all-day dining, a Pan-Latin restaurant, in-villa dining, and Hard Rock Cafe Maldives. The hotel provides direct access to The Marina @ CROSSROADS Maldives, offering entertainment, boutique shops, restaurants, bars, and various leisure activities.",
+      "short_description": "Hard Rock Hotel Maldives is situated in Emboodhoo Lagoon, a 20-minute boat ride from Velana International Airport. It features 178 spacious rooms, including family suites, beach villas, and overwater villas. The hotel's design blends local culture with modern aesthetics and showcases music memorabilia. Guests enjoy unique amenities such as the Sound of Your Stay program with free Fender guitars and Crosley record players, a full-service Rock Spa®, a Rock Shop®, and clubs for kids and teens.",
+      "facilities": [
+        "Bluetooth Speakers",
+        "Telephone",
+        "Free WiFi",
+        "Video on demand",
+        "Outdoor Shower",
+        "Air Conditioning",
+        "Reading Light",
+        "Bath Tub",
+        "Private Digital Safe",
+        "Swimming Pool",
+        "Bathroom Amenities",
+        "Bean bags",
+        "Laundry Service",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "24 hour Guest Services",
+        "24-hour Security",
+        "Water Sports Center",
+        "Certified Dive Centres",
+        "Fitness Center"
+      ],
+      "accommodations": [
+        {
+          "title": "SILVER SKY STUDIO",
+          "description": "When the limelight is too bright, retreat to your studio or ocean-view villa. No paparazzi here—just surf, sand. Tune in to your own beats with our unique program The Sound of Your Stay®.\nSimple, sophisticated, and snazzy, our Silver Sky Studios feature private balconies and waterfall showers. Located on the first floor, with exclusive views of the surrounding lagoon, these room offers privacy and a direct access to Emboodhoo Lagoon.\nKING | 46 SQM| SLEEPS 3A | 2A1C | 1A2C",
+          "image": "/import/accommodation/accommodation_image_025.jpg"
+        },
+        {
+          "title": "SILVER BEACH STUDIO",
+          "description": "Featuring a private terrace with direct beach access, all our Silver Beach Studios at Hard Rock Hotel Maldives are located on the ground floor. Signature amenities and sun loungers, indoor and outdoor showers to complement your island getaway.\nKING / TWIN| 46 SQM| SLEEPS 3A | 2A1C | 1A2C",
+          "image": "/import/accommodation/accommodation_image_026.jpg"
+        },
+        {
+          "title": "SILVER FAMILY SUITE (DUPLEX, 2 BEDROOM)",
+          "description": "Our Silver Family Suite boasts two levels of wooden accents, tropical décor, and an open-floor concept. The top level includes a bunk bed, LCD TV, and separate bathroom—the perfect amount of space for your band of four, five, or six.\nKING/TWIN | 107 SQM |SLEEPS 5A | 4A2C | 5AInfant | 2A3C1Infant",
+          "image": "/import/accommodation/accommodation_image_027.jpg"
+        },
+        {
+          "title": "GOLD BEACH VILLA",
+          "description": "Set down your shopping bags from The Marina @ CROSSROADS and head straight to your chaise lounge chair. Our Gold Beach Villa includes ocean views, a sofa bed, and an en-suite bathroom with double vanity sinks and a high-walled bathtub.\nKING / TWIN | 62 SQM | SLEEPS 3A | 2A2C | 3A1C | 2A1C1Infant",
+          "image": "/import/accommodation/accommodation_image_030.jpg"
+        },
+        {
+          "title": "GOLD BEACH POOL VILLA",
+          "description": "Enjoy the best of both worlds by having your own plunge pool and direct beach access. Our Gold Beach Pool Villa features 1 king bed, ocean views, a sofa bed, and an en-suite bathroom with double vanity sinks and a high-walled bathtub.\nKING | 62 SQM| SLEEPS 3A | 2A2C | 3A1C | 2A1C1Infant",
+          "image": "/import/accommodation/accommodation_image_031.jpg"
+        },
+        {
+          "title": "PLATINUM OVERWATER VILLA",
+          "description": "There are a million reasons to love our Platinum Overwater Villa. Soak up the view on your private terrace on sun loungers. Enjoy outdoor living on the lounge net over the water and direct access to the turquoise blue lagoon.\nKING / TWIN | 75 SQ M | SLEEPS 3A | 2A2C | 3A1C | 2A1C1Infant",
+          "image": "/import/accommodation/accommodation_image_032.jpg"
+        },
+        {
+          "title": "PLATINUM OVERWATER POOL VILLA",
+          "description": "Featuring an infinity pool, the Platinum Overwater Pool Villa is located over the water includes a private terrace, sun loungers, private plunge pool, and direct lagoon access.\nKING / TWIN | 76 SQM | SLEEPS 3A | 2A2C | 3A1C | 2A1C1Infant",
+          "image": "/import/accommodation/accommodation_image_033.jpg"
+        },
+        {
+          "title": "DIAMOND OVERWATER POOL VILLA",
+          "description": "With direct access to the crystal clear lagoon and a spectacular infinite view, Diamond Overwater Pool Villa is located on the south wing of the Island. This stunning Villa includes 1 king bed or 2 double beds, a private terrace with a plunge pool, and sun loungers.\nKING / TWIN | 76 SQM | SLEEPS 3A | 2A2C | 3A1C | 2A1C1Infant",
+          "image": "/import/accommodation/accommodation_image_038.jpg"
+        },
+        {
+          "title": "ROCK ROYALTY OVERWATER POOL VILLA (2-BEDROOM)",
+          "description": "A living room, an infinity pool, dedicated butler service your divine vacation is now in session. Settle into this palatial hotel villa with a large oceanfront terrace, waterfall shower, and three Smart TVs.\nKING & TWIN | 144 SQM | SLEEPS 7A | 2A5C | 3A4C | 1A6C | 2A4C1Infant",
+          "image": "/import/accommodation/accommodation_image_039.jpg"
+        },
+        {
+          "title": "ROCK STAR VILLA",
+          "description": "Live like the Rock Star. Our Rock Star Villa boasts a tuk-tuk bar, infinity pool, Jukebox, large outdoor deck with sun loungers, outdoor and indoor dining area and butler room with a service pantry and a carousel seahorse. A playful experience.\nKING | 445 SQM| SLEEPS 2A | 2A1C",
+          "image": "/import/accommodation/accommodation_image_040.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "Eat & Drink",
+          "description": "Start your tour with us and indulge in a culinary journey amid pristine waters. Choose from various meal plans: Half board with breakfast and dinner, Full board with lunch added, or the All-inclusive package with selected beverages and a 3-course menu for lunch and dinner.\nDine at SAii Lagoon Maldives, The Beach Club, or creative eateries at The Marina @ CROSSROADS, the Maldives' first integrated resort. Enjoy craft beers and cocktails at our swim-up Pool Bar, or savor burgers at Hard Rock Cafe Maldives. Experience live music at Hard Rock Cafe or Balearic beats at SAii Beach Club. Discover top restaurants and vibrant dining options in Emboodhoo Lagoon.",
+          "image": "/import/dining/dining_image_029.jpg"
+        },
+        {
+          "title": "HARD ROCK CAFE MALDIVES",
+          "description": "Nothing is more classic America than Hard Rock Cafe. Eat, meet, or drink—the choice is yours.\nBest spot to hang out with your loved ones and enjoy the live music at night!\n12:00 PM - 12:30 AM",
+          "image": "/import/dining/dining_image_031.jpg"
+        },
+        {
+          "title": "SESSIONS",
+          "description": "Immerse yourself in our private Chef’s Studio for 12 guests. Our open-kitchen restaurant borrows flavours and recipes from around the world for a truly unique dining experience.\nMON- SUN:\n7:00AM- 10:30AM | 12:30 PM- 3:00 PM | 6:30 PM- 10:00 PM",
+          "image": "/import/dining/dining_image_032.jpg"
+        },
+        {
+          "title": "THE ELEPHANT AND THE BUTTERFLY",
+          "description": "Indulge at this iconic restaurant with local ceviche and tiradito, tableside guacamole, Inspired by Frida Kahlo, this award winning restaurant tells the story of the food that wants to be loved.\nHOURS\n11:30AM- 10:00 PM",
+          "image": "/import/dining/dining_image_034.jpg"
+        },
+        {
+          "title": "POOL BAR",
+          "description": "Snack and sip in a sparkling infinity pool that feeds straight into Emboodhoo Lagoon.\nThis swim-up bar features underwater stools and tunes, a waterslide, and special menu for kids.\nHOURS\n9:00AM- 11:30 PM",
+          "image": "/import/dining/dining_image_035.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_062.jpg",
+        "/import/gallery/gallery_image_063.jpg",
+        "/import/gallery/gallery_image_064.jpg",
+        "/import/gallery/gallery_image_065.jpg",
+        "/import/gallery/gallery_image_066.jpg",
+        "/import/gallery/gallery_image_067.jpg",
+        "/import/gallery/gallery_image_068.jpg",
+        "/import/gallery/gallery_image_069.jpg",
+        "/import/gallery/gallery_image_070.jpg",
+        "/import/gallery/gallery_image_071.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_062.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 7,
+      "name": "Crystal Sands",
+      "slug": "crystal-sands",
+      "category": "city-hotels",
+      "atoll": "North Male Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Surfing"
+      ],
+      "description": "Crystal Sands, a cozy guest house in Maafushi Island in Kaafu Atoll with 18 rooms, offers stunning sea views and sunsets from its modern, turquoise-and-white interiors. The island can be reached by speedboat, with a distance of 27 km from Velana International Airport.\nManaged by Symphony Group, known for its long-standing restaurant expertise in the Maldives, the guest house features a restaurant and provides free Wi-Fi and cable TV. Symphony Maldives' long-term goal is to extend its exceptional service from its restaurant experience into the hospitality industry, maintaining high standards across all its ventures.",
+      "short_description": "Crystal Sands, a cozy guest house in Maafushi Island in Kaafu Atoll with 18 rooms, offers stunning sea views and sunsets from its modern, turquoise-and-white interiors. The island can be reached by speedboat, with a distance of 27 km from Velana International Airport.",
+      "facilities": [
+        "Free WiFi",
+        "Ceiling Fan",
+        "Air Conditioning",
+        "Bathroom Amenities",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "24 hour Guest Services"
+      ],
+      "accommodations": [
+        {
+          "title": "Standard Rooms",
+          "description": "The Cozy Standard guest room offers a serene escape from city life with its Egyptian cotton bedding and soothing sounds of palm trees and ocean breezes. The 13 m² room is fully air-conditioned and includes amenities such as a minibar, flat-screen satellite TV, safety deposit box, and a private bathroom with a shower and free toiletries. Additional features include complimentary tea and coffee, a hair dryer, and laundry service.",
+          "image": "/import/accommodation/accommodation_image_041.jpg"
+        },
+        {
+          "title": "Beach Deluxe Rooms",
+          "description": "The Deluxe Double Room with Balcony offers stunning beach and ocean views from its outdoor balcony. This 13 m², air-conditioned room features a comfortable double bed, flat-screen satellite TV, safety deposit box, and a private bathroom with a shower and free toiletries. Additional amenities include complimentary tea and coffee, a hair dryer, and laundry service. The room's spacious design and scenic views ensure a relaxing and memorable stay.",
+          "image": "/import/accommodation/accommodation_image_042.jpg"
+        },
+        {
+          "title": "Ocean Deluxe Rooms",
+          "description": "The Ocean Deluxe Rooms offer luxury with a spacious balcony providing sunrise or sunset views of the ocean, beach, and palm trees. Furnished with a coffee table, the balcony is perfect for relaxing or enjoying the island's beauty. Guests can start their day with freshly brewed coffee and a continental breakfast.\nThe 13 m² room is fully air-conditioned and includes a comfortable double bed, flat-screen satellite TV, safety deposit box, and a private bathroom with a shower and free toiletries. The room features an extra-large balcony with sea, beach, island, or city views.",
+          "image": "/import/accommodation/accommodation_image_043.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "Symphony Lagoon",
+          "description": "Crystal Sands features Symphony Lagoon, a restaurant owned and managed by Symphony Group, known for its longstanding reputation in the Maldives. Symphony Lagoon offers a calm and pleasant ambiance with quick service and friendly staff. The restaurant serves a diverse range of cuisines, including:\nAmerican | Italian | Malaysian | Mediterranean | Middle Eastern | Pizza | Seafood",
+          "image": "/import/dining/dining_image_036.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_099.jpg",
+        "/import/gallery/gallery_image_100.jpg",
+        "/import/gallery/gallery_image_101.jpg",
+        "/import/gallery/gallery_image_102.jpg",
+        "/import/gallery/gallery_image_103.jpg",
+        "/import/gallery/gallery_image_104.jpg",
+        "/import/gallery/gallery_image_105.jpg",
+        "/import/gallery/gallery_image_106.jpg",
+        "/import/gallery/gallery_image_107.jpg",
+        "/import/gallery/gallery_image_108.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_099.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 8,
+      "name": "RAAYA by Atmosphere",
+      "slug": "raaya-by-atmosphere",
+      "category": "resorts",
+      "atoll": "Raa Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Wellness"
+      ],
+      "description": "Exceptional Living Begins at RAAYA\nAt RAAYA, we redefine the essence of luxury living. Every moment at our resort is crafted to offer unparalleled comfort and style. From seamless arrival and departure services to a gourmet culinary experience, scenic seaplane transfers, and a curated selection of fine beverages, your stay promises to surpass all expectations.\nWhether you seek exhilarating adventures or a serene retreat, RAAYA has it all. Your journey starts with a breathtaking 45-minute seaplane flight from Velana International Airport in Malé, setting the stage for an extraordinary escape.",
+      "short_description": "Exceptional Living Begins at RAAYA",
+      "facilities": [
+        "Free WiFi",
+        "Air Conditioning",
+        "Private Digital Safe",
+        "Swimming Pool",
+        "Bathroom Amenities",
+        "Laundry Service",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "Kids Club",
+        "24 hour Guest Services",
+        "Water Sports Center",
+        "Certified Dive Centres",
+        "Fitness Center"
+      ],
+      "accommodations": [
+        {
+          "title": "Beach Villa",
+          "description": "Beach Bliss\nIndulge in premium seaside views. RAAYA's Beach Villas offer spacious interiors and king-size beds amidst tropical beauty. Relax on your terrace, steps away from the sandy beach and serene lagoon.\n2 adults | 1 King Bed | Total Area - 61m²",
+          "image": "/import/accommodation/accommodation_image_044.png"
+        },
+        {
+          "title": "Beach Villa with Pool",
+          "description": "Beachside Retreat\nExperience a lifestyle upgrade at RAAYA's Beach Villas, complete with private pools, spacious interiors, and king-size beds surrounded by tropical beauty. Lounge on your terrace, a stone's throw from the sandy beach and serene lagoon.\n2 adults + 1 child | 1 King Bed | Total Area - 91m² | Pool Size - 7m²",
+          "image": "/import/accommodation/accommodation_image_045.png"
+        },
+        {
+          "title": "Water Villa",
+          "description": "Ocean Serenity\nRAAYA's Water Villas exude the charm of castaway ships, offering modern amenities. Lounge on the private overwater deck with sun loungers, an overwater hammock, and serene ocean vistas.\n2 adults | 1 King Bed | Total Area - 73m²",
+          "image": "/import/accommodation/accommodation_image_046.png"
+        },
+        {
+          "title": "Water Villa with Pool",
+          "description": "Ocean Oasis\nIndulge in the epitome of romance with our ocean-facing villa, adorned with a private pool and furnished with modern amenities. Immerse yourself in the ultimate relaxation, bask in the warmth of the sun, and create unforgettable moments together.\n2 adults | 1 King Bed | Total Area - 80m² | Pool Size - 7m²",
+          "image": "/import/accommodation/accommodation_image_047.png"
+        },
+        {
+          "title": "Deluxe Water Villa with Pool",
+          "description": "Ocean Serenity\nElevate your escape with our Deluxe Water Villa with Pool. This secluded haven offers sweeping ocean views, a private pool for ultimate relaxation, and modern amenities to ensure your utmost comfort. Experience the serene beauty and make timeless memories in this exquisite setting. Surrender to the tranquility, soak up the sun's rays, and craft unforgettable memories in this idyllic paradise.\n2 adults + 1 child | 1 King Bed | Total Area - 92m² | Pool Size - 7m²",
+          "image": "/import/accommodation/accommodation_image_048.png"
+        },
+        {
+          "title": "2BR Family Beach Villa",
+          "description": "Family Haven\nUltimate unwinding begins where vibrant tropical accents adorn bright suites. Immerse yourself in the expanse of interconnected living spaces, crafting memories that will linger like the gentle kiss of the ocean breeze.\n4 adults or 2 adults + 2 children | 2 King Beds | Total Area - 142m²\nSIGNATURE FEATURES\n- Spacious terrace with dining area, hammock, and daybeds\n- Interconnecting villas",
+          "image": "/import/accommodation/accommodation_image_049.png"
+        },
+        {
+          "title": "2BR Family Beach Villa with Pool",
+          "description": "Family Paradise\nElevate your holiday experience at RAAYA where each moment is bathed in tranquility. Immerse yourself in the vibrant tropical ambiance, unwind in spacious suites, and surrender to the allure of your private pool and beachfront cabanas for dining.\n4 adults or 2 adults + 2 children | 2 King Beds | Total Area - 232m² | Pool Size - 19m²\nSIGNATURE FEATURES\n- Spacious terrace with dining area, hammock, and daybeds\n- Interconnecting villas",
+          "image": "/import/accommodation/accommodation_image_050.png"
+        },
+        {
+          "title": "RAAYA Residence",
+          "description": "Exclusive Retreat\nDiscover Maldives’ best-kept secret at your very own RAAYA Residences, nestled near the tranquil mangrove where Seb once roamed. Enjoy spacious suites with private infinity pools, ocean-facing decks, and utmost privacy for an unparalleled retreat.\n4 adults or 2 adults + 2 children | 2 King Beds| Total Area - 849m² | Pool Size - 41m²\nSIGNATURE FEATURES\n- Terrace with daybed\n- Living and dining area",
+          "image": "/import/accommodation/accommodation_image_051.png"
+        }
+      ],
+      "dining": [
+        {
+          "title": "THE VILLAGE - Italian Restaurant",
+          "description": "Step into a quaint Italian coastal village vibe at this charming restaurant located in RAAYA island’s vibrant Village Square. On the menu are favorites from the region ranging from pastas to gnocchi and risotto – all carefully paired with fine wine.\nOperating hours: (Pre-booking required)\nDinner: 19:00hrs to 22:00hrs (open 6 days a week)",
+          "image": "/import/dining/dining_image_037.png"
+        },
+        {
+          "title": "AMPERS&ND – Bar & Restaurant",
+          "description": "Indulge in the artistry of Pan-Asian cuisine with locally sourced seafood, premium meats, and vegetarian options, all complemented by handcrafted cocktails. The dreamy setting welcomes you to relax at beachfront cabanas, indoors with the medley of live music, or up on the breezy rooftop bar – all offering majestic sunset views.\nOperating hours: (Pre-booking required)\n- Lunch: 12:30hrs to 14:30hrs (open 6 days a week)\n- Dinner: 19:00hrs to 22:00hrs (open 6 days a week)\n- Rooftop Bar: 11:00 hrs to 00:00hrs midnight",
+          "image": "/import/dining/dining_image_038.png"
+        },
+        {
+          "title": "MIZĀJ – Middle Eastern Fine Dining",
+          "description": "Translating from Arabic as ‘mood,’ this poetic pool bar converts into an à la carte fine-dining restaurant in the evening. Savour a thoughtfully curated melange of flavours from the Middle East amidst the ocean breeze, swaying palms, and starlit vistas.\nOperating hours: (Pre-booking required)\n- Dinner: 19:00hrs to 22:00hrs (open 6 days a week)",
+          "image": "/import/dining/dining_image_039.png"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_112.png",
+        "/import/gallery/gallery_image_113.png",
+        "/import/gallery/gallery_image_114.png",
+        "/import/gallery/gallery_image_115.png",
+        "/import/gallery/gallery_image_116.png",
+        "/import/gallery/gallery_image_117.png",
+        "/import/gallery/gallery_image_118.png",
+        "/import/gallery/gallery_image_119.png",
+        "/import/gallery/gallery_image_120.png",
+        "/import/gallery/gallery_image_121.png"
+      ],
+      "cover": "/import/gallery/gallery_image_112.png",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 11,
+      "name": "Atmosphere Kanifushi",
+      "slug": "atmosphere-kanifushi",
+      "category": "resorts",
+      "atoll": "Lhaviyani Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Surfing",
+        "Wedding",
+        "Wellness"
+      ],
+      "description": "Atmosphere Kanifushi, a gorgeous island resort in the Lhaviyani Atoll, is famous for its turquoise vistas, endless white beach, and swaying palm trees. The island is approximately 2 km in length and 90 meters wide. Beach Villas and Water Villas, showcasing vast living spaces with elegant interiors, are ideal for a tropical holiday. ATMOSPHERE KANIFUSHI PLAN™ offers a hassle-free five-star resort experience with an array of activities, excursions, and adventures.",
+      "short_description": "Atmosphere Kanifushi, a gorgeous island resort in the Lhaviyani Atoll, is famous for its turquoise vistas, endless white beach, and swaying palm trees. The island is approximately 2 km in length and 90 meters wide. Beach Villas and Water Villas, showcasing vast living spaces with elegant interiors, are ideal for a tropical holiday. ATMOSPHERE KANIFUSHI PLAN™ offers a hassle-free five-star resort experience with an array of activities, excursions, and adventures.",
+      "facilities": [
+        "Daily Turndown Service With Special Turn Down Service For Special Occasions",
+        "Telephone",
+        "Beach essentials including slippers",
+        "Trackable Island Shuttle Service",
+        "Free WiFi",
+        "43-inch LED TV",
+        "Bicycle On Request & Chargeable - CSR",
+        "Outdoor Shower",
+        "Fully Stocked Minibar – Replenished Daily Once",
+        "Air Conditioning",
+        "Reading Light",
+        "Bath Tub",
+        "Private Digital Safe",
+        "Outdoor Table Set & Sun Loungers",
+        "Swimming Pool",
+        "Coffee Machine",
+        "Rain Shower and Bathtub",
+        "Mosque",
+        "Day Bed",
+        "Laundry Service",
+        "Bar lounge",
+        "Room Service",
+        "Credit Cards: Visa and Mastercard",
+        "Kids Club",
+        "24 hour Guest Services",
+        "24-hour Security",
+        "Water Sports Center"
+      ],
+      "accommodations": [
+        {
+          "title": "Sunset Water Villa with Pool",
+          "description": "An overwater bliss\nExperience overwater bliss in our exclusive Maldives water villas along the island's northern end. With contemporary interiors, ocean views, and a turquoise lagoon beneath your feet, these overwater villas make for a magical Maldivian holiday. Spend your days relaxing on the private deck or enjoy a romantic sunset by the pool.\n2 adults + 2 children or 3 adults + 1 child | 1 King Bed | Total Area - 126m² | Pool Size - 20m²",
+          "image": "/import/accommodation/accommodation_image_055.png"
+        },
+        {
+          "title": "Kanifushi Grand Pool Villa",
+          "description": "An indulgent paradise\nLounge by the lap pool, surrounded by tropical vibes in our private pool villas with sweeping oceanfront views. High wooden ceilings, classic décor, and plush furnishings create a serene atmosphere. The luxurious bathroom with a deep alfresco bathtub adds to the indulgent experience. Perfect for couples and young families.\n2 adults + 2 children or 3 adults + 1 child | 1 King Bed | Total Area - 243m² | Pool Size - 42m²",
+          "image": "/import/accommodation/accommodation_image_056.png"
+        },
+        {
+          "title": "Two Bedroom Sunset Family Beach Villa with Pool",
+          "description": "A breezy family getaway\nEscape to our luxurious standalone beach villa for a laid-back family vacation. Seamlessly blending the expansive outdoor spaces with indoors, it boasts a pristine private pool. The exclusive villa is a secluded hideaway, where your eyes can feast on the mesmerising and boundless ocean views.\n2 adults + 4 children or 3 adults + 3 children or 4 adults + 2 children | 2 Queen Beds | Total Area - 258m² |Pool Size - 40m²",
+          "image": "/import/accommodation/accommodation_image_057.png"
+        },
+        {
+          "title": "Sunset Beach Villa",
+          "description": "An oasis of elegance\nOur beautiful rooms with high ceilings, crème walls, and wooden flooring weave the magic of the locale in their design. Bookend sun-soaked days with a stunning lagoon view in the morning and the famed, dazzling Maldivian sunsets in the evening – all from the comfort of your private villa.\n2 adults + 2 children or 3 adults + 1 child | 1 Queen Bed | Total Area - 100m²",
+          "image": "/import/accommodation/accommodation_image_058.png"
+        },
+        {
+          "title": "Two Bedroom Sunset Family Beach Villa",
+          "description": "An exclusive beach bungalow\nA backyard beach, expansive living spaces, and a cosy veranda make this the best private villa for a family holiday in the Maldives. Warm sunshine pours through the large glass windows while the smooth wooden flooring and stone highlights add a rustic touch. Enjoy seamless access to the resort's amenities and activities.\n2 adults + 4 children or 3 adults + 3 children or 4 adults + 2 children | 1 King Bed, 2 Twin Beds | Total Area - 187m²",
+          "image": "/import/accommodation/accommodation_image_059.png"
+        },
+        {
+          "title": "Sunset Beach Villa with Pool",
+          "description": "A luxurious sanctuary\nIndulge in a luxurious island escape in our beachfront villas with a pool, where sophistication and exclusivity meet comfort. Gaze upon the vast azure lagoon of Kanifushi Island from your bed, bask in sun-kissed days in your private garden, feel the soft sand under your feet, and unwind in your private pool.\n2 adults + 2 children or 3 adults + 1 child | 1 Queen Bed | Total Area - 194m² | Pool Size - 36m²",
+          "image": "/import/accommodation/accommodation_image_060.png"
+        },
+        {
+          "title": "Kanifushi Residence",
+          "description": "A dreamy tropical home\nThis expansive beach home captures the authentic allure of the Maldives, offering an escape for the best tropical vacation. The freeform swimming pool offers sofa seating, semi-submerged sun loungers, and a shallow area for kids. A roomy wooden deck with a Maldivian swing sets the stage for creating cherished memories.\n4 adults + 3 children or 5 adults + 2 children | 1 King Bed, 2 Twin Beds | Total Area - 594m² | Pool Size - 115m²",
+          "image": "/import/accommodation/accommodation_image_061.png"
+        },
+        {
+          "title": "Kanifushi Beach Villa with Pool",
+          "description": "An exquisite retreat\nExperience the perfect blend of island allure and modern convenience in our secluded sea-view villas in the Maldives. This island retreat offers contemporary interiors and private outdoor spaces with a pool. Let your worries sweep away as you soak in expansive Indian Ocean views, surrounded by lush greenery, with direct beach access.\n2 adults + 2 children or 3 adults + 1 child | 1 King Bed | Total Area - 146m² | Pool Size - 30m²",
+          "image": "/import/accommodation/accommodation_image_062.png"
+        },
+        {
+          "title": "Water Villa",
+          "description": "A tranquil seascape\nOur enchanting Water Villas, perfect for a romantic getaway or dream honeymoon in the Maldives, stretch along a crystal-clear lagoon. Sea-inspired blue accents adorn the interiors, while the outdoor deck features a wooden ladder leading to a lagoon rich with marine life.\n2 adults + 2 children or 3 adults + 1 child | 1 King Bed | Total Area - 103m²",
+          "image": "/import/accommodation/accommodation_image_063.png"
+        }
+      ],
+      "dining": [
+        {
+          "title": "THE LANTERN BAR – An extension to Just Veg open for Sunset",
+          "description": "Open from 17:00hrs - 20:00hrs\nAmbiance: Slow down and soak in the glorious sunset hues, and ease into the night in the lantern-lit ambiance as the stars come up in the sky. Indulge in flavorful vegetarian platters that reimagine iconic Asian dishes complemented by a collection of Elixirs – delicious healing mocktails prepared by an Ayurvedic doctor",
+          "image": "/import/dining/dining_image_040.png"
+        },
+        {
+          "title": "THE LIQUID – Pool side bar and snacks",
+          "description": "Ambiance: Elegant, Airy interiors with a large 50-meter pool overlooking the vast deep blue ocean.\nDelectable snacks and nibbles during the day from 12:00 - 17:00\nFish and Chips service from 17:00hrs - 19:00hrs\nTheme nights and live performances throughout the year",
+          "image": "/import/dining/dining_image_041.png"
+        },
+        {
+          "title": "JUST VEG – Contemporary vegetarian fine dining",
+          "description": "Open for lunch from 12:30hrs - 14:30hrs and dinner from 19:00hrs - 22:00hrs; pre-booking required\nAmbiance: Perched over the turquoise ocean waters, this elegant restaurant offers fine dining with gorgeous views all around. The first à la carte vegetarian restaurant in the Maldives (topping TripAdvisor’s ranking), serving choicest gourmet cuisine from Arabic, Indian, and Mediterranean regions",
+          "image": "/import/dining/dining_image_042.png"
+        },
+        {
+          "title": "THE SPICE – All-Day Dining Restaurant (Breakfast, Lunch, And Dinner)",
+          "description": "Open for breakfast from 07:00hrs - 10:30hrs, lunch from 12:00hrs - 14:30hrs, and dinner from 19:00hrs - 22:00hrs\nAmbiance: Contemporary restaurant with soothing light-coloured interiors, high ceilings and large doors overlooking tropical foliage and the\nblue lagoon.\nAssisted buffet service design with ‘cloche’ offering a selection of Asian, European, and Maldivian favourites, live cooking stations,\ngrills, and delightful dessert spreads\nEnjoy daily theme nights at The Spice:\n- Monday: Tropical Night\n-Tuesday: Around the World\n-Wednesday & Saturday: International Cuisine\n-Thursday: Chef’s Choice\n-Friday: Asian Street Food\n-Sunday: Indian Ocean Themed Gala Night",
+          "image": "/import/dining/dining_image_043.png"
+        },
+        {
+          "title": "THE PIER SIX – Specialty seafood over-water fine dining",
+          "description": "Open for dinner from 19:00hrs - 22:00hrs; pre-booking required\nAmbiance: Lively over-water dining complex designed in the shape of a native Manta Ray, with high ceilings and blue marble walls. There’s both indoor and outdoor seating here.\nA range of seafood staples including the catch of the day and Japanese Teppanyaki grill options",
+          "image": "/import/dining/dining_image_044.png"
+        },
+        {
+          "title": "TEPPANYAKI GRILL at THE PIER SIX– Authentic Japanese fine dining, a show to remember!",
+          "description": "Open for dinner, 2 seatings at , 19:00hrs and 21:00hrs; pre-booking required\nGuests share a table around a large hotplate, where a theatrical chef whirls, swirls, juggles, flips, and flames raw ingredients into a\ndelectable dinner. Chilled or hot sake is an essential accompaniment",
+          "image": "/import/dining/dining_image_045.png"
+        },
+        {
+          "title": "CEYLON BLISS – Traditional Sri Lankan street food by the ocean",
+          "description": "Open from 17:00hrs - 21:00hrs on all days except Wednesday and Sunday\nAmbiance: Rustic wooden cabin under the shade of a massive tree by the ocean.\nAuthentic Sri Lankan street food style light meals and beverages",
+          "image": "/import/dining/dining_image_046.png"
+        },
+        {
+          "title": "THE SUNSET POOL BAR – À la carte lunch",
+          "description": "Open during pool hours, from 12:00hrs - 17:00hrs\nAmbiance: Sandy floor interiors, high ceilings, and a breath-taking lagoon view.\nÀ la carte lunch menu with classic burgers, sandwiches, and light snacks",
+          "image": "/import/dining/dining_image_047.png"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_158.png",
+        "/import/gallery/gallery_image_159.png",
+        "/import/gallery/gallery_image_160.png",
+        "/import/gallery/gallery_image_161.png",
+        "/import/gallery/gallery_image_162.png",
+        "/import/gallery/gallery_image_163.png",
+        "/import/gallery/gallery_image_164.png",
+        "/import/gallery/gallery_image_165.png",
+        "/import/gallery/gallery_image_166.png",
+        "/import/gallery/gallery_image_167.png"
+      ],
+      "cover": "/import/gallery/gallery_image_158.png",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 12,
+      "name": "Conte Max",
+      "slug": "conte-max",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Surfing"
+      ],
+      "description": "Join the M/Y Conte Max for a unique Maldivian liveaboard experience that combines wellness with diving. The yacht accommodates up to 17 guests (or 21 with triple occupancy) in 9 spacious cabins, each with climate control and en suite bathrooms. Enjoy amenities like a salon with TV, a bar with a wide drink selection, and diverse dining options. Relax on three decks featuring sun loungers and deck chairs.\nThe Conte Max offers year-round diving to the Maldives' best sites, with a dedicated diving dhoni and free nitrox for certified divers. Explore Central and Northern Atolls, or Southern and Extreme Southern Atolls, encountering sharks, turtles, and mantas. Book your adventure today!\nThe M/Y Conte Max, built in 2004 and renovated annually, measures 33 meters in length with a beam of 10 meters and cruises at a speed of 12 knots. Powered by Yanmar 405HP engines, The yacht features a dive dhoni for easy access to dive sites. It has a water capacity of 6 tons and a fuel capacity of 4,500 liters.",
+      "short_description": "Join the M/Y Conte Max for a unique Maldivian liveaboard experience that combines wellness with diving. The yacht accommodates up to 17 guests (or 21 with triple occupancy) in 9 spacious cabins, each with climate control and en suite bathrooms. Enjoy amenities like a salon with TV, a bar with a wide drink selection, and diverse dining options. Relax on three decks featuring sun loungers and deck chairs.",
+      "facilities": [
+        "En-Suite bathrooms",
+        "Audio & video entertainment",
+        "Sun Deck",
+        "Outdoor Dining",
+        "Aircon Cabins",
+        "Warm Water Showers",
+        "Indoor Saloon",
+        "Non-Diver (Snorkeler) Friendly",
+        "Charging stations",
+        "Air Conditioned saloon",
+        "Custom built for diving",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Paid Internet",
+        "Seaview Cabins",
+        "Family Cabins",
+        "Separate Rinse for u/w Camera",
+        "Snorkeling Equipment",
+        "Observation Deck",
+        "Leisure Deck",
+        "Dedicated Local & International Crew",
+        "Available for Charter",
+        "Kayaks On-Board",
+        "Outside Showers",
+        "Camera Station",
+        "Library",
+        "Rinse Hoses",
+        "Sidemount Diving",
+        "Tech diving",
+        "Dive deck",
+        "Shaded Diving Area",
+        "DIN Adaptors",
+        "Rebreather Support",
+        "Tenders for diving",
+        "Free Nitrox",
+        "Nitrox available",
+        "Fine Wines Selection",
+        "Beach BBQ",
+        "Vegetarian Options",
+        "Snacks All Day",
+        "Wine Available",
+        "Western Food",
+        "Al Fresco Dining",
+        "Buffet style",
+        "Vegan Options",
+        "Fine Cuisine",
+        "Local Food",
+        "Beer available"
+      ],
+      "accommodations": [
+        {
+          "title": "Lower Deck Twin Cabins (# 3 & 6)",
+          "description": "Experience comfort and relaxation in our twin cabins, each featuring two single beds and designed to accommodate up to 2 guests. Located on the lower deck, Cabins 3 and 6 offer a cozy retreat with independently adjustable air conditioning and en-suite bathrooms with modern shower cubicles. Enjoy a restful stay with all the amenities you need for a perfect getaway.\n-2 single beds (twin) | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_064.jpg"
+        },
+        {
+          "title": "Lower Deck Double Cabins (# 1, 2, 7 & 8)",
+          "description": "Relax in our spacious cabins on the lower deck, where comfort meets versatility. Cabins 1, 2, 7, and 8 each feature a queen bed and a single bed, comfortably accommodating up to 3 guests upon request. Enjoy the luxury of individually controlled air conditioning and en-suite bathrooms with sleek shower cubicles, ensuring a refreshing stay tailored to your needs.\n-1 single and 1 double bed | Aircon with control | Shared Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_065.jpg"
+        },
+        {
+          "title": "Lower Deck Single Cabin (#4)",
+          "description": "Discover the comfort of Cabin 4, located on the lower deck, where relaxation and convenience come together. This cabin boasts individually adjustable air conditioning and an en-suite bathroom with a modern shower cubicle, providing a refreshing and private retreat for your stay.\n-1 single bed | Aircon with control | Ensuite Bathroom | Max 1 guest",
+          "image": "/import/accommodation/accommodation_image_066.jpg"
+        },
+        {
+          "title": "Main Deck Cabin (#9)",
+          "description": "Experience comfort in Cabin 9, located on the main deck, which features two single beds for a cozy and relaxing stay. Enjoy the convenience of independently adjustable air conditioning and an en-suite bathroom with a stylish shower cubicle, ensuring a refreshing and comfortable retreat.\n-2 single beds (twin) | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_067.jpg"
+        },
+        {
+          "title": "Upper Deck Cabin (#11)",
+          "description": "Elevate your stay in Cabin 11 on the upper deck, offering a queen bed and a single bed, with the flexibility to accommodate up to three guests. Enjoy the added comfort of individually adjustable air conditioning and an en-suite bathroom with a sleek shower cubicle, providing a private and relaxing retreat with stunning views.\n1 single and 1 double bed | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_068.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/gallery_image_175.jpg",
+        "/import/gallery/gallery_image_176.jpg",
+        "/import/gallery/gallery_image_177.jpg",
+        "/import/gallery/gallery_image_178.jpg",
+        "/import/gallery/gallery_image_179.jpg",
+        "/import/gallery/gallery_image_180.jpg",
+        "/import/gallery/gallery_image_181.jpg",
+        "/import/gallery/gallery_image_182.jpg",
+        "/import/gallery/gallery_image_183.jpg",
+        "/import/gallery/gallery_image_184.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_175.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 13,
+      "name": "Equator Village",
+      "slug": "equator-village",
+      "category": "city-hotels",
+      "atoll": "Addu City",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Wedding",
+        "Wellness"
+      ],
+      "description": "Nestled directly on the Equator, Gan Island offers an unparalleled escape into serenity and history. This exceptional resort is not just another tropical getaway—it's a unique blend of tranquility and cultural richness, immersed in the heart of the Maldives' Addu Atoll.\nExperience a harmonious fusion of ancient charm and modern luxury. The island's pristine landscapes and crystal-clear waters create a perfect tropical haven, where every moment is designed to rejuvenate and inspire.\nWhether you're seeking peaceful relaxation or a deeper connection with the local culture, Gan Island stands as a sanctuary of extraordinary beauty and calm. Embrace a retreat that promises not just a vacation, but a truly unforgettable journey.",
+      "short_description": "Nestled directly on the Equator, Gan Island offers an unparalleled escape into serenity and history. This exceptional resort is not just another tropical getaway—it's a unique blend of tranquility and cultural richness, immersed in the heart of the Maldives' Addu Atoll.",
+      "facilities": [
+        "Telephone",
+        "Air Conditioning",
+        "Private Digital Safe",
+        "Swimming Pool",
+        "Hair Dryer",
+        "Mini fridge",
+        "Veranda",
+        "Iron and ironing board",
+        "Laundry Service",
+        "Beach Towels",
+        "Outdoor seating",
+        "Television",
+        "Billiards"
+      ],
+      "accommodations": [
+        {
+          "title": "Superior Room",
+          "description": "Embrace tranquility in our mellow rooms, featuring natural wicker and expansive windows with stunning garden views. Just a short walk from the ocean, these peaceful retreats allow you to draw the curtains and envelop yourself in lush, soothing greenery.",
+          "image": "/import/accommodation/accommodation_image_069.jpg"
+        },
+        {
+          "title": "Family Room",
+          "description": "Enjoy quality time and restful nights in our family-friendly accommodations. Located close to your loved ones, these serene retreats offer a perfect blend of tranquility and natural beauty, ensuring a memorable stay for all.",
+          "image": "/import/accommodation/accommodation_image_070.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "Vaivaru Restaurant",
+          "description": "Experience the ultimate holiday indulgence at Vaivaru Restaurant, where buzzing breakfasts, leisurely lunches, and delightful dinners await. Enjoy a fusion of flavors with our tantalizing buffets and live pasta and grill stations, allowing you to customize your meals to perfection. Our extensive menu caters to diverse tastes while showcasing the unique local touch that makes dining with us truly special.",
+          "image": "/import/dining/dining_image_048.jpg"
+        },
+        {
+          "title": "Veragan Bar",
+          "description": "Set between the calming ocean and a lush fern garden, our white wicker bar is your perfect retreat. Sip on our signature “Coconut Colada” and enjoy a range of premium drinks in a serene atmosphere. Delight in our à la carte menu and a selection of snacks, making it the ideal spot for relaxation and satisfying your holiday cravings.",
+          "image": "/import/dining/dining_image_049.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_189.jpg",
+        "/import/gallery/gallery_image_190.jpg",
+        "/import/gallery/gallery_image_191.jpg",
+        "/import/gallery/gallery_image_192.jpg",
+        "/import/gallery/gallery_image_193.jpg",
+        "/import/gallery/gallery_image_194.jpg",
+        "/import/gallery/gallery_image_195.jpg",
+        "/import/gallery/gallery_image_196.jpg",
+        "/import/gallery/gallery_image_197.jpg",
+        "/import/gallery/gallery_image_198.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_189.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 14,
+      "name": "Duke of York",
+      "slug": "duke-of-york",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Surfing"
+      ],
+      "description": "Discover unparalleled scuba diving aboard the M/Y Duke of York, a luxury liveaboard cruising the Maldives’ turquoise waters. Accommodating 21 guests in 11 spacious cabins across 3 decks, each with climate control and en-suite bathrooms, the yacht offers ultimate comfort. Enjoy a stylish salon with entertainment options, a well-stocked bar, and a restaurant serving Italian and Maldivian buffets. Relax on the sun-soaked decks, or indulge in a massage at the onboard spa.\nThe Duke of York provides year-round itineraries to top dive sites, free Nitrox for certified divers, rebreather support, and an underwater scooter. A dhoni accompanies the yacht for gear storage and convenience. Departing mostly on Sundays, it offers a serene diving experience away from the crowds.\nBoat Specifications\nYear Built: 2010 | Length: 36 meters | Beam: 11 meters | Top Speed: 12 knots | Cruising Speed: 9 knots | Engines: Daewoo 600HP | Max Guests: 23 | Cabins: 11 | Bathrooms: 11 | Tenders: Dive Dhoni | Water Capacity: 10 tons\nFuel Capacity: 8,000 liters | Freshwater Maker: 12 tons per day",
+      "short_description": "Discover unparalleled scuba diving aboard the M/Y Duke of York, a luxury liveaboard cruising the Maldives’ turquoise waters. Accommodating 21 guests in 11 spacious cabins across 3 decks, each with climate control and en-suite bathrooms, the yacht offers ultimate comfort. Enjoy a stylish salon with entertainment options, a well-stocked bar, and a restaurant serving Italian and Maldivian buffets. Relax on the sun-soaked decks, or indulge in a massage at the onboard spa.",
+      "facilities": [
+        "En-Suite bathrooms",
+        "Audio & video entertainment",
+        "Sun Deck",
+        "Outdoor Dining",
+        "Aircon Cabins",
+        "Warm Water Showers",
+        "Indoor Saloon",
+        "Non-Diver (Snorkeler) Friendly",
+        "Charging stations",
+        "Air Conditioned saloon",
+        "Custom built for diving",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Paid Internet",
+        "Seaview Cabins",
+        "Family Cabins",
+        "Separate Rinse for u/w Camera",
+        "Snorkeling Equipment",
+        "Observation Deck",
+        "Leisure Deck",
+        "Dedicated Local & International Crew",
+        "Available for Charter",
+        "Kayaks On-Board",
+        "Massage",
+        "Outside Showers",
+        "Camera Station",
+        "Library",
+        "Rinse Hoses",
+        "Sidemount Diving",
+        "Tech diving",
+        "Dive deck",
+        "Shaded Diving Area",
+        "DIN Adaptors",
+        "Rebreather Support",
+        "Tenders for diving",
+        "Free Nitrox",
+        "Nitrox available",
+        "Fine Wines Selection",
+        "Beach BBQ",
+        "Vegetarian Options",
+        "Snacks All Day",
+        "Wine Available",
+        "Western Food",
+        "Al Fresco Dining",
+        "Buffet style",
+        "Vegan Options",
+        "Fine Cuisine",
+        "Local Food",
+        "Beer available"
+      ],
+      "accommodations": [
+        {
+          "title": "Lower Deck Twin Cabins (# 3 & 6)",
+          "description": "Cabins 3 and 6 on the lower deck come with two single beds each, featuring individually adjustable air conditioning and en-suite bathrooms with shower cubicles.\n2 single beds (twin) | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_071.png"
+        },
+        {
+          "title": "Lower Deck Double/Twin Cabins (# 1, 2, 7 & 8)",
+          "description": "Cabins 1, 2, 7, and 8 on the lower deck feature a queen bed and a single bed, accommodating up to 3 guests upon request. Each cabin includes individually adjustable air conditioning and an en-suite bathroom with a shower cubicle.\n1 single and 1 double bed | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_072.jpg"
+        },
+        {
+          "title": "Lower Deck Single Cabin (# 4)",
+          "description": "This lower deck cabin features a single bed, individually adjustable air conditioning, and an en-suite bathroom with a shower cubicle.\n1 single bed | Aircon with control | Ensuite Bathroom | Max 1 guest",
+          "image": "/import/accommodation/accommodation_image_073.jpg"
+        },
+        {
+          "title": "Main & Upper Deck Cabins (# 9, 10, 11 & 12)",
+          "description": "Cabin 9 on the main deck and Cabins 10, 11, and 12 on the upper deck each feature two single beds (Cabin 12 can be converted into a double bed). All cabins offer individually adjustable air conditioning and en-suite bathrooms with shower cubicles.\n2 single beds (twin) | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_074.jpg"
+        },
+        {
+          "title": "Upper Deck Cabin (#14)",
+          "description": "Cabin 14 on the upper deck features two single beds. It includes individually adjustable air conditioning and an en-suite bathroom with a shower cubicle.\n2 single beds (twin) | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_075.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/gallery_image_220.jpg",
+        "/import/gallery/gallery_image_221.jpg",
+        "/import/gallery/gallery_image_222.jpg",
+        "/import/gallery/gallery_image_223.jpg",
+        "/import/gallery/gallery_image_224.jpg",
+        "/import/gallery/gallery_image_225.jpg",
+        "/import/gallery/gallery_image_226.jpg",
+        "/import/gallery/gallery_image_227.jpg",
+        "/import/gallery/gallery_image_228.jpg",
+        "/import/gallery/gallery_image_229.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_220.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 15,
+      "name": "Princess Haseena",
+      "slug": "princess-haseena",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [],
+      "description": "Experience luxury aboard the spacious 32m M/V Princess Haseena in the Maldives. This yacht features 9 twin-berth cabins and 1 single cabin, all with en-suite facilities and climate control. Relax in the large indoor salon with TV and entertainment system, or enjoy the open deck areas for sunbathing.\nAccompanied by a dedicated diving dhoni, Princess Haseena offers diverse diving itineraries to Northern, Central, and Deep South atolls, including top sites like Maaya Thila and Manta Point. Spot Mantas, Whale Sharks, and reef sharks with expert crew support.\nBoat Specifications\nYear Built: 2016 | Length: 32 meters | Beam: 10.6 meters | Top Speed: 12 knots | Cruising Speed: 10 knots\nMax Guests: 20 | Cabins: 11 | Bathrooms: 12 | Tender: 1 | Water Capacity: 6,000 liters | Fuel Capacity: 10,000 liters\nFreshwater Maker: 12,000 liters per day",
+      "short_description": "Experience luxury aboard the spacious 32m M/V Princess Haseena in the Maldives. This yacht features 9 twin-berth cabins and 1 single cabin, all with en-suite facilities and climate control. Relax in the large indoor salon with TV and entertainment system, or enjoy the open deck areas for sunbathing.",
+      "facilities": [
+        "Outdoor Shower",
+        "En-Suite bathrooms",
+        "Audio & video entertainment",
+        "Sun Deck",
+        "Outdoor Dining",
+        "Aircon Cabins",
+        "Warm Water Showers",
+        "Indoor Saloon",
+        "Non-Diver (Snorkeler) Friendly",
+        "Custom built for diving",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Paid Internet",
+        "Seaview Cabins",
+        "Family Cabins",
+        "Separate Rinse for u/w Camera",
+        "Leisure Deck",
+        "Dedicated Local & International Crew",
+        "Available for Charter",
+        "Library",
+        "Rinse Hoses",
+        "Dive deck",
+        "Shaded Diving Area",
+        "DIN Adaptors",
+        "Tenders for diving",
+        "Free Nitrox",
+        "Fine Wines Selection",
+        "Beach BBQ",
+        "Vegetarian Options",
+        "Snacks All Day",
+        "Wine Available",
+        "Western Food",
+        "Al Fresco Dining",
+        "Buffet style",
+        "Fine Cuisine",
+        "Local Food",
+        "Beer available"
+      ],
+      "accommodations": [
+        {
+          "title": "Upper Deck Cabin",
+          "description": "Enjoy stunning ocean views from two cabins, each with individual climate control and en-suite bathrooms.\n2 single beds (twin) | Aircon with control | Ensuite Bathroom | Max 2 guests",
+          "image": "/import/accommodation/accommodation_image_076.jpg"
+        },
+        {
+          "title": "Single Cabin Big",
+          "description": "Each spacious cabin comes with individual climate control and an en-suite bathroom.\n1 single bed | Aircon with control | Ensuite Bathroom | Max 1 guest",
+          "image": "/import/accommodation/accommodation_image_077.jpg"
+        },
+        {
+          "title": "Single Cabin Small",
+          "description": "Each spacious cabin features individual climate control and en-suite bathrooms.\n1 single bed | Aircon with control | Ensuite Bathroom | Max 1 guest",
+          "image": "/import/accommodation/accommodation_image_078.jpg"
+        },
+        {
+          "title": "Lower Deck Cabins",
+          "description": "There are 7 cabins with double beds and twin beds. Please specify the preferred bedding configuration when booking. Bed choices are subject to availability. Each spacious cabin features individual climate control and en-suite bathrooms.\n1 double or 2 single beds (amenable twin) | Aircon with control | Ensuite Bathroom | Max 3 guests",
+          "image": "/import/accommodation/accommodation_image_079.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/gallery_image_205.jpg",
+        "/import/gallery/gallery_image_206.jpg",
+        "/import/gallery/gallery_image_207.jpg",
+        "/import/gallery/gallery_image_208.jpg",
+        "/import/gallery/gallery_image_209.jpg",
+        "/import/gallery/gallery_image_210.jpg",
+        "/import/gallery/gallery_image_211.jpg",
+        "/import/gallery/gallery_image_212.jpg",
+        "/import/gallery/gallery_image_213.jpg",
+        "/import/gallery/gallery_image_214.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_205.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 16,
+      "name": "h78 Veli",
+      "slug": "h78-veli",
+      "category": "city-hotels",
+      "atoll": "Male City",
+      "tags": [
+        "All Inclusive",
+        "Family Holidays",
+        "Honeymoon"
+      ],
+      "description": "Welcome to Hotel Veli, your beachfront paradise on the pristine shores of Hulhumale. Here, the gentle embrace of ocean breezes meets our warm hospitality, creating an idyllic escape where you can truly unwind. With stunning vistas of the turquoise sea, Hotel Veli is your gateway to serenity and relaxation. Our inviting rooms and suites, including ocean view options, seamlessly combine modern comforts with a touch of cozy charm. At Veli, we are dedicated to crafting unforgettable experiences, ensuring your stay is as memorable as the breathtaking surroundings.\nNearby Attractions:\n• Swimming Area: 1.4 km\n• Republic Square: 4.7 km\n• Sultan Park: 4.8 km\n• Henveiru Park: 4.9 km\n• National Museum: 4.9 km\nDining Options:\n• The Food Club Cafe & Restaurant: 100 m\n• Shell Beans: 150 m\n• Cafe Kannah Baa: 150 m\nBeaches Nearby:\n• Eastern/Hulhumale Beach: 30 m\n• Artificial Beach: 4.5 km\n• Rasfannu Beach: 5 km\n• Villingili Public Beach: 7 km\n• One Love Beach: 7 km\nClosest Airport:\n• Velena International Airport: 1.1 km\nExplore the vibrant surroundings of Hulhumale with easy access to beautiful beaches, local attractions, and popular dining spots!",
+      "short_description": "Welcome to Hotel Veli, your beachfront paradise on the pristine shores of Hulhumale. Here, the gentle embrace of ocean breezes meets our warm hospitality, creating an idyllic escape where you can truly unwind. With stunning vistas of the turquoise sea, Hotel Veli is your gateway to serenity and relaxation. Our inviting rooms and suites, including ocean view options, seamlessly combine modern comforts with a touch of cozy charm. At Veli, we are dedicated to crafting unforgettable experiences, ensuring your stay is as memorable as the breathtaking surroundings.",
+      "facilities": [
+        "Free WiFi",
+        "Non-Smoking Rooms",
+        "Restaurant",
+        "Free Parking",
+        "Tea/coffee maker in all rooms",
+        "Very good breakfast",
+        "Shuttle service"
+      ],
+      "accommodations": [
+        {
+          "title": "Ocean View Room",
+          "description": "Our ocean view rooms boast breathtaking views of the Maldives' turquoise sea and white sandy beaches, with full-length windows or private balconies to enjoy stunning sunrises and sunsets. Each room features air conditioning, a flat-screen TV with cable, complimentary Lavazza coffee and tea, a personal safe, and high-speed Wi-Fi.",
+          "image": "/import/accommodation/accommodation_image_080.jpg"
+        },
+        {
+          "title": "Superior Double",
+          "description": "Our ocean view rooms feature stunning vistas of the Maldivian turquoise sea and white sandy beaches. Enjoy breathtaking sunrises and sunsets from full-length windows or your private balcony.\nAmenities include air conditioning, a flat-screen TV with cable, complimentary Lavazza coffee and tea, a personal safe, and high-speed Wi-Fi.",
+          "image": "/import/accommodation/accommodation_image_081.jpg"
+        },
+        {
+          "title": "Super Twin",
+          "description": "Our ocean view rooms provide stunning panoramas of the Maldivian turquoise sea and white sandy beaches. Guests can relish the beauty of sunrises and sunsets from full-length windows or their private balcony.\nAmenities include air conditioning, a flat-screen TV with cable channels, complimentary Lavazza coffee and tea, a personal safe, and high-speed Wi-Fi.",
+          "image": "/import/accommodation/accommodation_image_082.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "The Catch 78",
+          "description": "Catch 78 Veli is a vibrant dining spot located in Hulhumale, situated at H78. This restaurant offers a unique blend of local and international cuisine, making it a popular choice for both locals and visitors. The menu features a variety of fresh seafood, succulent meats, and flavorful vegetarian options, all crafted with high-quality ingredients.\nThe restaurant’s ambiance combines modern elegance with a relaxed atmosphere, perfect for casual meals or special occasions. Whether you’re looking to enjoy a leisurely lunch, a romantic dinner, or just a drink with friends, Catch 78 Veli provides a delightful dining experience with excellent service and a welcoming environment.",
+          "image": "/import/dining/dining_image_050.jpg"
+        },
+        {
+          "title": "Roof Top Dining",
+          "description": "Elevate your dining experience at H78 Veli's rooftop restaurant. With stunning panoramic views of Hulhumale, this sophisticated setting offers a memorable backdrop for any occasion. Enjoy a curated menu featuring a blend of local and international cuisine while taking in the breathtaking scenery. Perfect for romantic evenings, special celebrations, or casual get-togethers, the rooftop at H78 Veli combines exceptional food with an unforgettable ambiance.",
+          "image": "/import/dining/dining_image_051.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_238.jpg",
+        "/import/gallery/gallery_image_240.jpg",
+        "/import/gallery/gallery_image_241.jpg",
+        "/import/gallery/gallery_image_242.jpg",
+        "/import/gallery/gallery_image_243.jpg",
+        "/import/gallery/gallery_image_244.jpg",
+        "/import/gallery/gallery_image_245.jpg",
+        "/import/gallery/gallery_image_246.jpg",
+        "/import/gallery/gallery_image_247.jpg",
+        "/import/gallery/gallery_image_248.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_238.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 17,
+      "name": "H78 Maldives",
+      "slug": "h78-maldives",
+      "category": "city-hotels",
+      "atoll": "Male City",
+      "tags": [
+        "All Inclusive",
+        "Family Holidays",
+        "Honeymoon"
+      ],
+      "description": "Discover H78, an award-winning beachfront hotel just 15 minutes from Velana International Airport. Nestled steps from the Maldives' stunning crystal-clear waters and white sandy beaches, H78 offers a modern, intimate retreat. Enjoy unparalleled relaxation with our attentive staff and premium services, ensuring you leave feeling refreshed and revitalized.\nNearby Attractions:\n• Swimming Area: 1.3 km\n• Republic Square: 4.8 km\n• Sultan Park: 4.9 km\n• National Museum: 5 km\n• Henveiru Park: 5 km\nRestaurants & Cafés:\n• Shell Beans Café: 40 m\n• Red Snapper and Coffee Beans Reserve: 50 m\n• Cafe Kannah Baa: 100 m\nBeaches:\n• Eastern/Hulhumale Beach: 20 m\n• Artificial Beach: 4.6 km\n• Rasfannu Beach: 5 km\n• Villingili Public Beach: 7 km\n• One Love Beach: 7 km\nClosest Airport:\n• Velena International Airport: 1.2 km\nEnjoy convenient access to popular attractions, beautiful beaches, and local dining spots just steps away from your stay in Hulhumale!",
+      "short_description": "Discover H78, an award-winning beachfront hotel just 15 minutes from Velana International Airport. Nestled steps from the Maldives' stunning crystal-clear waters and white sandy beaches, H78 offers a modern, intimate retreat. Enjoy unparalleled relaxation with our attentive staff and premium services, ensuring you leave feeling refreshed and revitalized.",
+      "facilities": [
+        "Free WiFi",
+        "Restaurant",
+        "Free Parking",
+        "Very good breakfast",
+        "Shuttle service",
+        "Non smoking rooms",
+        "Fitness Center"
+      ],
+      "accommodations": [
+        {
+          "title": "Deluxe Double Room with Sea View",
+          "description": "Enjoy stunning beachfront views of the sea, sand, and sunrises from our elegant rooms. Relax with a drink on your private balcony or through full-length windows. Amenities include air-conditioning, bathrobes, slippers, a flat-screen TV with cable, free “Café’s Richard” coffee and tea, a safe, a 24-hour mini bar, and high-speed Wi-Fi.",
+          "image": "/import/accommodation/accommodation_image_083.jpg"
+        },
+        {
+          "title": "Deluxe Twin Room",
+          "description": "Our cozy double rooms feature two single beds and offer a range of amenities including air-conditioning, bathrobes, slippers, a flat-screen TV with cable, free “Café’s Richard” coffee and tea, a safe, a 24-hour mini bar, and high-speed Wi-Fi.",
+          "image": "/import/accommodation/accommodation_image_084.jpg"
+        },
+        {
+          "title": "Deluxe Double Room",
+          "description": "Our spacious rooms are perfect for families of 2 adults and 1 child (under 11). Enjoy amenities such as air-conditioning, bathrobes, slippers, a flat-screen TV with cable, free “Café’s Richard” coffee and tea, a safe, a 24-hour mini bar, and complimentary high-speed Wi-Fi.",
+          "image": "/import/accommodation/accommodation_image_085.jpg"
+        },
+        {
+          "title": "Deluxe Suite",
+          "description": "Experience luxury in our stylish deluxe suites, featuring a spacious lounge area perfect for relaxing, working, or letting children play. Ideal for both business travelers and families, these suites offer extra space for comfort. Enjoy amenities such as air-conditioning, bathrobes, slippers, a flat-screen TV with cable, free “Café’s Richard” coffee and tea, a safe, a 24-hour mini bar, and high-speed Wi-Fi.",
+          "image": "/import/accommodation/accommodation_image_086.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "The Catch 78 Restaurant",
+          "description": "The Catch 78 Restaurant at H78 in Hulhumale offers a vibrant dining experience with a menu featuring fresh seafood, succulent meats, and flavorful vegetarian options. Enjoy a blend of local and international cuisine in a modern yet relaxed setting, ideal for casual meals, romantic dinners, or drinks with friends. Experience excellent service and a welcoming atmosphere at this popular dining spot.",
+          "image": "/import/dining/dining_image_052.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/gallery_image_253.jpg",
+        "/import/gallery/gallery_image_254.jpg",
+        "/import/gallery/gallery_image_255.jpg",
+        "/import/gallery/gallery_image_256.jpg",
+        "/import/gallery/gallery_image_257.jpg",
+        "/import/gallery/gallery_image_258.jpg",
+        "/import/gallery/gallery_image_259.jpg",
+        "/import/gallery/gallery_image_260.jpg",
+        "/import/gallery/gallery_image_261.jpg",
+        "/import/gallery/gallery_image_262.jpg"
+      ],
+      "cover": "/import/gallery/gallery_image_253.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 18,
+      "name": "Maagiri Hotel",
+      "slug": "maagiri-hotel",
+      "category": "city-hotels",
+      "atoll": "Male City",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon"
+      ],
+      "description": "Maagiri Hotel, perfectly positioned opposite Velana International Airport in Male’, offers an exceptional stay with its elegantly designed rooms, luxurious comforts, and breathtaking Maldivian sea views. The hotel features a Coffee Shop, Restaurant, Lounge, semi-fine dining, Meeting Rooms, and a fully equipped Gym. It caters to business travelers, leisure seekers, couples, and families, providing activities such as diving, fishing, and snorkeling. With its focus on delivering a memorable experience, Maagiri Hotel combines comfort and adventure to create an unforgettable stay.",
+      "short_description": "Maagiri Hotel, perfectly positioned opposite Velana International Airport in Male’, offers an exceptional stay with its elegantly designed rooms, luxurious comforts, and breathtaking Maldivian sea views. The hotel features a Coffee Shop, Restaurant, Lounge, semi-fine dining, Meeting Rooms, and a fully equipped Gym. It caters to business travelers, leisure seekers, couples, and families, providing activities such as diving, fishing, and snorkeling. With its focus on delivering a memorable experience, Maagiri Hotel combines comfort and adventure to create an unforgettable stay.",
+      "facilities": [
+        "Family rooms",
+        "Tours",
+        "Snorkeling",
+        "Family friendly",
+        "Business center",
+        "Free WiFi",
+        "Bar lounge",
+        "Coffee maker Hair dryer Iron",
+        "Air Conditioning",
+        "Safe deposit",
+        "Restaurant on site",
+        "Free breakfast",
+        "Non-Smoking Rooms",
+        "Laundry Service",
+        "Room Service",
+        "Television",
+        "Fitness Center"
+      ],
+      "accommodations": [
+        {
+          "title": "Executive Suite",
+          "description": "Our six Executive Suites offer unparalleled luxury and comfort. Each suite is thoughtfully designed with distinct bedroom and living areas, allowing you to leave work and entertainment behind for an uninterrupted 8 hours of restful sleep.\nWhether you’re staying for a few days or a week to explore the city after business meetings, the Executive Suite provides ample space for your belongings and more. Enjoy breathtaking scenic views and spacious comfort throughout your stay, all from the privacy of your suite.\n6 Suites / Max 4 Adults / 50 SQM / Ocean View / King Size Bed (203cm X 203cm)",
+          "image": "/import/accommodation/accommodation_image_087.jpg"
+        },
+        {
+          "title": "Junior Suite",
+          "description": "Situated in the eastern wing of the building, our Junior Suites offer a refreshing escape at Maagiri Hotel, surrounded by the serene blues of the ocean.\nRelax and entertain guests in the dedicated lounging area while enjoying a selection of gourmet coffee. Immerse yourself in the tranquility of the suite, making each visit to Male' City a memorable experience.\n6 Suites / Max 3 Adults / 41 SQM / Ocean View / King Size Bed (203cm X 203cm)",
+          "image": "/import/accommodation/accommodation_image_089.jpg"
+        },
+        {
+          "title": "Premier Room",
+          "description": "Experience the essence of Male' City with views of its bustling districts from our rooms. Find tranquility in the warmly lit spaces, adorned in soothing light grey tones, offering a perfect retreat for a midday break amidst your busy schedule.\n20 Rooms / Max 3 Adults / 22-24 SQM / City View / King Size Bed (203cm X 203cm)",
+          "image": "/import/accommodation/accommodation_image_090.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "Coffee Curve",
+          "description": "Coffee Curve, with its vibrant and jazz-inspired ambiance, is the ideal spot for a quick coffee break or a mid-day snack. Enjoy a selection of refreshing juices and iced teas, along with a lighter menu featuring sandwiches, burgers, wraps, pastries, and sweet treats designed to energize you.\nFrom a rich espresso to a chilled café frappe, Coffee Curve guarantees top-notch service and the perfect coffee experience.",
+          "image": "/import/dining/dining_image_053.jpg"
+        },
+        {
+          "title": "Faru",
+          "description": "Faru is the perfect destination for a diverse dining experience, offering semi-fine dining with stylish buffets, quick express meals, and à la carte options. Escape the tropical heat with refreshing juices and chilled mojitos while enjoying a meal that allows you to reconnect.\nWith its elegant décor and attentive service, Faru is ideal for a range of occasions, from family dinners and corporate lunches to intimate wedding celebrations.",
+          "image": "/import/dining/dining_image_054.jpg"
+        },
+        {
+          "title": "Peak",
+          "description": "Peak offers a stunning terrace with panoramic ocean views, providing an exclusive yet relaxed atmosphere. Enjoy a menu of tantalizing dishes crafted with passion and served with warm, attentive service.\nIdeal for social lunches or a charming evening escape, Peak transforms into a perfect spot to unwind with expertly crafted mocktails, savor sunset hues, and indulge in sharing platters or gourmet burgers. Amidst the city’s hustle and bustle, Peak is a favored gathering place for friends, families, and colleagues.",
+          "image": "/import/dining/dining_image_055.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/property_18_274.jpg",
+        "/import/gallery/property_18_275.jpg",
+        "/import/gallery/property_18_276.jpg",
+        "/import/gallery/property_18_277.jpg",
+        "/import/gallery/property_18_278.jpg",
+        "/import/gallery/property_18_279.jpg",
+        "/import/gallery/property_18_280.png",
+        "/import/gallery/property_18_281.png",
+        "/import/gallery/property_18_282.png",
+        "/import/gallery/property_18_283.jpg"
+      ],
+      "cover": "/import/gallery/property_18_274.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 19,
+      "name": "Marselia Star",
+      "slug": "marselia-star",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [],
+      "description": "ABOUT THE YACHT\nMarselia Star offers the perfect blend of adventure, relaxation, and luxury. Dive into crystal-clear waters for snorkeling, unwind on pristine beaches, or enjoy a variety of on-board activities. Our expert crew is committed to fulfilling your every need, from gourmet dining and personalized service to a range of exclusive experiences. Whether you seek excitement or tranquility, Marselia Star delivers an unforgettable journey.\nOUR CABIN\nOur cabins are thoughtfully designed to offer the ideal blend of space, privacy, and elegance, ensuring a memorable and relaxing stay aboard. Enjoy a comfortable retreat that perfectly balances style and functionality for a truly exceptional experience.",
+      "short_description": "Marselia Star offers the perfect blend of adventure, relaxation, and luxury. Dive into crystal-clear waters for snorkeling, unwind on pristine beaches, or enjoy a variety of on-board activities. Our expert crew is committed to fulfilling your every need, from gourmet dining and personalized service to a range of exclusive experiences. Whether you seek excitement or tranquility, Marselia Star delivers an unforgettable journey.",
+      "facilities": [],
+      "accommodations": [
+        {
+          "title": "Upper Deck Cabbins",
+          "description": "Our spacious cabins feature a luxurious king-size bed with plush bedding for a restful night's sleep. Greet each morning with stunning views of the Maldives through expansive windows.\nEach cabin is thoughtfully equipped with modern amenities, including a safe, air-conditioning, minibar, and Wi-Fi, ensuring a comfortable and enjoyable stay.\nThe master suite bathroom boasts a spacious Jacuzzi tub, ideal for relaxing after a day of exploring the Maldives. It also includes a vanity, shower, and lavatory, along with plush towels to enhance your comfort.",
+          "image": "/import/accommodation/accommodation_image_091.webp"
+        },
+        {
+          "title": "Lower Deck Cabbins",
+          "description": "Our standard cabins, while cozier than the Master Suite cabins, still offer comfortable accommodations for guests. These cabins feature either twin beds or a double bed, and include a shower and lavatory. Modern amenities such as air conditioning, a safe, minibar, towels, and ample storage are provided. Some standard cabins also feature a small sitting area and a porthole or window, allowing natural light and views of the surrounding waters.",
+          "image": "/import/accommodation/accommodation_image_092.jpg"
+        }
+      ],
+      "dining": [
+        {
+          "title": "The finest culinary delights and drinks",
+          "description": "Our chef, Rajesh, an expert Indian national, masterfully combines the vibrant flavors of this tropical island paradise with traditional European and Mediterranean cuisine. Each day, you’ll enjoy three buffet-style meals, complemented by a curated selection of global wines and Champagnes.\nIndulge in a variety of culinary delights including the freshest seafood, premium lamb and beef, Asian specialties, and unique creations from the chef. Fresh, cooked-to-order lobster is available for a small fee.\nDining aboard our yacht offers a truly unforgettable experience: savor breakfast as you watch the sunrise, enjoy a leisurely lunch in the sun, and relish a memorable dinner under the stars. All meals and dining times are customized to fit your group’s preferences.",
+          "image": "/import/dining/dining_image_056.webp"
+        },
+        {
+          "title": "Bar",
+          "description": "Our bar, expertly managed by experienced staff and attentive waiters, is situated on the upper deck, offering a scenic view of the stern and direct access to the shaded lounge deck. This versatile space is perfect for lively parties or relaxing sheesha and drink sessions, enhanced by music and DJ lights.\nEnjoy a diverse selection of fine wines and Champagnes, or indulge in exotic cocktails crafted by our skilled bartenders. We also offer a wide range of branded beers, spirits, cordials, and liquors to suit every taste.",
+          "image": "/import/dining/dining_image_057.webp"
+        },
+        {
+          "title": "BBQ",
+          "description": "On all routes, our onboard guest relations manager arranges a unique BBQ experience on a pristine, uninhabited island or a specially selected island for your convenience. These BBQs are thoughtfully designed with nature in mind, using only reusable or natural items.\nMix with fellow guests while sipping cocktails on a stunning sandy beach, with azure waters lapping at the shore and the day’s fresh catch sizzling on the grill.\nSavor delicious food, great company, and the enchanting magic of the Maldives under a starlit sky.",
+          "image": "/import/dining/dining_image_058.jpg"
+        }
+      ],
+      "gallery": [
+        "/import/gallery/property_19_294.JPG",
+        "/import/gallery/property_19_295.JPG",
+        "/import/gallery/property_19_296.jpg",
+        "/import/gallery/property_19_297.webp",
+        "/import/gallery/property_19_298.jpg",
+        "/import/gallery/property_19_299.jpg",
+        "/import/gallery/property_19_300.jpg",
+        "/import/gallery/property_19_301.jpg",
+        "/import/gallery/property_19_302.jpg",
+        "/import/gallery/property_19_303.jpg"
+      ],
+      "cover": "/import/gallery/property_19_294.JPG",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 20,
+      "name": "Kaani Beach Hotel",
+      "slug": "kaani-beach-hotel",
+      "category": "city-hotels",
+      "atoll": "South Male Atoll",
+      "tags": [],
+      "description": "Located on the vibrant Maafushi Island, Kaani Beach Hotel offers a serene beach escape surrounded by coconut palms. The hotel features sea view rooms with private balconies, all equipped with modern amenities including air conditioning, hot water showers, satellite TV, free Wi-Fi, mini bar, hair dryer, and a safe.\nGuests can enjoy a delicious buffet breakfast and dinner at the hotel's restaurant, relax on the rooftop terrace with loungers, and take part in a variety of entertainment, including karaoke.\nFor adventure seekers, the hotel offers a wide range of budget-friendly activities typically found in luxury resorts, such as fishing trips, snorkeling, visits to sandbanks, dolphin watching, and water sports. A floating bar is available just two minutes away with complimentary transfers.\nMaafushi Island is conveniently located 25 km south of Male International Airport, reachable in 30 minutes by speedboat or 90 minutes by regular ferry.",
+      "short_description": "Located on the vibrant Maafushi Island, Kaani Beach Hotel offers a serene beach escape surrounded by coconut palms. The hotel features sea view rooms with private balconies, all equipped with modern amenities including air conditioning, hot water showers, satellite TV, free Wi-Fi, mini bar, hair dryer, and a safe.",
+      "facilities": [
+        "Free WiFi",
+        "Air Conditioning",
+        "Swimming Pool",
+        "Restaurant",
+        "Very good breakfast",
+        "Laundry Service",
+        "Beach"
+      ],
+      "accommodations": [
+        {
+          "title": "Deluxe Double Room with Balcony and Sea View",
+          "description": "This 22 m² room features a private balcony with beautiful sea views. Air-conditioned and equipped with a 32-inch flat-screen TV, minibar, and personal safe. The en-suite bathroom includes a shower, free toiletries, and a hairdryer.\nRoom Size: 22 m²\nViews: Sea view from the balcony\nAmenities: Flat-screen TV, minibar, personal safe, air conditioning, free Wi-Fi\nPrivate Bathroom: Shower, free toiletries, and hairdryer\nNo Smoking Room\nA cozy retreat with sea views for a comfortable and refreshing stay.",
+          "image": "/import/accommodation/accommodation_image_093.jpg"
+        },
+        {
+          "title": "Deluxe Triple Room with Balcony and Sea View",
+          "description": "Spacious 26 m² room offering a private balcony with stunning sea views. Ideal for up to 3 guests, this air-conditioned room includes a 32-inch flat-screen TV, minibar, and personal safe. The en-suite bathroom is equipped with a shower, free toiletries, and a hairdryer.\nRoom Size: 26 m²\nViews: Private balcony with sea views\nAmenities: Flat-screen TV, minibar, personal safe, air conditioning, free Wi-Fi\nPrivate Bathroom: Includes a shower, toiletries, and hairdryer\nNo Smoking Room\nComfort and sea views make this room perfect for a relaxing stay.",
+          "image": "/import/accommodation/accommodation_image_094.jpg"
+        },
+        {
+          "title": "Deluxe Double Room with Balcony and City View",
+          "description": "Relax in this 18 m² City View Room featuring a private balcony with views of the bustling city. This air-conditioned room is designed for comfort, offering a cozy bed (rated 8.9 based on 134 reviews) and modern amenities including a 32-inch flat-screen TV, minibar, and personal safe. The en-suite bathroom comes equipped with a shower, free toiletries, and a hairdryer.\nRoom Size: 18 m²\nBed: Comfortable and cozy (8.9 rating based on 134 reviews)\nViews: Private balcony with city views\nAmenities: Flat-screen TV, minibar, personal safe, air conditioning, and free Wi-Fi\nPrivate Bathroom: Includes a shower, free toiletries, hairdryer, and toilet paper\nFacilities: Desk, wardrobe, satellite TV, iron, fan, towels, wake-up service\nNo Smoking Room\nKey Features of the City View Room\nSize: 18 m², compact and comfortable\nComfort: Highly rated bed for a restful stay\nViews: Private balcony with lively city views\nModern Amenities: Equipped with a flat-screen TV, minibar, and personal safe\nBathroom: Features a shower, free toiletries, and a hairdryer",
+          "image": "/import/accommodation/accommodation_image_095.jpg"
+        },
+        {
+          "title": "Deluxe Double Room with Balcony and Sea View",
+          "description": "This 22 m² room features a private balcony with stunning sea views and includes a special package with a return speed boat transfer, snorkeling at 3 reefs, dolphin watching, and lunch on a sandbank. Guests also receive a free photo from the excursion.\nRoom Size: 22 m²\nViews: Sea view from the balcony\nPackage: Free return airport speed boat transfer, snorkeling, dolphin watching, and sandbank lunch\nAmenities: Air conditioning, flat-screen TV, minibar, personal safe, free Wi-Fi\nPrivate Bathroom: Shower, free toiletries, and hairdryer\nNo Smoking Room\nA perfect blend of relaxation and adventure with scenic views and exciting excursions.",
+          "image": "/import/accommodation/accommodation_image_106.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_20_327.JPG",
+        "/import/gallery/property_20_328.jpg",
+        "/import/gallery/property_20_329.jpg",
+        "/import/gallery/property_20_330.jpg",
+        "/import/gallery/property_20_331.JPG",
+        "/import/gallery/property_20_332.JPG",
+        "/import/gallery/property_20_333.jpg",
+        "/import/gallery/property_20_334.jpg",
+        "/import/gallery/property_20_335.jpg",
+        "/import/gallery/property_20_336.jpg"
+      ],
+      "cover": "/import/gallery/property_20_327.JPG",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 21,
+      "name": "Kaani Grand Seaview | Maafushi | Maldives",
+      "slug": "kaani-grand-seaview-maafushi-maldives",
+      "category": "city-hotels",
+      "atoll": "South Male Atoll",
+      "tags": [],
+      "description": "Located in South Male Atoll, just 25 km from Male City, Kaani Grand Seaview offers beachfront luxury with a spa, fitness center, and conference facilities.\nEach ocean view room features a private balcony, air conditioning, a personal safe, minibar, flat-screen TV with cable channels, and complimentary coffee/tea making facilities. Free toiletries and a hairdryer are also provided.\nThe hotel is directly opposite Bikini Beach, with an in-house restaurant serving both local and Western cuisine, paired with stunning lagoon views.\nGuests can take advantage of the 24-hour front desk, which offers airport transfers, luggage storage, and tour arrangements at the onsite excursion center. Popular activities in the area include snorkeling, diving, and cycling, with bicycle rentals available.\nThe nearest airport is Male International Airport, located 25 km away.",
+      "short_description": "Located in South Male Atoll, just 25 km from Male City, Kaani Grand Seaview offers beachfront luxury with a spa, fitness center, and conference facilities.",
+      "facilities": [
+        "Snorkeling",
+        "Free WiFi",
+        "Air Conditioning",
+        "Breakfast buffet",
+        "Beach-front",
+        "Child-friendly",
+        "Front desk",
+        "Full-service laundry",
+        "Local shuttle",
+        "Spa",
+        "Fitness centre",
+        "Pet-friendly",
+        "Conference Hall"
+      ],
+      "accommodations": [
+        {
+          "title": "Deluxe Double Room with Balcony and Sea View",
+          "description": "Spacious Sea View Room – 31 m²\nThis 31 m² room offers a private balcony with stunning sea views, perfect for enjoying the beauty of the Maldives. The air-conditioned room is equipped with soundproof walls, a flat-screen TV with cable channels, a minibar, and tea/coffee making facilities. Guests can relax in a comfortable double bed and make use of the private bathroom, which includes a shower, free toiletries, a hairdryer, and fresh towels.\nRoom Size: 31 m²\nBeds: Comfy double bed (8.7 rating based on 205 reviews)\nViews: Private balcony with sea view\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, wardrobe, electric kettle, and free Wi-Fi.\nPrivate Bathroom: Includes free toiletries, shower or bath, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a peaceful and quiet stay\nNo Smoking Room\nKey Features of the Sea View Room\nSize: 31 m² of space, ideal for relaxation\nComfort: Highly rated comfy bed (8.7 based on guest reviews)\nModern Amenities: Flat-screen TV, minibar, air conditioning, and soundproofing\nPrivate Balcony: Offering breathtaking sea views\nBathroom: Equipped with complimentary toiletries, a shower, and a hairdryer",
+          "image": "/import/accommodation/accommodation_image_096.jpg"
+        },
+        {
+          "title": "Quadruple Room with City View and Private Balcony",
+          "description": "Quadruple Room with City View – 44 m²\nThis spacious 44 m² quadruple room features a private balcony with city views, offering comfort and modern amenities for up to four guests. The room is air-conditioned and equipped with soundproof walls, a flat-screen TV with cable channels, minibar, and tea/coffee making facilities. The private bathroom includes a shower, free toiletries, and a hairdryer, ensuring a comfortable stay.\nRoom Size: 44 m²\nBeds: 3 comfortable beds (8.7 rating based on 205 reviews)\nViews: Private balcony with city views\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, wardrobe, electric kettle, and free Wi-Fi.\nPrivate Bathroom: Includes free toiletries, shower or bath, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a peaceful and quiet stay\nNo Smoking Room\nKey Features of the Quadruple Room\nSize: Spacious 44 m², perfect for families or groups\nComfort: Highly rated comfy beds (8.7 based on guest reviews)\nModern Amenities: Flat-screen TV, minibar, air conditioning, and soundproofing\nPrivate Balcony: Overlooks the city for a relaxing atmosphere\nBathroom: Fully equipped with free toiletries, a shower, and a hairdryer",
+          "image": "/import/accommodation/accommodation_image_098.jpg"
+        },
+        {
+          "title": "Deluxe family Room Seaview with Balcony",
+          "description": "Family Room with Sea View – 38 m²\nThis spacious 38 m² family room offers a private balcony with stunning sea views, perfect for a relaxing getaway. The air-conditioned room includes 2 comfortable beds, a flat-screen TV with cable channels, and a private bathroom equipped with a shower, free toiletries, and a hairdryer. Guests can enjoy modern amenities such as a minibar, tea/coffee making facilities, and free Wi-Fi.\nRoom Size: 38 m²\nBeds: 2 comfortable beds (8.7 rating based on 205 reviews)\nViews: Private balcony with sea views\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, wardrobe, electric kettle, and free Wi-Fi.\nPrivate Bathroom: Includes free toiletries, shower or bath, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a peaceful stay\nNo Smoking Room\nKey Features of the Family Room\nSize: 38 m², ideal for families\nComfort: Two comfortable beds with high guest satisfaction (8.7 rating)\nSea View: Private balcony with beautiful ocean views\nModern Amenities: Includes flat-screen TV, minibar, tea/coffee maker, air conditioning, and soundproofing\nBathroom: Features a shower, free toiletries, and a hairdryer",
+          "image": "/import/accommodation/accommodation_image_099.jpg"
+        },
+        {
+          "title": "Super Deluxe Room with Balcony and Ocean View",
+          "description": "Sea View Double Room – 31 m²\nRelax in this 31 m² double room, featuring a private balcony with beautiful sea views. The air-conditioned room includes a comfortable double bed, a flat-screen TV with cable channels, a minibar, and tea/coffee making facilities. The private bathroom is well-equipped with a shower, free toiletries, and a hairdryer.\nRoom Size: 31 m²\nBed: Comfortable double bed (8.7 rating based on 205 reviews)\nViews: Private balcony with sea view\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, wardrobe, electric kettle, and free Wi-Fi.\nPrivate Bathroom: Features free toiletries, a shower, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a quiet and relaxing stay\nNo Smoking Room\nKey Features of the Sea View Double Room\nSize: 31 m², perfect for a relaxing stay\nComfort: Highly rated double bed (8.7 rating)\nSea View: Private balcony overlooking the ocean\nModern Amenities: Includes flat-screen TV, minibar, tea/coffee maker, air conditioning, and soundproofing\nBathroom: Equipped with a shower, free toiletries, and a hairdryer",
+          "image": "/import/accommodation/accommodation_image_100.jpg"
+        },
+        {
+          "title": "Honeymoon Room with Balcony and Seaview",
+          "description": "Sea View Double Room – 38 m²\nEnjoy a spacious 38 m² double room with a private balcony and stunning sea views. This air-conditioned room features a comfortable double bed, a flat-screen TV with cable channels, and a minibar.\nRoom Size: 38 m²\nBed: Comfortable double bed (8.7 rating based on 205 reviews)\nViews: Private balcony with sea view\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, wardrobe, electric kettle, and free Wi-Fi.\nPrivate Bathroom: Includes free toiletries, a shower or bath, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a peaceful stay\nNo Smoking Room\nKey Features of the Sea View Double Room\nSize: 38 m² for a spacious stay\nComfort: Highly rated comfy double bed (8.7 rating)\nViews: Private balcony with spectacular sea views\nModern Amenities: Flat-screen TV, minibar, air conditioning, and soundproofing\nBathroom: Equipped with a shower, free toiletries, and a hairdryer",
+          "image": "/import/accommodation/accommodation_image_101.jpg"
+        },
+        {
+          "title": "King Suite with Balcony and Seaview",
+          "description": "Sea View Suite – 62 m²\nExperience ultimate comfort in our expansive 62 m² Sea View Suite. Featuring a private entrance, this suite includes a spacious bedroom, a cozy seating area, and a luxurious bathroom with both a bath and a shower. Enjoy stunning sea views from your private balcony while relaxing in an air-conditioned environment with modern amenities.\nRoom Size: 62 m²\nBed: Comfortable bed (8.7 rating based on 205 reviews)\nViews: Private balcony with beautiful sea views\nAmenities: Flat-screen TV with cable channels, minibar, tea/coffee maker, air conditioning, safety deposit box, sofa, and free Wi-Fi.\nPrivate Bathroom: Features a bath, shower, free toiletries, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a quiet and relaxing stay\nNo Smoking Suite\nKey Features of the Sea View Suite\nSize: Spacious 62 m² for ample comfort\nComfort: Highly rated comfortable bed (8.7 rating)\nViews: Private balcony offering spectacular sea views\nModern Amenities: Includes flat-screen TV, minibar, air conditioning, and soundproofing\nBathroom: Luxurious with both a bath and shower, along with free toiletries",
+          "image": "/import/accommodation/accommodation_image_102.jpg"
+        },
+        {
+          "title": "Deluxe Double Room with Balcony and Sea View",
+          "description": "Sea View Double Room – 31 m²\nEnjoy a relaxing stay in our 31 m² Sea View Double Room, featuring a private balcony with stunning ocean views. The air-conditioned room includes a comfortable double bed, flat-screen TV, minibar, and tea/coffee making facilities. Your private bathroom offers modern amenities with a shower, free toiletries, and a hairdryer.\nRoom Size: 31 m²\nBed: Comfortable double bed (8.7 rating based on 205 reviews)\nViews: Private balcony with breathtaking sea views\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, and free Wi-Fi.\nPrivate Bathroom: Equipped with free toiletries, shower or bath, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a peaceful stay\nNo Smoking Room\nSpecial Package Includes:\nFree Return Speed Boat Transfer: Convenient transfers to and from the airport.\nFree Sand Bank Excursion: Enjoy a full-day snorkeling trip to 3 reefs, dolphin watching, and lunch on a sand bank.\nFree Photos: Receive complimentary photos from your excursion trip.\nKey Features\nSize: 31 m², ideal for a comfortable stay\nComfort: Highly rated double bed (8.7 rating)\nViews: Private balcony with sea views\nAmenities: Includes modern features like a flat-screen TV, minibar, and air conditioning\nPackage Perks: Return speed boat transfer, sand bank excursion, dolphin watching, and free photos",
+          "image": "/import/accommodation/accommodation_image_103.jpg"
+        },
+        {
+          "title": "Standard Double Room with Private Balcony and Sea View",
+          "description": "Sea and Garden View Double Room – 31 m²\nDiscover comfort and relaxation in our 31 m² Double Room, featuring a private balcony with both sea and garden views. This air-conditioned room includes a cozy double bed, a flat-screen TV with cable channels, and a minibar. Enjoy modern amenities such as a tea/coffee maker and free Wi-Fi, along with a private bathroom equipped with a shower, free toiletries, and a hairdryer.\nRoom Size: 31 m²\nBed: Comfortable double bed (8.7 rating based on 205 reviews)\nViews: Private balcony with sea and garden views\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, and free Wi-Fi.\nPrivate Bathroom: Includes free toiletries, a shower or bath, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a quiet and peaceful stay\nNo Smoking Room\nKey Features of the Sea and Garden View Double Room\nSize: 31 m², offering ample space\nComfort: Highly rated double bed (8.7 rating)\nViews: Private balcony with beautiful sea and garden views\nModern Amenities: Features flat-screen TV, minibar, and air conditioning\nBathroom: Equipped with a shower, free toiletries, and a hairdryer",
+          "image": "/import/accommodation/accommodation_image_104.jpg"
+        },
+        {
+          "title": "Deluxe Double Room with Balcony & Sea View with Honeymooners Escape",
+          "description": "Indulge in our 31 m² Deluxe Double Room, perfect for honeymooners. This elegant room features a private balcony with stunning sea views, ideal for a romantic getaway. Enjoy modern comforts including air conditioning, a flat-screen TV with cable channels, and a minibar. The room also offers a tea/coffee maker and free Wi-Fi. The private bathroom is equipped with a shower, free toiletries, and a hairdryer.\nRoom Size: 31 m²\nBed: Cozy double bed (8.7 rating based on 205 reviews)\nViews: Private balcony with beautiful sea views\nAmenities: Flat-screen TV, minibar, tea/coffee maker, air conditioning, safety deposit box, and free Wi-Fi.\nPrivate Bathroom: Includes a shower, free toiletries, hairdryer, and toilet paper.\nAccessibility: Upper floors accessible by elevator\nSoundproofing: Ensures a quiet, restful environment\nNo Smoking Room\nHoneymooners Escape Package Includes:\nSpecial Amenities: Romantic touches and extra comforts to enhance your stay.\nKey Features of the Deluxe Double Room\nSize: 31 m², offering ample space and comfort\nComfort: Highly rated double bed (8.7 rating)\nViews: Private balcony with picturesque sea views\nModern Amenities: Equipped with flat-screen TV, minibar, and air conditioning\nBathroom: Features a shower, free toiletries, and a hairdryer\nSpecial Package: Honeymooners Escape with added romantic touches",
+          "image": "/import/accommodation/accommodation_image_105.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_21_355.jpg",
+        "/import/gallery/property_21_356.jpg",
+        "/import/gallery/property_21_357.jpg",
+        "/import/gallery/property_21_358.jpg",
+        "/import/gallery/property_21_359.jpg",
+        "/import/gallery/property_21_360.jpg",
+        "/import/gallery/property_21_361.jpg",
+        "/import/gallery/property_21_362.jpg",
+        "/import/gallery/property_21_363.jpg",
+        "/import/gallery/property_21_364.jpg"
+      ],
+      "cover": "/import/gallery/property_21_355.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 22,
+      "name": "Kaani Village & Spa",
+      "slug": "kaani-village-spa",
+      "category": "city-hotels",
+      "atoll": "South Male Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon"
+      ],
+      "description": "Enjoy a relaxing stay at Kaani Village & Spa with an outdoor pool, spa services, and on-site dining just steps from Maafushi Beach. The hotel features family rooms, free WiFi, and various activities for an exciting island getaway.\nRooms: Air-conditioned rooms with en suite bathrooms, flat-screen TVs, and poolside or garden views.\nDining: On-site restaurant and bar, offering special diet menus on request.\nWellness: Spa and wellness center with sauna, massages, and wellness packages.\nActivities: Free motorbike rentals, water sports, and excursions like snorkeling, diving, and fishing.\nNearby Attractions: Bikini Beach is just 200m away, with other beaches and local cafes within walking distance.\nPerfect for those seeking a mix of relaxation, adventure, and convenience on Maafushi Island.\nProperty surroundings\nRestaurants & cafes\n• Restaurant MR.Octopus 50m\n• Restaurant Hiyala Mariyaadhu Café 50m\n• Cafe/barNero 50m\nBeaches in the neighbourhood\n• Bikini Beach 200m\n• Makunufushi Cocoa Island Beach 3.5 km*\n• Biyaadhoo Beach 4.4 km*\n• Kandooma Beach 4.7 km*\n• Guraidhoo Beach 5 km*\nShortest estimated walking or driving distances displayed, actual distances may vary.\n*No walking or driving route available, the distance displayed is measured in a straight line.\nAdditional Charges\n• BBQ facilities Additional charge\n• Bicycle rental\n• Water sport facilities on site Additional charge\n• Snorkeling Additional charge\n• Diving Additional charge\n• Canoeing Additional charge Off-site\n• Windsurfing Additional charge\n• Fishing Additional charge\n• Laundry Additional charge\n• Airport shuttle Additional charge\n• Massage Additional charge\n• Spa and wellness Centre Additional charge\n• Sauna Additional charge",
+      "short_description": "Enjoy a relaxing stay at Kaani Village & Spa with an outdoor pool, spa services, and on-site dining just steps from Maafushi Beach. The hotel features family rooms, free WiFi, and various activities for an exciting island getaway.",
+      "facilities": [
+        "Private bathroom",
+        "Tour desk",
+        "Mini Bar",
+        "Free WiFi",
+        "Ceiling Fan",
+        "Air Conditioning",
+        "Private Digital Safe",
+        "Bathroom Amenities",
+        "Outdoor swimming pool Free!",
+        "Outdoor furniture",
+        "Garden",
+        "Sun loungers or beach chairs",
+        "-",
+        "Designated smoking area",
+        "24-hour front desk",
+        "Special diet menus (on request)",
+        "Fabulous breakfast",
+        "Restaurant",
+        "Free Parking",
+        "Currency exchange",
+        "Room Service",
+        "TV",
+        "Non smoking rooms",
+        "Kid meals",
+        "Room service breakfast"
+      ],
+      "accommodations": [
+        {
+          "title": "Deluxe double room",
+          "description": "This air-conditioned room offers comfort with a minibar, free WiFi, and a cozy double bed (bed type assigned at check-in). Enjoy convenient amenities such as a mini refrigerator, coffee/tea pot, and cable TV.\n• Facilities:\no Air conditioning\no Minibar\no Free WiFi\no Desk\no Ironing facilities\no Hairdryer\no Wardrobe/closet\no Coffee/tea pot\nImportant Info:\n• Non-refundable booking\n• No modifications allowed after booking\n• Fabulous breakfast included",
+          "image": "/import/accommodation/accommodation_image_107.jpg"
+        },
+        {
+          "title": "Deluxe Double Room with Pool View",
+          "description": "Cozy Poolside Room (14 m²)\nThis charming room offers a peaceful pool view, perfect for relaxation. It features modern interiors with a minibar, flat-screen TV, and a private bathroom equipped with a rain-shower and complimentary toiletries. Ideal for couples seeking a tranquil stay.\n• Room Features:\no Pool view\no 1 large double bed (high comfort rating of 8.4 from 41 reviews)\no Air conditioning\no Minibar\no Flat-screen TV with satellite channels\no Free WiFi\n• Private Bathroom:\no Rain-shower\no Hairdryer\no Additional toilet\no Free toiletries\n• Additional Facilities:\no Safety deposit box\no Electric kettle\no Towels and linens\no Carpeted flooring\no Fan\nImportant:\n• No smoking allowed\n• Perfect for those who enjoy cozy and modern settings.\n4o",
+          "image": "/import/accommodation/accommodation_image_108.jpg"
+        },
+        {
+          "title": "Deluxe Family Room",
+          "description": "Designed for comfort, this spacious room accommodates up to 4 guests with 1 single bed and 1 large double bed. The room features elegant interiors, a minibar, and a private bathroom with rain-shower facilities, ideal for families or small groups.\n• Room Features:\no 1 single bed and 1 large double bed\no Spacious layout\no Air conditioning\no Minibar\no Flat-screen TV with satellite channels\no Free WiFi\n• Private Bathroom:\no Rain-shower or bath\no Free toiletries\no Hairdryer\n• Additional Facilities:\no Safety deposit box\no Electric kettle\no Towels and linens\no Carpeted flooring\no Tea/Coffee maker\no Fan\nImportant:\n• No smoking allowed\n• Comfortable beds rated 8.4 based on 41 reviews. Perfect for family stays.",
+          "image": "/import/accommodation/accommodation_image_109.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_22_381.jpg",
+        "/import/gallery/property_22_382.jpg",
+        "/import/gallery/property_22_383.jpg",
+        "/import/gallery/property_22_384.jpg",
+        "/import/gallery/property_22_385.jpg",
+        "/import/gallery/property_22_386.jpg",
+        "/import/gallery/property_22_387.jpg",
+        "/import/gallery/property_22_388.jpg",
+        "/import/gallery/property_22_389.jpg",
+        "/import/gallery/property_22_390.jpg"
+      ],
+      "cover": "/import/gallery/property_22_381.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 23,
+      "name": "Kaani Palm Beach I Maafushi",
+      "slug": "kaani-palm-beach-i-maafushi",
+      "category": "city-hotels",
+      "atoll": "South Male Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Surfing"
+      ],
+      "description": "Experience tropical comfort at Kaani Palm Beach, featuring a garden, shared lounge, sun terrace, and outdoor swimming pool. Guests enjoy buffet breakfast, 24-hour front desk, room service, free WiFi, and convenient airport transfers.\n• Rooms:\no Air-conditioned with modern amenities including a desk, kettle, minibar, safety deposit box, flat-screen TV, and private bathroom with a shower. Linens and towels are provided.\n• Dining:\no On-site restaurant serving international dishes with dairy-free, halal, and vegan options.\n• Activities:\no Explore the island by bike with rentals available. Ideal for couples, rated 9.3 for a romantic getaway.\n• Location:\no 100 meters from Bikini Beach, perfect for a beachside holiday.\n• Facilities:\no Outdoor swimming pool\no Spa & wellness center\no 2 restaurants\no Free WiFi and room service\no Tea/coffee makers in all rooms\no Airport shuttle services available\no Great for families with children’s cots available on request.\nRestaurants & cafes\n• Restaurant - Hot Bite 30 m\n• Restaurant - Kaani Beach Restaurant 50 m\n• Restaurant - Caviar Café & Restaurant 100 m\nBeaches in the neighbourhood\n• Bikini Beach 50 m\n• Makunufushi Cocoa Island Beach 3.7 km*\n• Biyaadhoo Beach 4.5 km*\n• Kandooma Beach 4.9 km*\n• Guraidhoo Beach 5 km*\nRestaurants\n2 restaurants on site\n• Palm Beach Restaurant\no Cuisine - International\no Open for - Breakfast • Brunch • Dinner • High tea • Cocktail hour\no Ambiance - Family friendly • Modern • Romantic\no Dietary options - Halal • Vegan • Gluten-free • Dairy-free\n• Palm Beach Restaurant\no Cuisine - International\no Open for - Breakfast • Brunch • Dinner • High tea • Cocktail hour\no Ambiance - Family friendly • Modern • Romantic\no Dietary options - Halal • Vegan • Gluten-free • Dairy-free\n• Infinite Cafe\no Cuisine - International\no Open for - Brunch • Dinner • High tea • Cocktail hour\no Ambiance - Family friendly • Modern • Romantic\no Dietary options - Halal • Vegan",
+      "short_description": "Experience tropical comfort at Kaani Palm Beach, featuring a garden, shared lounge, sun terrace, and outdoor swimming pool. Guests enjoy buffet breakfast, 24-hour front desk, room service, free WiFi, and convenient airport transfers.",
+      "facilities": [
+        "Family rooms",
+        "Private bathroom",
+        "Telephone",
+        "Beach essentials including slippers",
+        "Tour desk",
+        "Mini Bar",
+        "Free WiFi",
+        "Air Conditioning",
+        "Safe deposit",
+        "Bathroom Amenities",
+        "Outdoor swimming pool Free!",
+        "Non-Smoking Rooms",
+        "Outdoor furniture",
+        "Garden",
+        "Designated smoking area",
+        "24-hour front desk",
+        "Special diet menus (on request)",
+        "Restaurant",
+        "Tea/coffee maker in all rooms",
+        "Fire extinguishers",
+        "CCTV outside property",
+        "CCTV in common areas",
+        "Smoke alarms",
+        "Security alarm",
+        "Key card access",
+        "Currency exchange",
+        "Spa and wellness centre",
+        "Room Service",
+        "Fishing Additional charge",
+        "Luggage Storage",
+        "TV",
+        "24-hour Security",
+        "Airport shuttle Additional charge"
+      ],
+      "accommodations": [
+        {
+          "title": "Standard Double Room (Excludes Window Access)",
+          "description": "This spacious double room offers a cozy atmosphere with an extra-large bed rated 9.1 for comfort. Equipped with air conditioning and an electric kettle, the room provides everything for a relaxing stay.\nRoom Features:\n• Air conditioning, soundproofing, and a flat-screen TV\n• Minibar, tea/coffee maker, and laptop safe\n• Private bathroom with free toiletries, bath/shower, and hairdryer\n• Extra long beds (> 2 meters), wardrobe, and outdoor furniture\nAdditional Info:\n• No modifications after booking\n• Non-smoking room\n• Breakfast included\nIdeal for a peaceful and convenient stay.",
+          "image": "/import/accommodation/accommodation_image_110.webp"
+        },
+        {
+          "title": "Deluxe Double Room Seaview with Balcony",
+          "description": "Enjoy breathtaking sea views from your private balcony in this spacious 25 m² room featuring an extra-large double bed, rated 9.1 for comfort. The room is equipped with modern amenities, including air conditioning, a flat-screen TV with cable channels, and soundproofing for a peaceful stay.\nRoom Features:\n• Private balcony with stunning sea views\n• Air conditioning, minibar, and tea/coffee maker\n• Private bathroom with free toiletries, bath/shower, and hairdryer\n• Laptop safe, desk, and extra-long bed (> 2 meters)\nAdditional Info:\n• Non-smoking room\n• Free Wi-Fi and upper floors accessible by elevator\nAn ideal choice for those seeking luxury and comfort with a view.",
+          "image": "/import/accommodation/accommodation_image_111.jpg"
+        },
+        {
+          "title": "Deluxe Family Room City View with Balcony",
+          "description": "This 30 m² air-conditioned family room features one single bed and one extra-large double bed, rated 9.1 for comfort. Enjoy city views from your private balcony, with modern amenities ensuring a pleasant stay.\nRoom Features:\n• Private balcony with city view\n• Air conditioning, minibar, and tea/coffee maker\n• Private bathroom with free toiletries, bath/shower, and hairdryer\n• Flat-screen TV with cable channels, soundproofing, and extra-long beds (> 2 meters)\nAdditional Info:\n• Non-smoking room\n• Free WiFi and upper floors accessible by elevator\nA perfect choice for families looking for a spacious, comfortable stay with all essential amenities.",
+          "image": "/import/accommodation/accommodation_image_112.jpg"
+        },
+        {
+          "title": "Deluxe Family Room Seaview with Balcony",
+          "description": "This 30 m² air-conditioned family room offers one single bed and one extra-large double bed, rated 9.1 for comfort. Enjoy stunning sea views from your private balcony, perfect for a relaxing getaway.\nRoom Features:\n• Private balcony with sea view\n• Air conditioning, minibar, and tea/coffee maker\n• Private bathroom with free toiletries, bath/shower, and hairdryer\n• Flat-screen TV with cable channels, soundproofing, and extra-long beds (> 2 meters)\nAdditional Info:\n• Non-smoking room\n• Free WiFi and upper floors accessible by elevator\nIdeal for families seeking a spacious room with breathtaking views and modern amenities.",
+          "image": "/import/accommodation/accommodation_image_113.jpg"
+        },
+        {
+          "title": "Deluxe Quadruple room Seaview with Balcony",
+          "description": "This 36 m² air-conditioned quadruple room features an extra-large double bed, highly rated for comfort (9.1). With a private balcony offering stunning sea views, it's perfect for those seeking a luxurious and relaxing stay.\nRoom Features:\n• Private balcony with panoramic sea views\n• Air conditioning, minibar, coffee machine, and tea/coffee maker\n• Private bathroom with free toiletries, bath/shower, and hairdryer\n• Flat-screen TV with cable channels and soundproofing for added comfort\nAdditional Info:\n• Non-smoking room\n• Free Wi-Fi, laptop safe, and elevator access to upper floors\nA luxurious and spacious choice for guests who want modern comforts with breathtaking sea views.",
+          "image": "/import/accommodation/accommodation_image_114.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_23_462.jpg",
+        "/import/gallery/property_23_463.jpg",
+        "/import/gallery/property_23_464.jpg",
+        "/import/gallery/property_23_465.jpg",
+        "/import/gallery/property_23_466.jpg",
+        "/import/gallery/property_23_467.jpg",
+        "/import/gallery/property_23_468.jpg",
+        "/import/gallery/property_23_469.jpg",
+        "/import/gallery/property_23_470.jpg",
+        "/import/gallery/property_23_471.jpg"
+      ],
+      "cover": "/import/gallery/property_23_462.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 24,
+      "name": "Kiha Beach",
+      "slug": "kiha-beach",
+      "category": "city-hotels",
+      "atoll": "Baa Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon"
+      ],
+      "description": "Kiha Beach is a boutique luxury hotel on a charming local island, offering the ultimate 'island life' experience. With its prime location, top-notch amenities, and warm hospitality, your stay promises to be unforgettable. Immerse yourself in the stunning natural surroundings, vibrant sea life, and unique fauna of this Biosphere Reserve, creating memories you'll cherish for a lifetime.\nSummary:\n• Boutique luxury hotel on a local island\n• Prime location with beautiful natural surroundings\n• Luxury amenities and exceptional service\n• Experience rich biodiversity in a Biosphere Reserve\nNearby Attractions:\nRestaurants & cafes\n• Cafe/barRaaveriya bar 4.1 km\n• RestaurantBenjarong 8 km\n• Cafe/barSand Bar 8 km\nBeaches in the Neighbourhood:\n• Dharavandhoo Beach: 3 m\n• Bikini Beach: 6 km\n• Horubadhoo Island Beach: 8 km*\nClosest Airports:\n• Dharavandhoo Airport: 500 m\n• Madivaru Airport: 41 km*\n• Ifuru Airport: 61 km*\n*Distances are measured in a straight line. Actual travel distance may vary.\n• Sea Sports Adventures\nExperience a range of seasonal sea sports, from windsurfing to canoeing. Set sail around the island on a catamaran or amp up the excitement with a thrilling jet ski ride. Contact us for more details and to plan your adventure!\n• Fishing Experience\nEmbrace the island life with a fishing adventure! Bring your own gear or hire a rod from us to enjoy a relaxing day on the water. Perfect for both beginners and seasoned anglers.\nSandbanks & Excursions\n• Maalhos Island\nDiscover the charm of Maalhos Island, known for its unique sea almonds. Experience the local tradition where islanders gather these nuts during special ceremonies, promoting conservation and the preservation of Maldivian cuisine.\n• Sandbank Getaways\nImmerse yourself in the tranquil beauty of our nearby sandbanks. Enjoy the serenity of nature, spot white terns and frigatebirds, and savor a private picnic organized just for you. This is the perfect way to disconnect from the world and create unforgettable memories with your loved ones.\n• Snorkeling Adventures\nExperience the breathtaking marine life of Baa Atoll without the need for scuba gear! Our warm, crystal-clear waters offer high visibility, making Snorkeling an enjoyable and therapeutic experience.\n• House Reef\nSwim at your leisure to our house reef and discover the vibrant underwater world in true 'island life' style.\n• Kihaadhoo Reef\nExplore this nearby island's waters, home to over 200 species of reef-associated fish. You're sure to meet a captivating new friend beneath the waves!\n• Hanifaru Bay\nDive into the wonders of this UNESCO-protected area, where you can witness the spectacular gathering of manta rays during feeding season. This unique site is also a breeding ground for gentle whale sharks and a nesting habitat for green and hawksbill turtles. Join us for an unforgettable Snorkeling experience!\nAfternoon Tea Experience\n• Discover the unique Maldivian twist on the traditional British afternoon tea during your stay with us. Indulge in handcrafted savory and sweet delights, known as 'short eats,' made from local ingredients such as fresh coconut, rice flour, palm sugar, smoked tuna, and spices.\n• This cultural tradition is a cherished family and social time, often enjoyed with friends and neighbours. On special occasions, afternoon tea receptions bring communities together, reflecting the warm Maldivian spirit.\n• Join us for a delightful afternoon on your balcony, sipping tea while savoring a variety of flavors from our short eats. Let the gentle sea breeze and late afternoon sun enhance your culinary journey through the Maldives!",
+      "short_description": "Kiha Beach is a boutique luxury hotel on a charming local island, offering the ultimate 'island life' experience. With its prime location, top-notch amenities, and warm hospitality, your stay promises to be unforgettable. Immerse yourself in the stunning natural surroundings, vibrant sea life, and unique fauna of this Biosphere Reserve, creating memories you'll cherish for a lifetime.",
+      "facilities": [
+        "Family rooms",
+        "Private bathroom",
+        "Telephone",
+        "Tour desk",
+        "Mini Bar",
+        "Free WiFi",
+        "Air Conditioning",
+        "Private Digital Safe",
+        "Bathroom Amenities",
+        "Non-Smoking Rooms",
+        "Outdoor furniture",
+        "Garden",
+        "24-hour front desk",
+        "Special diet menus (on request)",
+        "Restaurant",
+        "Tea/coffee maker in all rooms",
+        "Very good breakfast",
+        "Fire extinguishers",
+        "CCTV outside property",
+        "CCTV in common areas",
+        "Smoke alarms",
+        "Security alarm",
+        "Key card access",
+        "BBQ facilities Additional charge",
+        "Private beach area",
+        "Sun terrace",
+        "Currency exchange",
+        "Spa and wellness centre",
+        "Terrace",
+        "Kids' pool",
+        "Room Service",
+        "Fishing Additional charge",
+        "Salt-water pool",
+        "Luggage Storage",
+        "TV",
+        "Airport shuttle",
+        "Outdoor swimming pool"
+      ],
+      "accommodations": [
+        {
+          "title": "Family Rooms",
+          "description": "Experience luxury and comfort at Kiha Beach, designed with families in mind. Our spacious family rooms feature two super king-size beds, crafted from eco-friendly materials for a serene environment.\nEach room includes:\n• Adjustable air-conditioning\n• Soft or firm feather pillows\n• 100% cotton linens for a smooth sleep\n• En-suite bathroom with hot shower and amenities\n• Mini-bar and Illy coffee machine\n• Free Wi-Fi and TV with international channels\nEnjoy a large private balcony with stunning sea views—perfect for adults to unwind while children sleep safely. Create cherished family memories in your luxurious island sanctuary.",
+          "image": "/import/accommodation/accommodation_image_116.jpg"
+        },
+        {
+          "title": "Deluxe Room",
+          "description": "Discover tranquility in our eco-friendly Deluxe Rooms, each 30 sqm and designed for harmony with nature. Enjoy:\nSuper King Size Beds with high-quality cotton sateen linens (300 thread count) and a choice of soft or firm feather pillows.\nAdjustable Air-Conditioning and ambient lighting for your comfort.\nEn-Suite Bathroom with hot shower, complimentary toiletries, and hairdryer.\nRefreshments with tea/coffee facilities and a mini-bar.\nEntertainment including a TV with international channels and free Wi-Fi.\nRelax on your private balcony, listening to the soothing sounds of the waves. Experience luxury and sustainability in your home away from home.",
+          "image": "/import/accommodation/accommodation_image_117.jpg"
+        },
+        {
+          "title": "Ultimate Room",
+          "description": "Experience luxury and sustainability in our 30 sqm Ultimate Rooms, featuring:\nSuper King Size Beds with premium cotton sateen linens (300 thread count) and a choice of soft or firm feather pillows.\nFreestanding Bathtub with bubble bath, salts, and aromatherapy candles, plus stunning sea views.\nEn-Suite Bathroom with hot shower, premium amenities, and hairdryer.\nAmbient Lighting and elegant titanium-finished flooring for a serene atmosphere.\nRefreshments with Italian Illy coffee machines and a mini-bar.\nEntertainment with a TV offering international channels and free Wi-Fi.\nUnwind in your eco-friendly sanctuary and enjoy the perfect blend of comfort and nature.",
+          "image": "/import/accommodation/accommodation_image_118.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_24_600.jpeg",
+        "/import/gallery/property_24_601.jpeg",
+        "/import/gallery/property_24_602.jpeg",
+        "/import/gallery/property_24_603.jpg",
+        "/import/gallery/property_24_604.jpg",
+        "/import/gallery/property_24_605.jpg",
+        "/import/gallery/property_24_606.jpg",
+        "/import/gallery/property_24_607.jpg",
+        "/import/gallery/property_24_608.jpg",
+        "/import/gallery/property_24_609.jpg"
+      ],
+      "cover": "/import/gallery/property_24_600.jpeg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 25,
+      "name": "Maldives Legend - Sea Pleasure",
+      "slug": "maldives-legend-sea-pleasure",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [
+        "Diving",
+        "Surfing"
+      ],
+      "description": "Maldives Legend - Sea Pleasure offers the perfect blend of luxury and comfort for 20 guests in 10 elegantly designed cabins. The upper deck features 4 Seaview Cabins with private balconies, some offering flexible twin or double beds. The lower deck includes standard twin and family cabins, all air-conditioned with en suite bathrooms. Upper deck cabins also boast minibars for added indulgence\nSPECIFICATIONS\nVessel: Wooden Hull (Balau and Kempes timber finely polished with fiberglass coating)\nYear Built: 2020\nPropulsion: Main: Daewoo 640 HP\nFuel Capacity: 12000 litres\nDesalinator: 20 ton and 10-ton plants with 11500 litres of fresh water per day\nNavigation & 36 miles marine radar system, Eco\nCommunication: Sounder, Compass, map fish finder,GPS, CB Radio, mobile phones, internet, search light, binoculars, IDD Telephone\nPower: 2 x 70 Kw Cummins Generators\nIndulge in luxury aboard this yacht, featuring a jacuzzi bar and sun lounges on the sun deck. The expansive main deck offers a spacious saloon, a multicuisine restaurant, and a bar serving a variety of cocktails, wines, and imported liquors. Outdoor dining and relaxation areas enhance your experience, while two tenders ensure seamless exploration.",
+      "short_description": "Maldives Legend - Sea Pleasure offers the perfect blend of luxury and comfort for 20 guests in 10 elegantly designed cabins. The upper deck features 4 Seaview Cabins with private balconies, some offering flexible twin or double beds. The lower deck includes standard twin and family cabins, all air-conditioned with en suite bathrooms. Upper deck cabins also boast minibars for added indulgence",
+      "facilities": [
+        "Bar lounge",
+        "En-Suite bathrooms",
+        "Audio & video entertainment",
+        "Sun Deck",
+        "Outdoor Dining",
+        "Aircon Cabins",
+        "Warm Water Showers",
+        "Indoor Saloon",
+        "Non-Diver (Snorkeler) Friendly",
+        "Charging stations",
+        "Air Conditioned saloon",
+        "Custom built for diving",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Paid Internet",
+        "Seaview Cabins",
+        "Family Cabins",
+        "Separate Rinse for u/w Camera",
+        "Observation Deck",
+        "Leisure Deck",
+        "Available for Charter",
+        "Kayaks On-Board",
+        "Massage",
+        "Outside Showers",
+        "Camera Station",
+        "Library",
+        "Oxygen",
+        "Bilge pump alarm",
+        "Crew trained in first aid",
+        "Radio VHF/DSC/SSB",
+        "Radar",
+        "Life Vests",
+        "E.P.I.R.B. Distress System",
+        "First Aid Kits",
+        "Fire Alarm & Fire Extinguishers",
+        "Search light",
+        "Satellite & mobile phones",
+        "Engine room CCTV",
+        "GPS",
+        "Emergency Rafts",
+        "Rinse Hoses",
+        "Sidemount Diving",
+        "DIN Adaptors",
+        "Tenders for diving",
+        "Nitrox available",
+        "Fine Wines Selection",
+        "Beach BBQ",
+        "Vegetarian Options",
+        "Snacks All Day",
+        "Wine Available",
+        "Western Food",
+        "Buffet style",
+        "Vegan Options",
+        "Local Food",
+        "Beer available",
+        "Laundry Service"
+      ],
+      "accommodations": [
+        {
+          "title": "Family Cabins & Double Cabin",
+          "description": "Family Cabins feature 1 double and 1 single bed, accommodating up to 3 guests. Located on the lower deck, these air-conditioned cabins come with en suite bathrooms, offering comfort and convenience for families.",
+          "image": "/import/accommodation/accommodation_image_119.jpg"
+        },
+        {
+          "title": "Standard Cabins",
+          "description": "Located on the lower deck, our Standard Twin Cabins offer 2 single beds and are fully air-conditioned with en suite bathrooms. Perfect for 2 guests seeking comfort and convenience.",
+          "image": "/import/accommodation/accommodation_image_120.jpg"
+        },
+        {
+          "title": "Seaview Suites with Balconies",
+          "description": "Enjoy stunning views from our Seaview Double Cabins on the upper deck, featuring a double bed and private balconies. Each air-conditioned cabin includes an en suite bathroom and minibar, perfect for up to 2 guests.",
+          "image": "/import/accommodation/accommodation_image_121.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_25_638.jpg",
+        "/import/gallery/property_25_639.jpg",
+        "/import/gallery/property_25_640.jpg",
+        "/import/gallery/property_25_641.jpg",
+        "/import/gallery/property_25_642.jpg",
+        "/import/gallery/property_25_643.jpg",
+        "/import/gallery/property_25_644.jpg",
+        "/import/gallery/property_25_645.jpg",
+        "/import/gallery/property_25_646.jpg",
+        "/import/gallery/property_25_647.jpg"
+      ],
+      "cover": "/import/gallery/property_25_638.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 26,
+      "name": "Maldives Legend Odyssey",
+      "slug": "maldives-legend-odyssey",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [],
+      "description": "Maldives Legend Odyssey is a luxurious 30m liveaboard, built in 2022, offering exceptional diving, surfing, and cruising trips year-round. With 11 spacious cabins, it accommodates up to 22 guests in twin or double rooms, or 26 with triple occupancy. The top deck features 4 Seaview Suites, while the main and lower decks offer a variety of standard cabins. Guests can enjoy an air-conditioned restaurant, bar, sun deck with Jacuzzi, and three exterior decks with lounges. Additional amenities include a library, indoor games, stereos, and TV for relaxation between activities.\nSPECIFICATIONS\nVessel: Full Fiber\nYear Built: 2022\nPropulsion: Main: Doosan 360\nFuel Capacity: 7000 Liters\nDesalination: 6000 Liters of fresh water per day\nNavigation & 36 miles marine radar system, Eco\nCommunication: Sounder, Compass, map, fish finder, GPS, CB Radio, mobile phone, internet, Search light, binoculars, IDD Telephone\nThe liveaboard features a spacious saloon and restaurant with modern wooden furnishings. Ample exterior relaxation areas are available on the main and upper decks, while the sun deck offers a Jacuzzi for ultimate relaxation.",
+      "short_description": "Maldives Legend Odyssey is a luxurious 30m liveaboard, built in 2022, offering exceptional diving, surfing, and cruising trips year-round. With 11 spacious cabins, it accommodates up to 22 guests in twin or double rooms, or 26 with triple occupancy. The top deck features 4 Seaview Suites, while the main and lower decks offer a variety of standard cabins. Guests can enjoy an air-conditioned restaurant, bar, sun deck with Jacuzzi, and three exterior decks with lounges. Additional amenities include a library, indoor games, stereos, and TV for relaxation between activities.",
+      "facilities": [
+        "En-Suite bathrooms",
+        "Audio & video entertainment",
+        "Sun Deck",
+        "Jacuzzi / Hot Tub",
+        "Outdoor Dining",
+        "Aircon Cabins",
+        "Warm Water Showers",
+        "Fishing",
+        "Indoor Saloon",
+        "Non-Diver (Snorkeler) Friendly",
+        "Charging stations",
+        "Welcome Cocktails",
+        "Air Conditioned saloon",
+        "Custom built for diving",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Paid Internet",
+        "Seaview Cabins",
+        "Family Cabins",
+        "Separate Rinse for u/w Camera",
+        "Naturalist Guide",
+        "Observation Deck",
+        "Leisure Deck",
+        "Jet Ski",
+        "Available for Charter",
+        "Free Internet",
+        "Kayaks On-Board",
+        "Massage",
+        "Rooms with Balcony",
+        "Outside Showers",
+        "Camera Station",
+        "Library",
+        "Stand Up Paddleboard",
+        "Oxygen",
+        "Bilge pump alarm",
+        "Crew trained in first aid",
+        "Radio VHF/DSC/SSB",
+        "Radar",
+        "Life Vests",
+        "E.P.I.R.B. Distress System",
+        "First Aid Kits",
+        "Fire Alarm & Fire Extinguishers",
+        "Search light",
+        "Satellite & mobile phones",
+        "Engine room CCTV",
+        "GPS",
+        "Emergency Rafts",
+        "Rinse Hoses",
+        "Sidemount Diving",
+        "DIN Adaptors",
+        "Tenders for diving",
+        "Nitrox available",
+        "Fine Wines Selection",
+        "Beach BBQ",
+        "Vegetarian Options",
+        "Snacks All Day",
+        "Wine Available",
+        "Western Food",
+        "Buffet style",
+        "Vegan Options",
+        "Local Food",
+        "Beer available",
+        "Laundry Service",
+        "Bar lounge"
+      ],
+      "accommodations": [
+        {
+          "title": "Seaview Cabins & 1 Tour Leader Cabin",
+          "description": "Seaview Cabins and 1 Tour Leader Cabin feature 2 single beds, air conditioning, and en suite bathrooms with a shower and toilet. Ideal for up to 2 guests.",
+          "image": "/import/accommodation/accommodation_image_122.jpg"
+        },
+        {
+          "title": "Family Cabins",
+          "description": "Family Cabins feature 1 double and 1 single bed, accommodating up to 3 guests. Each cabin is air-conditioned with an en suite bathroom, ensuring a comfortable stay.",
+          "image": "/import/accommodation/accommodation_image_123.jpg"
+        },
+        {
+          "title": "Standard Twin & 1 Bunk Bed Cabins",
+          "description": "Standard Twin & Bunk Bed Cabins feature 2 single beds or a bunk bed. All rooms are air-conditioned with en suite bathrooms, providing a comfortable stay for guests.",
+          "image": "/import/accommodation/accommodation_image_124.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_26_682.jpg",
+        "/import/gallery/property_26_683.jpg",
+        "/import/gallery/property_26_684.jpg",
+        "/import/gallery/property_26_685.jpg",
+        "/import/gallery/property_26_686.jpg",
+        "/import/gallery/property_26_687.jpg",
+        "/import/gallery/property_26_688.jpg",
+        "/import/gallery/property_26_689.jpg",
+        "/import/gallery/property_26_691.jpg",
+        "/import/gallery/property_26_692.jpg"
+      ],
+      "cover": "/import/gallery/property_26_682.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 27,
+      "name": "Maldives Legend – ZEN",
+      "slug": "maldives-legend-zen",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [],
+      "description": "Maldives Legend Zen offers a luxurious liveaboard experience with 13 modern guest cabins. The upper deck features a Seaview Suite and 3 Seaview Cabins, while the lower deck offers a Junior Suite, 2 Double Cabins, 4 convertible Twin Cabins, and 2 Single Cabins. Each cabin is equipped with modern amenities, providing comfort and relaxation throughout your stay.\nSPECIFICATION\nVessel: Wooden hull polished with fiberglass coating\nYear Refitted: 2024\nPropulsion: Main: Yanmar 650hp\nFuel Capacity: 10000 Liters\nDesalinator: 12000 Liters Per Day\nNavigation & Communication: 36 miles marine radar system, Eco sounder, Compass, map, fish finder, GPS, CB Radio, mobile phones, internet, searching light, binoculars, IDD Telephone.\nPower: 3x55Kw Generator’s\nThis expansive and comfortable liveaboard features a restaurants and bar on the main deck, a cozy lounge in the saloon area, and multiple relaxation spots both at the front and back. The upper deck boasts a jacuzzi, additional bar and lounge at the rear, and another relaxation area at the front, while the sun deck offers sun loungers for soaking up the Maldives sun.",
+      "short_description": "Maldives Legend Zen offers a luxurious liveaboard experience with 13 modern guest cabins. The upper deck features a Seaview Suite and 3 Seaview Cabins, while the lower deck offers a Junior Suite, 2 Double Cabins, 4 convertible Twin Cabins, and 2 Single Cabins. Each cabin is equipped with modern amenities, providing comfort and relaxation throughout your stay.",
+      "facilities": [
+        "En-Suite bathrooms",
+        "Audio & video entertainment",
+        "Sun Deck",
+        "Jacuzzi / Hot Tub",
+        "Outdoor Dining",
+        "Aircon Cabins",
+        "Warm Water Showers",
+        "Fishing",
+        "Indoor Saloon",
+        "Non-Diver (Snorkeler) Friendly",
+        "Charging stations",
+        "Welcome Cocktails",
+        "Air Conditioned saloon",
+        "Custom built for diving",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Paid Internet",
+        "Seaview Cabins",
+        "Family Cabins",
+        "Separate Rinse for u/w Camera",
+        "Naturalist Guide",
+        "Observation Deck",
+        "Leisure Deck",
+        "Jet Ski",
+        "Available for Charter",
+        "Free Internet",
+        "Kayaks On-Board",
+        "Massage",
+        "Rooms with Balcony",
+        "Outside Showers",
+        "Camera Station",
+        "Library",
+        "Stand Up Paddleboard",
+        "Rinse Hoses",
+        "Sidemount Diving",
+        "DIN Adaptors",
+        "Tenders for diving",
+        "Nitrox available",
+        "Fine Wines Selection",
+        "Beach BBQ",
+        "Vegetarian Options",
+        "Snacks All Day",
+        "Wine Available",
+        "Western Food",
+        "Buffet style",
+        "Vegan Options",
+        "Local Food",
+        "Beer available",
+        "Laundry Service",
+        "Bar lounge"
+      ],
+      "accommodations": [
+        {
+          "title": "1 Seaview Suite & 3 Seaview Cabins",
+          "description": "Enjoy stunning ocean views in our Seaview Suite and 3 Seaview Cabins, offering modern amenities and ultimate comfort for a luxurious stay.\"",
+          "image": "/import/accommodation/accommodation_image_125.jpg"
+        },
+        {
+          "title": "1 Junior Suite & 4 Twin / Double Cabins",
+          "description": "Our Junior Suite and 4 Twin/Double Cabins offer flexible, comfortable accommodations with modern amenities, perfect for a relaxing stay.",
+          "image": "/import/accommodation/accommodation_image_126.jpg"
+        },
+        {
+          "title": "2 Double Cabins & 2 Single Cabins",
+          "description": "Our 2 Double Cabins and 2 Single Cabins offer cozy, air-conditioned accommodations with all the essential amenities for a comfortable stay.",
+          "image": "/import/accommodation/accommodation_image_127.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_27_785.jpg",
+        "/import/gallery/property_27_786.jpg",
+        "/import/gallery/property_27_787.jpg",
+        "/import/gallery/property_27_788.jpg",
+        "/import/gallery/property_27_789.jpg",
+        "/import/gallery/property_27_790.jpg",
+        "/import/gallery/property_27_791.jpg",
+        "/import/gallery/property_27_794.jpg",
+        "/import/gallery/property_27_795.jpg",
+        "/import/gallery/property_27_797.jpg"
+      ],
+      "cover": "/import/gallery/property_27_785.jpg",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 28,
+      "name": "Maldives Legend - X",
+      "slug": "maldives-legend-x",
+      "category": "liveaboards",
+      "atoll": "",
+      "tags": [],
+      "description": "Maldives Legend - X is a newly built, luxurious liveaboard crafted with precision by local experts. Accommodating up to 26 guests in 13 spacious cabins, each equipped with modern amenities like a minibar, safety deposit box, and en suite bathroom. The upper deck features 3 Seaview Suites, the main deck has 2 VIP Suites, and the lower deck offers 2 Junior Suites, 3 Triple Cabins, and 3 Double Cabins.\nSPECIFICATIONS\nVessel: Wooden hull polished with fiberglass coating\nYear Built: 2024\nPropulsion: Main: Daewoo 600 HP\nFuel Capacity: 12000 liters\nDesalinator: 12 Tonnes per day\nNavigation & 36 miles marine radar system, Eco sounder,\nCommunication: Compass, map, fish finder, GPS, CB Radio,\nmobile phones, Internet, searchlight,\nbinoculars, IDD Telephone\nPower: 3 x 50 Kw Generators\nThe motor yacht features a spacious restaurant, bar, and lounge with luxurious furnishings. Outdoor areas include a large dining space and relaxation zones on the upper deck, while the sun deck offers sun loungers, beds, and a jacuzzi for ultimate relaxation.",
+      "short_description": "Maldives Legend - X is a newly built, luxurious liveaboard crafted with precision by local experts. Accommodating up to 26 guests in 13 spacious cabins, each equipped with modern amenities like a minibar, safety deposit box, and en suite bathroom. The upper deck features 3 Seaview Suites, the main deck has 2 VIP Suites, and the lower deck offers 2 Junior Suites, 3 Triple Cabins, and 3 Double Cabins.",
+      "facilities": [
+        "En-Suite bathrooms",
+        "Audio & video entertainment",
+        "Sun Deck",
+        "Jacuzzi / Hot Tub",
+        "Outdoor Dining",
+        "Aircon Cabins",
+        "Warm Water Showers",
+        "Fishing",
+        "Indoor Saloon",
+        "Non-Diver (Snorkeler) Friendly",
+        "Charging stations",
+        "Welcome Cocktails",
+        "Air Conditioned saloon",
+        "Custom built for diving",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Paid Internet",
+        "Seaview Cabins",
+        "Family Cabins",
+        "Separate Rinse for u/w Camera",
+        "Naturalist Guide",
+        "Observation Deck",
+        "Leisure Deck",
+        "Jet Ski",
+        "Available for Charter",
+        "Free Internet",
+        "Kayaks On-Board",
+        "Massage",
+        "Rooms with Balcony",
+        "Outside Showers",
+        "Camera Station",
+        "Library",
+        "Stand Up Paddleboard",
+        "Oxygen",
+        "Bilge pump alarm",
+        "Crew trained in first aid",
+        "Radio VHF/DSC/SSB",
+        "Radar",
+        "Life Vests",
+        "E.P.I.R.B. Distress System",
+        "First Aid Kits",
+        "Fire Alarm & Fire Extinguishers",
+        "Search light",
+        "Satellite & mobile phones",
+        "Engine room CCTV",
+        "GPS",
+        "Emergency Rafts",
+        "Rinse Hoses",
+        "Sidemount Diving",
+        "DIN Adaptors",
+        "Tenders for diving",
+        "Nitrox available",
+        "Fine Wines Selection",
+        "Beach BBQ",
+        "Vegetarian Options",
+        "Snacks All Day",
+        "Wine Available",
+        "Western Food",
+        "Buffet style",
+        "Vegan Options",
+        "Local Food",
+        "Beer available",
+        "Laundry Service",
+        "Bar lounge"
+      ],
+      "accommodations": [
+        {
+          "title": "2 VIP Suites & 3 Seaview Suites",
+          "description": "Enjoy luxury in our 2 VIP Suites and 3 Seaview Suites, each designed for comfort and equipped with modern amenities for an unforgettable stay.",
+          "image": "/import/accommodation/accommodation_image_128.png"
+        },
+        {
+          "title": "2 Junior Suites & 3 Triple Cabins",
+          "description": "Relax in our 2 Junior Suites and 3 Triple Cabins, each offering comfortable accommodations and modern amenities for a memorable stay.",
+          "image": "/import/accommodation/accommodation_image_129.png"
+        },
+        {
+          "title": "3 Double Cabins",
+          "description": "Experience comfort in our 3 Double Cabins, each equipped with modern amenities for a relaxing stay.",
+          "image": "/import/accommodation/accommodation_image_130.png"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_28_826.png",
+        "/import/gallery/property_28_827.png",
+        "/import/gallery/property_28_828.png",
+        "/import/gallery/property_28_829.png",
+        "/import/gallery/property_28_830.png",
+        "/import/gallery/property_28_831.png",
+        "/import/gallery/property_28_832.png",
+        "/import/gallery/property_28_833.png",
+        "/import/gallery/property_28_835.png",
+        "/import/gallery/property_28_837.png"
+      ],
+      "cover": "/import/gallery/property_28_826.png",
+      "from_price_usd": null
+    },
+    {
+      "legacy_id": 29,
+      "name": "iCom Marina",
+      "slug": "icom-marina",
+      "category": "city-hotels",
+      "atoll": "North Male Atoll",
+      "tags": [
+        "All Inclusive",
+        "Diving",
+        "Family Holidays",
+        "Honeymoon",
+        "Wellness"
+      ],
+      "description": "iCom Marina Sea View in Maafushi, just 500 meters from Bikini Beach, offers air-conditioned rooms with sea views, free WiFi, and private parking. The guest house features a family-friendly restaurant, wellness services, and yoga classes. Ideal for families, it provides indoor and outdoor play areas, bicycle rentals, and nearby canoeing opportunities. Perfect for a relaxing island getaway.",
+      "short_description": "iCom Marina Sea View in Maafushi, just 500 meters from Bikini Beach, offers air-conditioned rooms with sea views, free WiFi, and private parking. The guest house features a family-friendly restaurant, wellness services, and yoga classes. Ideal for families, it provides indoor and outdoor play areas, bicycle rentals, and nearby canoeing opportunities. Perfect for a relaxing island getaway.",
+      "facilities": [
+        "Family rooms",
+        "Private bathroom",
+        "Telephone",
+        "Tour desk",
+        "Free WiFi",
+        "Air Conditioning",
+        "Private Digital Safe",
+        "Bathroom Amenities",
+        "Non-Smoking Rooms",
+        "Daily housekeeping",
+        "Rooms with Balcony",
+        "Outdoor furniture",
+        "Garden",
+        "24-hour front desk",
+        "Restaurant",
+        "Free Parking",
+        "Tea/coffee maker in all rooms",
+        "Very good breakfast",
+        "Fire extinguishers",
+        "CCTV outside property",
+        "CCTV in common areas",
+        "Smoke alarms",
+        "Security alarm",
+        "Key card access",
+        "BBQ facilities Additional charge",
+        "Sun terrace",
+        "Currency exchange",
+        "Laundry Service",
+        "Front desk",
+        "Room Service",
+        "Luggage Storage",
+        "TV",
+        "24-hour Security",
+        "Airport shuttle Additional charge",
+        "Airport shuttle"
+      ],
+      "accommodations": [
+        {
+          "title": "Deluxe Double Room with Balcony",
+          "description": "Enjoy a relaxing 21 m² space with a private balcony overlooking the sea. This air-conditioned room features a comfy double bed, flat-screen TV with streaming services, and a modern bathroom with free toiletries, bathrobe, and slippers. Perfect for unwinding, the room includes a minibar, coffee machine, and free Wi-Fi, No smoking.",
+          "image": "/import/accommodation/accommodation_image_131.jpg"
+        },
+        {
+          "title": "Superior Twin Room",
+          "description": "This comfortable 19 m² air-conditioned room offers two cozy twin beds and a private balcony with stunning city views. Enjoy modern amenities such as a flat-screen TV with streaming services, a minibar, and free Wi-Fi. The private bathroom comes with free toiletries, a bathrobe, and slippers for added comfort. This is a non-smoking room.",
+          "image": "/import/accommodation/accommodation_image_132.jpg"
+        },
+        {
+          "title": "Queen Room",
+          "description": "This spacious 21 m² air-conditioned room features a queen bed and a private balcony with breathtaking sea and landmark views. Modern comforts include a flat-screen TV with streaming services, a minibar, and free WiFi. The private bathroom is equipped with free toiletries, a bathrobe, and slippers for added comfort. This is a non-smoking room.",
+          "image": "/import/accommodation/accommodation_image_133.jpg"
+        },
+        {
+          "title": "Family Room",
+          "description": "This spacious 42 m² air-conditioned family room features four comfortable beds and a private balcony with stunning sea and landmark views. Enjoy modern amenities including a flat-screen TV with streaming services, minibar, and free Wi-Fi. The private bathroom is equipped with free toiletries, bathrobes, and slippers for your convenience. This is a non-smoking room.",
+          "image": "/import/accommodation/accommodation_image_134.jpg"
+        },
+        {
+          "title": "Honeymoon Suite",
+          "description": "This luxurious 42 m² Honeymoon Suite features a private entrance, one cozy bed, and two bathrooms, making it perfect for a romantic getaway. Enjoy breathtaking landmark views from your private balcony and terrace. The suite is equipped with air conditioning, a flat-screen TV with streaming services, a minibar, and free Wi-Fi, This is a non-smoking room.",
+          "image": "/import/accommodation/accommodation_image_135.jpg"
+        }
+      ],
+      "dining": [],
+      "gallery": [
+        "/import/gallery/property_29_877.jpg",
+        "/import/gallery/property_29_878.jpg",
+        "/import/gallery/property_29_879.jpg",
+        "/import/gallery/property_29_880.jpg",
+        "/import/gallery/property_29_881.jpg",
+        "/import/gallery/property_29_882.jpg",
+        "/import/gallery/property_29_883.jpg",
+        "/import/gallery/property_29_884.jpg",
+        "/import/gallery/property_29_885.jpg",
+        "/import/gallery/property_29_886.jpg"
+      ],
+      "cover": "/import/gallery/property_29_877.jpg",
+      "from_price_usd": null
+    }
+  ],
+  "articles": [
+    {
+      "legacy_id": 1,
+      "title": "Explore Maldives",
+      "slug": "explore-maldives",
+      "body": "The Maldives is the smallest country in Asia. Including the sea, the territory spans roughly 90,000 square kilometres (35,000 sq mi), with a land area of 298 square kilometres (115 sq mi).\nThe Maldives is one of the world's most geographically dispersed sovereign states, and the smallest Muslim-majority country by land area. With a population of 515,132 in the 2022 census, it is the 2nd least populous country in Asia and the ninth-smallest country in the world by area.\nMalé is the capital and the most populated city, traditionally called the \"King's Island\", where the ancient royal dynasties ruled from its central location.\nThe Maldivian Archipelago is located on the Chagos–Laccadive Ridge, a vast submarine mountain range in the Indian Ocean; this also forms a terrestrial ecoregion with the Chagos Archipelago and Lakshadweep.\nThe Maldives has an average ground-level elevation of 1.5 metres (4 ft 11 in) above sea level, and a highest natural point of only 2.4 metres (7 ft 10 in), making it the world's lowest-lying country.\nsource : wikipedia",
+      "images": []
+    },
+    {
+      "legacy_id": 2,
+      "title": "Planning your Trip",
+      "slug": "planning-your-trip",
+      "body": "Before you plan your trip to the Maldives, please consider the following information to get around the Maldives easy and make the best out of your trip.",
+      "images": []
+    },
+    {
+      "legacy_id": 3,
+      "title": "Surfing Spots",
+      "slug": "surfing-spots",
+      "body": "Experience the thrill of surfing in the Maldives, where crystal-clear waters and world-class waves meet stunning tropical beauty. Whether you're a beginner or a seasoned pro, the Maldives offers perfect surf conditions, with warm waters and consistent swells throughout the year. Explore the best breaks across the islands and immerse yourself in the ultimate surfing adventure.",
+      "images": []
+    },
+    {
+      "legacy_id": 4,
+      "title": "Shipwreck",
+      "slug": "shipwreck",
+      "body": "The Maldives is renowned for its pristine waters and incredible marine biodiversity, and the Underwater Treasures of the Maldives are best experienced through its shipwrecks. These submerged relics form artificial reefs, teeming with vibrant marine life and attracting divers from across the globe. The shipwrecks provide a haven for colorful corals, schools of fish, and larger species like sharks and rays. Each dive unveils a story of history, mystery, and natural beauty, making it a must-visit destination for both adventurers and marine enthusiasts.",
+      "images": []
+    },
+    {
+      "legacy_id": 5,
+      "title": "Diving Spots",
+      "slug": "diving-spots",
+      "body": "A Diver’s Paradise\nThe Maldives is synonymous with stunning beaches, but what lies beneath its turquoise waters is equally captivating. With over 1,200 islands scattered across 26 atolls, the Maldives offers some of the world’s most extraordinary diving experiences. It’s warm, crystal-clear waters host vibrant coral reefs and diverse marine life, making it a top destination for divers from around the globe.\nWhy Dive in the Maldives?\n• Unparalleled Biodiversity: The Maldives is home to over 2,000 species of fish and hundreds of coral species. You can spot manta rays, whale sharks, turtles, reef sharks, and tropical fish in the same dive.\n• Pristine Waters: With underwater visibility often exceeding 30 meters, it’s like swimming through an aquarium.\n• Year-Round Diving: Thanks to the warm climate, diving in the Maldives is possible throughout the year. The two monsoon seasons affect water conditions, with the best diving experiences from November to May.\n• Unique Dive Types: The Maldives offers a variety of dive experiences, from drift diving in strong currents, which attract large pelagic species, to night diving, which reveals a whole new side of marine life.",
+      "images": []
+    }
+  ]
+}

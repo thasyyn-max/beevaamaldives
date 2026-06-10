@@ -1,330 +1,43 @@
-// Bundled demo content so the site runs before Supabase is connected.
-// Replace via the admin panel once Supabase is set up (see SETUP.md).
-import type { Guesthouse, Island, Photo } from "./types";
+// Bundled real Beevaa Maldives content (imported from the existing site).
+// Used when Supabase is not configured. Regenerate with scripts/import/parse.mjs.
+import importData from "@/data/import.json";
+import type { Article, Category, Property } from "./types";
 
-function photo(url: string, alt: string, sort: number): Photo {
-  return { id: `${url}-${sort}`, url, alt, sort_order: sort };
-}
+type RawProperty = (typeof importData)["properties"][number];
 
-export const demoIslands: Island[] = [
-  {
-    id: "isl-maafushi",
-    slug: "maafushi",
-    name: "Maafushi",
-    atoll: "Kaafu Atoll",
-    description:
-      "The original local-island destination: a lively guesthouse scene, a long bikini beach, sandbank trips and every excursion imaginable — 45 minutes from Malé by speedboat.",
-    hero_url: "/demo/beach-1.svg",
-    transfer_info: "Speedboat from Malé, ~45 min (USD 25–30) or public ferry (USD 2)",
-  },
-  {
-    id: "isl-thoddoo",
-    slug: "thoddoo",
-    name: "Thoddoo",
-    atoll: "Alif Alif Atoll",
-    description:
-      "A green farming island famous for papaya and watermelon plantations, a wide bikini beach with calm turquoise water, and a relaxed, uncrowded vibe.",
-    hero_url: "/demo/beach-2.svg",
-    transfer_info: "Speedboat from Malé, ~1h 45min (USD 50–55)",
-  },
-  {
-    id: "isl-dhigurah",
-    slug: "dhigurah",
-    name: "Dhigurah",
-    atoll: "Alif Dhaal Atoll",
-    description:
-      "A 3 km strip of white sand next to year-round whale shark territory. Snorkel the house reef in the morning, walk the endless beach at sunset.",
-    hero_url: "/demo/beach-3.svg",
-    transfer_info: "Speedboat from Malé, ~2h (USD 55–65) or domestic flight to Maamigili",
-  },
-  {
-    id: "isl-fulidhoo",
-    slug: "fulidhoo",
-    name: "Fulidhoo",
-    atoll: "Vaavu Atoll",
-    description:
-      "Tiny, postcard-pretty island where stingrays and nurse sharks glide along the jetty at dusk. Famous for traditional Boduberu drumming evenings.",
-    hero_url: "/demo/beach-4.svg",
-    transfer_info: "Speedboat from Malé, ~1h 15min (USD 40–50)",
-  },
-  {
-    id: "isl-ukulhas",
-    slug: "ukulhas",
-    name: "Ukulhas",
-    atoll: "Alif Alif Atoll",
-    description:
-      "An award-winning eco island known for spotless streets, green initiatives, manta point nearby and one of the prettiest bikini beaches in the atolls.",
-    hero_url: "/demo/beach-5.svg",
-    transfer_info: "Speedboat from Malé, ~1h 30min (USD 50)",
-  },
-];
+export const demoCategories: Category[] = importData.categories;
 
-const GH_AMENITIES = {
-  base: ["Free WiFi", "Air conditioning", "Hot water"],
-  breakfast: "Breakfast included",
-  transfer: "Airport transfer",
-  excursions: "Excursions desk",
-  beach: "Bikini beach nearby",
-  family: "Family rooms",
-  cafe: "Café / restaurant",
-  bikes: "Free bicycles",
-};
+export const demoBanners: string[] = importData.banners;
 
-export const demoGuesthouses: Guesthouse[] = [
-  {
-    id: "gh-coral-sands",
-    slug: "coral-sands-inn",
-    name: "Coral Sands Inn",
-    island_id: "isl-maafushi",
-    description:
-      "A family-run guesthouse 2 minutes' walk from Maafushi bikini beach. Rooftop breakfast terrace, daily sandbank and snorkelling trips, and rooms refreshed in 2025.",
-    amenities: [...GH_AMENITIES.base, GH_AMENITIES.breakfast, GH_AMENITIES.transfer, GH_AMENITIES.excursions, GH_AMENITIES.beach],
-    rating: 9.2,
-    review_count: 184,
-    contact_email: "stay@coralsands.example",
-    contact_phone: "+960 777-0001",
-    status: "live",
-    photos: [
-      photo("/demo/beach-1.svg", "Coral Sands Inn beachfront", 0),
-      photo("/demo/room-1.svg", "Deluxe double room", 1),
-      photo("/demo/beach-6.svg", "Lagoon view", 2),
-    ],
-    rooms: [
-      {
-        id: "rm-cs-deluxe",
-        guesthouse_id: "gh-coral-sands",
-        name: "Deluxe Double Room",
-        description: "Queen bed, rain shower, balcony with island views.",
-        max_guests: 2,
-        beds: "1 queen bed",
-        base_price_usd: 55,
-        amenities: ["Balcony", "Rain shower", "Mini fridge"],
-        photos: [photo("/demo/room-1.svg", "Deluxe Double Room", 0)],
-      },
-      {
-        id: "rm-cs-seaview",
-        guesthouse_id: "gh-coral-sands",
-        name: "Sea View Deluxe",
-        description: "Corner room with direct lagoon views and a daybed.",
-        max_guests: 3,
-        beds: "1 queen bed + daybed",
-        base_price_usd: 70,
-        amenities: ["Sea view", "Daybed", "Coffee maker"],
-        photos: [photo("/demo/room-2.svg", "Sea View Deluxe", 0)],
-      },
-      {
-        id: "rm-cs-family",
-        guesthouse_id: "gh-coral-sands",
-        name: "Family Room",
-        description: "Two connecting rooms sleeping up to five, ideal for families.",
-        max_guests: 5,
-        beds: "1 queen + 3 singles",
-        base_price_usd: 95,
-        amenities: ["Connecting rooms", "Bathtub", "Mini fridge"],
-        photos: [photo("/demo/room-3.svg", "Family Room", 0)],
-      },
-    ],
-  },
-  {
-    id: "gh-bikini-beach",
-    slug: "bikini-beach-view",
-    name: "Bikini Beach View",
-    island_id: "isl-maafushi",
-    description:
-      "Budget-friendly rooms literally across the path from the bikini beach. Hammocks, a sunset swing and the best smoothies on Maafushi.",
-    amenities: [...GH_AMENITIES.base, GH_AMENITIES.beach, GH_AMENITIES.excursions, GH_AMENITIES.cafe],
-    rating: 8.7,
-    review_count: 96,
-    contact_email: "hello@bikinibeachview.example",
-    contact_phone: "+960 777-0002",
-    status: "live",
-    photos: [
-      photo("/demo/beach-6.svg", "Beachfront at Bikini Beach View", 0),
-      photo("/demo/room-2.svg", "Standard double room", 1),
-    ],
-    rooms: [
-      {
-        id: "rm-bb-standard",
-        guesthouse_id: "gh-bikini-beach",
-        name: "Standard Double",
-        description: "Cosy double steps from the sand.",
-        max_guests: 2,
-        beds: "1 double bed",
-        base_price_usd: 48,
-        amenities: ["Beach access", "Desk"],
-        photos: [photo("/demo/room-2.svg", "Standard Double", 0)],
-      },
-      {
-        id: "rm-bb-triple",
-        guesthouse_id: "gh-bikini-beach",
-        name: "Triple Room",
-        description: "Roomy triple for friends travelling together.",
-        max_guests: 3,
-        beds: "3 single beds",
-        base_price_usd: 65,
-        amenities: ["Beach access", "Reading lights"],
-        photos: [photo("/demo/room-4.svg", "Triple Room", 0)],
-      },
-    ],
-  },
-  {
-    id: "gh-thoddoo-retreat",
-    slug: "thoddoo-retreat-garden",
-    name: "Thoddoo Retreat Garden",
-    island_id: "isl-thoddoo",
-    description:
-      "Set in a tropical fruit garden five minutes from Thoddoo's famous beach. Breakfast comes with papaya picked the same morning.",
-    amenities: [...GH_AMENITIES.base, GH_AMENITIES.breakfast, GH_AMENITIES.bikes, GH_AMENITIES.beach],
-    rating: 9.5,
-    review_count: 142,
-    contact_email: "stay@thoddooretreat.example",
-    contact_phone: "+960 777-0003",
-    status: "live",
-    photos: [
-      photo("/demo/beach-2.svg", "Thoddoo beach", 0),
-      photo("/demo/room-3.svg", "Garden villa room", 1),
-      photo("/demo/beach-5.svg", "Calm lagoon", 2),
-    ],
-    rooms: [
-      {
-        id: "rm-tr-garden",
-        guesthouse_id: "gh-thoddoo-retreat",
-        name: "Garden Villa",
-        description: "Private villa with outdoor seating in the fruit garden.",
-        max_guests: 2,
-        beds: "1 king bed",
-        base_price_usd: 42,
-        amenities: ["Garden terrace", "Outdoor seating"],
-        photos: [photo("/demo/room-3.svg", "Garden Villa", 0)],
-      },
-      {
-        id: "rm-tr-family",
-        guesthouse_id: "gh-thoddoo-retreat",
-        name: "Family Garden Suite",
-        description: "Two-room suite opening onto the garden.",
-        max_guests: 4,
-        beds: "1 king + 2 singles",
-        base_price_usd: 78,
-        amenities: ["Two rooms", "Garden terrace"],
-        photos: [photo("/demo/room-4.svg", "Family Garden Suite", 0)],
-      },
-    ],
-  },
-  {
-    id: "gh-whaleshark-lodge",
-    slug: "whale-shark-lodge",
-    name: "Whale Shark Lodge",
-    island_id: "isl-dhigurah",
-    description:
-      "Dive-and-snorkel lodge at the quiet end of Dhigurah's 3 km beach. Daily whale shark search trips with in-house guides, gear included.",
-    amenities: [...GH_AMENITIES.base, GH_AMENITIES.breakfast, GH_AMENITIES.excursions, GH_AMENITIES.transfer, GH_AMENITIES.cafe],
-    rating: 9.0,
-    review_count: 121,
-    contact_email: "dive@whalesharklodge.example",
-    contact_phone: "+960 777-0004",
-    status: "live",
-    photos: [
-      photo("/demo/beach-3.svg", "Dhigurah long beach", 0),
-      photo("/demo/room-4.svg", "Ocean room", 1),
-      photo("/demo/beach-4.svg", "House reef", 2),
-    ],
-    rooms: [
-      {
-        id: "rm-ws-ocean",
-        guesthouse_id: "gh-whaleshark-lodge",
-        name: "Ocean Room",
-        description: "Bright double with reef views from the balcony.",
-        max_guests: 2,
-        beds: "1 queen bed",
-        base_price_usd: 65,
-        amenities: ["Balcony", "Sea view", "Dive storage"],
-        photos: [photo("/demo/room-4.svg", "Ocean Room", 0)],
-      },
-      {
-        id: "rm-ws-beach",
-        guesthouse_id: "gh-whaleshark-lodge",
-        name: "Beach Bungalow",
-        description: "Stand-alone bungalow with direct beach access.",
-        max_guests: 3,
-        beds: "1 king + 1 single",
-        base_price_usd: 85,
-        amenities: ["Beach access", "Outdoor shower"],
-        photos: [photo("/demo/room-1.svg", "Beach Bungalow", 0)],
-      },
-    ],
-  },
-  {
-    id: "gh-stingray-villa",
-    slug: "stingray-villa",
-    name: "Stingray Villa",
-    island_id: "isl-fulidhoo",
-    description:
-      "Boutique four-room villa a minute from Fulidhoo jetty, where stingrays gather every evening. Boduberu nights on Fridays.",
-    amenities: [...GH_AMENITIES.base, GH_AMENITIES.breakfast, GH_AMENITIES.beach, GH_AMENITIES.excursions],
-    rating: 9.3,
-    review_count: 77,
-    contact_email: "stay@stingrayvilla.example",
-    contact_phone: "+960 777-0005",
-    status: "live",
-    photos: [
-      photo("/demo/beach-4.svg", "Fulidhoo lagoon", 0),
-      photo("/demo/room-1.svg", "Villa room", 1),
-    ],
-    rooms: [
-      {
-        id: "rm-sv-double",
-        guesthouse_id: "gh-stingray-villa",
-        name: "Villa Double",
-        description: "Calm, minimal double with handmade coral-wood furniture.",
-        max_guests: 2,
-        beds: "1 queen bed",
-        base_price_usd: 50,
-        amenities: ["Veranda", "Hammock"],
-        photos: [photo("/demo/room-1.svg", "Villa Double", 0)],
-      },
-    ],
-  },
-  {
-    id: "gh-ukulhas-sunset",
-    slug: "ukulhas-sunset-house",
-    name: "Ukulhas Sunset House",
-    island_id: "isl-ukulhas",
-    description:
-      "West-facing rooms built for sunset views on the Maldives' cleanest island. Manta snorkelling trips in season and free bikes for every guest.",
-    amenities: [...GH_AMENITIES.base, GH_AMENITIES.breakfast, GH_AMENITIES.bikes, GH_AMENITIES.beach, GH_AMENITIES.family],
-    rating: 8.9,
-    review_count: 104,
-    contact_email: "hello@ukulhassunset.example",
-    contact_phone: "+960 777-0006",
-    status: "live",
-    photos: [
-      photo("/demo/beach-5.svg", "Ukulhas sunset", 0),
-      photo("/demo/room-2.svg", "Sunset room", 1),
-      photo("/demo/beach-2.svg", "Bikini beach", 2),
-    ],
-    rooms: [
-      {
-        id: "rm-us-sunset",
-        guesthouse_id: "gh-ukulhas-sunset",
-        name: "Sunset Double",
-        description: "West-facing double with a balcony made for golden hour.",
-        max_guests: 2,
-        beds: "1 queen bed",
-        base_price_usd: 58,
-        amenities: ["Sunset balcony", "Coffee maker"],
-        photos: [photo("/demo/room-2.svg", "Sunset Double", 0)],
-      },
-      {
-        id: "rm-us-family",
-        guesthouse_id: "gh-ukulhas-sunset",
-        name: "Family Loft",
-        description: "Split-level loft sleeping four, kids love the upstairs nook.",
-        max_guests: 4,
-        beds: "1 queen + 2 singles",
-        base_price_usd: 88,
-        amenities: ["Split level", "Two bathrooms"],
-        photos: [photo("/demo/room-3.svg", "Family Loft", 0)],
-      },
-    ],
-  },
-];
+export const demoProperties: Property[] = (
+  importData.properties as RawProperty[]
+).map((p) => ({
+  id: `prop-${p.legacy_id}`,
+  legacy_id: p.legacy_id,
+  slug: p.slug,
+  name: p.name,
+  category: p.category,
+  atoll: p.atoll || "Maldives",
+  tags: p.tags ?? [],
+  description: p.description ?? "",
+  short_description: p.short_description ?? "",
+  facilities: p.facilities ?? [],
+  accommodations: p.accommodations ?? [],
+  dining: p.dining ?? [],
+  gallery: p.gallery?.length ? p.gallery : [p.cover],
+  cover: p.cover,
+  from_price_usd: p.from_price_usd ?? null,
+  status: "live",
+}));
+
+type RawArticle = (typeof importData)["articles"][number];
+
+export const demoArticles: Article[] = (
+  importData.articles as RawArticle[]
+).map((a, i) => ({
+  id: `art-${i + 1}`,
+  slug: a.slug,
+  title: a.title,
+  body: a.body,
+  images: (a.images as string[]) ?? [],
+}));

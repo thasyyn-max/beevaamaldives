@@ -1,37 +1,39 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Body: clean modern sans. Display: refined serif for headings.
+// Replace these two with your brand fonts if you have them.
+const sans = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const display = Fraunces({
+  variable: "--font-display",
   subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Beevaa — Guesthouses & local islands of the Maldives",
-    template: "%s · Beevaa",
+    default: "Beevaa Maldives — Resorts, Liveaboards & City Hotels",
+    template: "%s · Beevaa Maldives",
   },
   description:
-    "Book guesthouses on the local islands of the Maldives. Real islands, local hosts, paradise prices.",
+    "Your gateway to the Maldives. Hand-picked resorts, liveaboards and local island hotels — book with a local team.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${sans.variable} ${display.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-bg text-ink">{children}</body>
     </html>
   );
 }

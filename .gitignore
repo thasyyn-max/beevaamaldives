@@ -40,6 +40,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# raw scraped HTML + import scratch (import.json IS committed; it's used at runtime)
+/scrape
+/data/image-urls.txt
+/data/image-failures.txt
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

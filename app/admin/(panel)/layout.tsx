@@ -3,8 +3,6 @@ import { redirect } from "next/navigation";
 import { getAdminUser } from "@/lib/admin";
 import { signOut } from "../actions";
 
-// Admin always renders per-request: it depends on the session cookie and
-// must never be prerendered at build time.
 export const dynamic = "force-dynamic";
 
 export default async function AdminPanelLayout({
@@ -17,16 +15,16 @@ export default async function AdminPanelLayout({
 
   const nav = [
     { href: "/admin", label: "Dashboard" },
-    { href: "/admin/bookings", label: "Bookings" },
-    { href: "/admin/guesthouses", label: "Guesthouses" },
+    { href: "/admin/enquiries", label: "Enquiries" },
+    { href: "/admin/properties", label: "Properties" },
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white">
+    <div className="min-h-screen bg-surface">
+      <header className="sticky top-0 z-40 border-b border-line bg-bg">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-2 px-4">
           <div className="flex items-center gap-4 overflow-x-auto">
-            <Link href="/" className="text-lg font-extrabold text-teal-600">
+            <Link href="/" className="font-display text-lg font-semibold text-brand">
               beevaa
             </Link>
             <nav className="flex items-center gap-1 text-sm font-medium">
@@ -34,7 +32,7 @@ export default async function AdminPanelLayout({
                 <Link
                   key={n.href}
                   href={n.href}
-                  className="whitespace-nowrap rounded-full px-3 py-1.5 text-slate-700 hover:bg-slate-100"
+                  className="whitespace-nowrap rounded-full px-3 py-1.5 text-muted hover:bg-surface hover:text-ink"
                 >
                   {n.label}
                 </Link>
@@ -42,7 +40,7 @@ export default async function AdminPanelLayout({
             </nav>
           </div>
           <form action={signOut}>
-            <button className="whitespace-nowrap rounded-full border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-600 hover:bg-slate-100">
+            <button className="whitespace-nowrap rounded-full border border-line px-3 py-1.5 text-xs font-semibold text-muted hover:bg-surface">
               Sign out
             </button>
           </form>

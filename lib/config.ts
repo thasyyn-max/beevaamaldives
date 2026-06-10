@@ -1,6 +1,18 @@
-export const SITE_NAME = "Beevaa";
-export const SITE_TAGLINE = "Stay local in the Maldives";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+export const SITE_NAME = "Beevaa Maldives";
+export const SITE_TAGLINE = "Your gateway to the Maldives";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
+// Real contact details (from beevaamaldives.com). Edit here to update site-wide.
+export const CONTACT = {
+  phone: "+960 9996268",
+  whatsapp: "9609996268", // wa.me format
+  email: "inquiry@beevaamaldives.com",
+  address: "Keneree Lodge, Vaadhoo, Gaafu Dhaalu Atoll, Republic of Maldives",
+  facebook: "https://www.facebook.com/profile.php?id=61563375158281",
+  instagram: "https://www.instagram.com/beevaamaldives/",
+  tiktok: "https://www.tiktok.com",
+};
 
 export function isSupabaseConfigured(): boolean {
   return Boolean(

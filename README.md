@@ -1,10 +1,19 @@
-# Beevaa
+# Beevaa Maldives
 
-A mobile-first, booking.com-style marketplace for **Maldives guesthouses and local islands**.
+A mobile-first, modern-minimal website for **Beevaa Maldives** — a local travel agency
+offering **resorts, liveaboards and city hotels** across the atolls.
 
-- **Public site**: search by island/dates/guests, guesthouse pages with photo galleries, rooms & prices, booking-request flow (no prepayment).
-- **Admin panel** (`/admin`): bookings inbox (confirm/decline with automatic guest emails), guesthouse & room management, drag-and-drop photo uploads.
-- **Stack**: Next.js (App Router) + Tailwind CSS · Supabase (Postgres, auth) · Cloudinary (photos) · Resend (emails) · Vercel (hosting). All free tiers — **$0/month**.
+- **Public site**: category browsing (Resorts / Liveaboards / City Hotels), rich
+  property pages (gallery, rooms & villas, dining, facilities), a Maldives guide,
+  and an enquiry flow (WhatsApp + email, no prepayment).
+- **Admin panel** (`/admin`): enquiries inbox (reply by email), property management,
+  drag-and-drop photo uploads.
+- **Content**: the real Beevaa catalogue (26 properties + guide articles) imported
+  from the existing site and bundled, so the site looks complete out of the box.
+- **Stack**: Next.js (App Router) + Tailwind CSS · Supabase (Postgres, auth) ·
+  Cloudinary (photo uploads) · Resend (emails) · Vercel (hosting). All free tiers — **$0/month**.
+- **Payments**: Phase 2 via **BML Connect** (Bank of Maldives) — Stripe doesn't
+  support Maldives merchants. See SETUP.md.
 
 ## Quick start
 
@@ -13,25 +22,37 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. With no configuration the site runs in **demo mode** with built-in sample data.
+Open http://localhost:3000. With no configuration the site runs on the **bundled
+imported content** — no database needed to preview.
+
+## Theming (your colors + logo)
+
+Everything is driven by a few CSS variables in [`app/globals.css`](app/globals.css)
+(`--brand`, `--accent`, `--ink`, …). Send hex codes and they drop straight in.
+The wordmark lives in [`components/Logo.tsx`](components/Logo.tsx) — replace it with
+your logo image in one edit.
 
 ## Going live
 
-See **[SETUP.md](SETUP.md)** for the full step-by-step guide:
+See **[SETUP.md](SETUP.md)** for the full guide: deploy to Vercel (free), connect
+Supabase/Cloudinary/Resend for the admin backend, point beevaa.com at Vercel, and
+add BML Connect payments in Phase 2.
 
-1. Publish the test site on Vercel (free)
-2. Connect Supabase / Cloudinary / Resend to enable the admin backend
-3. Point beevaa.com at Vercel
-4. Phase 2: BML Connect card payments
+## Re-importing content
+
+The importer scripts live in `scripts/import/` (parse → download → optimize →
+optionally seed Supabase). The bundled dataset is `data/import.json` + `public/import/`.
 
 ## Project layout
 
 ```
-app/(site)/        public pages (home, search, islands, stay, booking)
-app/admin/         admin panel (login, dashboard, bookings, guesthouses)
-app/api/           booking creation + Cloudinary upload signing
+app/(site)/        public pages (home, category, property, guide, enquire)
+app/admin/         admin panel (login, dashboard, enquiries, properties)
+app/api/           enquiry creation + Cloudinary upload signing
 components/        UI components (public + admin)
-lib/               data layer (Supabase or demo fallback), email, types
-supabase/schema.sql  database schema + RLS + seed data
-scripts/           demo image generator
+lib/               data layer (Supabase or bundled import), email, config, types
+data/import.json   imported Beevaa catalogue (26 properties + articles)
+public/import/     optimized photos for the catalogue
+supabase/schema.sql  database schema + RLS + category seed
+scripts/import/    scrape → parse → download → optimize → seed pipeline
 ```

@@ -1,23 +1,72 @@
 @import "tailwindcss";
 
+/*
+  THEME TOKENS — modern minimal.
+  Swap the brand palette here (or send hex codes + logo and it drops straight in).
+  Everything else in the app references these via Tailwind classes
+  (bg-brand, text-ink, border-line, …).
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #ffffff;
+  --surface: #f7f7f5; /* warm off-white panels */
+  --ink: #14181d; /* near-black text */
+  --muted: #6b7280; /* secondary text */
+  --line: #e6e6e1; /* hairline borders */
+  --brand: #0f766e; /* primary (teal) — replace with your color */
+  --brand-ink: #0b5750; /* darker brand for hover */
+  --brand-50: #effcf8; /* tint background */
+  --accent: #c9a24b; /* warm gold accent — replace with your color */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-50: var(--brand-50);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-display: var(--font-display), Georgia, serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display headings use the serif for a premium, editorial feel. */
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
 input[type="date"] {
-  min-height: 2.5rem;
+  min-height: 2.75rem;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.5s ease both;
 }

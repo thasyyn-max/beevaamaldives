@@ -1,18 +1,13 @@
 import "server-only";
 import { createAuthClient, createDataClient } from "./supabase/server";
-import type { Booking } from "./types";
+import type { Enquiry, Property } from "./types";
 
-/**
- * Returns the logged-in admin user, or null. Used by the admin layout
- * and re-checked inside every server action before any write.
- */
 export async function getAdminUser() {
   const supabase = await createAuthClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) return null;
-
   const { data: profile } = await supabase
     .from("profiles")
     .select("role")
@@ -28,78 +23,73 @@ export async function requireAdmin() {
   return user;
 }
 
-/* ------------------------------ bookings ------------------------------ */
-
-const BOOKING_SELECT =
-  "*, room:rooms(name, guesthouse:guesthouses(name, island:islands(name)))";
+/* ------------------------------ enquiries ------------------------------ */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function mapBooking(row: any): Booking {
-  return {
-    ...row,
-    total_usd: Number(row.total_usd),
-    room_name: row.room?.name,
-    guesthouse_name: row.room?.guesthouse?.name,
-    island_name: row.room?.guesthouse?.island?.name,
-  };
+function mapEnquiry(row: any): Enquiry {
+  return { ...row, property_name: row.property?.name };
 }
 
-export async function adminListBookings(): Promise<Booking[]> {
+export async function adminListEnquiries(): Promise<Enquiry[]> {
   const db = createDataClient();
   const { data, error } = await db
-    .from("bookings")
-    .select(BOOKING_SELECT)
+    .from("enquiries")
+    .select("*, property:properties(name)")
     .order("created_at", { ascending: false })
-    .limit(200);
+    .limit(300);
   if (error) throw new Error(error.message);
-  return (data ?? []).map(mapBooking);
+  return (data ?? []).map(mapEnquiry);
 }
 
-export async function adminGetBooking(id: string): Promise<Booking | null> {
+export async function adminGetEnquiry(id: string): Promise<Enquiry | null> {
   const db = createDataClient();
   const { data } = await db
-    .from("bookings")
-    .select(BOOKING_SELECT)
+    .from("enquiries")
+    .select("*, property:properties(name)")
     .eq("id", id)
     .maybeSingle();
-  return data ? mapBooking(data) : null;
+  return data ? mapEnquiry(data) : null;
 }
 
-export async function adminUpdateBookingStatus(
+export async function adminSetEnquiryStatus(
   id: string,
-  status: "confirmed" | "declined" | "cancelled" | "completed"
+  status: "new" | "replied" | "closed"
 ) {
   const db = createDataClient();
-  const { error } = await db.from("bookings").update({ status }).eq("id", id);
+  const { error } = await db.from("enquiries").update({ status }).eq("id", id);
   if (error) throw new Error(error.message);
 }
 
-/* ----------------------------- guesthouses ---------------------------- */
+/* ------------------------------ properties ----------------------------- */
 
-export async function adminListGuesthouses() {
+export async function adminListProperties() {
   const db = createDataClient();
   const { data, error } = await db
-    .from("guesthouses")
-    .select("*, island:islands(name), rooms(id), photos(id)")
+    .from("properties")
+    .select("id, slug, name, category, atoll, status, from_price_usd, cover")
     .order("name");
   if (error) throw new Error(error.message);
   return data ?? [];
 }
 
-export async function adminGetGuesthouse(id: string) {
+export async function adminGetProperty(id: string): Promise<Property | null> {
   const db = createDataClient();
   const { data, error } = await db
-    .from("guesthouses")
-    .select("*, island:islands(*), rooms(*, photos(*)), photos(*)")
+    .from("properties")
+    .select("*")
     .eq("id", id)
     .maybeSingle();
   if (error) throw new Error(error.message);
-  return data;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return (data as any) ?? null;
 }
 
-export async function adminListIslands() {
+export async function adminListCategories() {
   const db = createDataClient();
-  const { data, error } = await db.from("islands").select("*").order("name");
+  const { data, error } = await db
+    .from("categories")
+    .select("*")
+    .order("sort_order");
   if (error) throw new Error(error.message);
   return data ?? [];
 }

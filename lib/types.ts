@@ -1,88 +1,65 @@
-export type Photo = {
-  id: string;
-  url: string;
-  alt: string;
-  sort_order: number;
-};
-
-export type Island = {
-  id: string;
+export type Category = {
   slug: string;
   name: string;
+  tagline: string;
+  image: string;
+};
+
+export type ContentBlock = {
+  title: string;
+  description: string;
+  image: string;
+};
+
+export type Property = {
+  id: string;
+  legacy_id?: number;
+  slug: string;
+  name: string;
+  category: string; // category slug
   atoll: string;
+  tags: string[];
   description: string;
-  hero_url: string;
-  transfer_info: string;
+  short_description: string;
+  facilities: string[];
+  accommodations: ContentBlock[];
+  dining: ContentBlock[];
+  gallery: string[];
+  cover: string;
+  from_price_usd: number | null;
+  status: "draft" | "live";
 };
 
-export type Room = {
-  id: string;
-  guesthouse_id: string;
-  name: string;
-  description: string;
-  max_guests: number;
-  beds: string;
-  base_price_usd: number;
-  amenities: string[];
-  photos: Photo[];
-};
-
-export type Guesthouse = {
+export type Article = {
   id: string;
   slug: string;
-  name: string;
-  island_id: string;
-  island?: Island;
-  description: string;
-  amenities: string[];
-  rating: number;
-  review_count: number;
-  contact_email: string;
-  contact_phone: string;
-  status: "draft" | "live";
-  photos: Photo[];
-  rooms: Room[];
-  min_price_usd?: number;
+  title: string;
+  body: string;
+  images: string[];
 };
 
-export type BookingStatus =
-  | "pending"
-  | "confirmed"
-  | "declined"
-  | "cancelled"
-  | "completed";
+export type EnquiryStatus = "new" | "replied" | "closed";
 
-export type Booking = {
+export type Enquiry = {
   id: string;
   reference: string;
-  room_id: string;
-  room_name?: string;
-  guesthouse_name?: string;
-  island_name?: string;
+  property_id: string | null;
+  property_name?: string;
   guest_name: string;
   guest_email: string;
   guest_phone: string;
   guest_country: string;
-  check_in: string; // YYYY-MM-DD
-  check_out: string;
+  check_in: string | null;
+  check_out: string | null;
   guests: number;
-  nights: number;
-  total_usd: number;
   message: string;
-  status: BookingStatus;
+  status: EnquiryStatus;
   created_at: string;
 };
 
-export type SearchFilters = {
-  island?: string; // island slug
-  guests?: number;
-  maxPrice?: number;
+export type PropertyFilters = {
+  category?: string;
   q?: string;
-  sort?: "price" | "rating";
+  maxPrice?: number;
+  sort?: "price" | "name";
 };
-
-export function nightsBetween(checkIn: string, checkOut: string): number {
-  const a = new Date(checkIn + "T00:00:00Z").getTime();
-  const b = new Date(checkOut + "T00:00:00Z").getTime();
-  return Math.max(0, Math.round((b - a) / 86400000));
-}
