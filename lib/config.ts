@@ -1,5 +1,5 @@
 export const SITE_NAME = "Beevaa Maldives";
-export const SITE_TAGLINE = "Your gateway to the Maldives";
+export const SITE_TAGLINE = "Your journey to tropical paradise";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 

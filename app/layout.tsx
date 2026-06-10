@@ -1,19 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-// Body: clean modern sans. Display: refined serif for headings.
-// Replace these two with your brand fonts if you have them.
+// Brand typography is Helvetica-style (see brand/), so one clean sans
+// carries both body and display — display headings get tighter tracking.
 const sans = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
-});
-const display = Fraunces({
-  variable: "--font-display",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -22,17 +16,15 @@ export const metadata: Metadata = {
     template: "%s · Beevaa Maldives",
   },
   description:
-    "Your gateway to the Maldives. Hand-picked resorts, liveaboards and local island hotels — book with a local team.",
+    "Your journey to tropical paradise. Hand-picked resorts, liveaboards and local island hotels — booked with a local Maldives team.",
+  icons: { icon: "/logo.svg" },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${sans.variable} ${display.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${sans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg text-ink">{children}</body>
     </html>
   );

@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div className="md:col-span-1">
           <Logo />
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
-            Your gateway to the Maldives. A local team curating resorts,
+            Your journey to tropical paradise. A local team curating resorts,
             liveaboards and island hotels.
           </p>
         </div>

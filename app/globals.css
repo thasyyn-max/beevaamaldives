@@ -1,21 +1,20 @@
 @import "tailwindcss";
 
 /*
-  THEME TOKENS — modern minimal.
-  Swap the brand palette here (or send hex codes + logo and it drops straight in).
-  Everything else in the app references these via Tailwind classes
+  THEME TOKENS — Beevaa Maldives brand palette (from brand/beevaa colors svg.svg).
+  Everything in the app references these via Tailwind classes
   (bg-brand, text-ink, border-line, …).
 */
 :root {
   --bg: #ffffff;
-  --surface: #f7f7f5; /* warm off-white panels */
-  --ink: #14181d; /* near-black text */
-  --muted: #6b7280; /* secondary text */
-  --line: #e6e6e1; /* hairline borders */
-  --brand: #0f766e; /* primary (teal) — replace with your color */
-  --brand-ink: #0b5750; /* darker brand for hover */
-  --brand-50: #effcf8; /* tint background */
-  --accent: #c9a24b; /* warm gold accent — replace with your color */
+  --surface: #f4f8fc; /* cool off-white panels */
+  --ink: #063065; /* brand navy — headings & body text */
+  --muted: #5b6b85; /* secondary text (navy-toned slate) */
+  --line: #e2e9f2; /* hairline borders */
+  --brand: #0592f8; /* brand ocean blue */
+  --brand-ink: #063065; /* navy for hover / emphasis */
+  --brand-50: #eaf5ff; /* light blue tint */
+  --accent: #2afffc; /* brand aqua */
 }
 
 @theme inline {
@@ -29,7 +28,6 @@
   --color-brand-50: var(--brand-50);
   --color-accent: var(--accent);
   --font-sans: var(--font-sans), system-ui, sans-serif;
-  --font-display: var(--font-display), Georgia, serif;
 }
 
 body {
@@ -39,10 +37,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Display headings use the serif for a premium, editorial feel. */
+/* Display headings: same brand sans, tighter tracking for a Swiss-clean feel. */
 .font-display {
-  font-family: var(--font-display), Georgia, serif;
-  letter-spacing: -0.01em;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  letter-spacing: -0.025em;
 }
 
 input[type="date"] {

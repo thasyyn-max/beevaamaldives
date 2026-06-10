@@ -38,7 +38,7 @@ export default async function CategoryPage({
       <section className="relative h-56 w-full overflow-hidden sm:h-72">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={category.image} alt="" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-ink/50" />
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto w-full max-w-6xl px-4 text-white sm:px-6">
             <h1 className="font-display text-4xl font-medium sm:text-5xl">

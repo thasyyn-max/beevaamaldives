@@ -23,11 +23,11 @@ export default async function HomePage() {
         <div className="relative h-[78vh] min-h-[460px] w-full overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={hero} alt="" className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-ink/30" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6">
               <p className="animate-fade-up text-sm font-semibold uppercase tracking-[0.25em] text-white/80">
-                Your gateway to the Maldives
+                Your journey to tropical paradise
               </p>
               <h1 className="animate-fade-up mt-3 max-w-2xl font-display text-4xl font-medium leading-[1.05] text-white sm:text-6xl">
                 Find your perfect island.
@@ -79,7 +79,7 @@ export default async function HomePage() {
                 loading="lazy"
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/85 to-transparent" />
               <div className="absolute bottom-0 p-5 text-white">
                 <h3 className="font-display text-2xl font-medium">{c.name}</h3>
                 <p className="mt-1 text-sm text-white/80">{c.tagline}</p>
