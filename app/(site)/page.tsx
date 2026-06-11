@@ -43,12 +43,6 @@ export default async function HomePage() {
                 >
                   Browse stays
                 </Link>
-                <Link
-                  href="/enquire"
-                  className="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-                >
-                  Plan my trip
-                </Link>
               </div>
             </div>
           </div>

@@ -12,8 +12,8 @@ export default async function AdminDashboard() {
   const live = properties.filter((p: any) => p.status === "live").length;
 
   const stats = [
-    { label: "New enquiries", value: newCount, href: "/admin/enquiries" },
-    { label: "All enquiries", value: enquiries.length, href: "/admin/enquiries" },
+    { label: "New bookings", value: newCount, href: "/admin/enquiries" },
+    { label: "All bookings", value: enquiries.length, href: "/admin/enquiries" },
     { label: "Live properties", value: live, href: "/admin/properties" },
     { label: "All properties", value: properties.length, href: "/admin/properties" },
   ];
@@ -35,7 +35,7 @@ export default async function AdminDashboard() {
       </div>
 
       <div className="mt-8 flex items-center justify-between">
-        <h2 className="font-semibold text-ink">Latest enquiries</h2>
+        <h2 className="font-semibold text-ink">Latest bookings</h2>
         <Link href="/admin/enquiries" className="text-sm font-semibold text-brand">
           View all →
         </Link>
@@ -58,7 +58,7 @@ export default async function AdminDashboard() {
         ))}
         {enquiries.length === 0 && (
           <p className="rounded-xl border border-dashed border-line p-6 text-center text-sm text-muted">
-            No enquiries yet.
+            No bookings yet.
           </p>
         )}
       </div>

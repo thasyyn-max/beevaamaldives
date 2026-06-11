@@ -69,14 +69,6 @@ export function PropertyForm({
         <textarea name="facilities" rows={2} defaultValue={(p?.facilities ?? []).join(", ")} className={field} />
       </div>
       <div className="sm:col-span-2">
-        <label className={label}>Rooms / villas (JSON array of {"{title, description, image}"})</label>
-        <textarea name="accommodations" rows={4} defaultValue={JSON.stringify(p?.accommodations ?? [], null, 0)} className={`${field} font-mono text-xs`} />
-      </div>
-      <div className="sm:col-span-2">
-        <label className={label}>Dining (JSON array of {"{title, description, image}"})</label>
-        <textarea name="dining" rows={3} defaultValue={JSON.stringify(p?.dining ?? [], null, 0)} className={`${field} font-mono text-xs`} />
-      </div>
-      <div className="sm:col-span-2">
         <button className="rounded-lg bg-ink px-5 py-2.5 text-sm font-bold text-white hover:bg-brand">
           {p ? "Save changes" : "Create property"}
         </button>

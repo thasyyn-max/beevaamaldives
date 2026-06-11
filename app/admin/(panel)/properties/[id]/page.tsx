@@ -2,8 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { deleteProperty } from "@/app/admin/actions";
 import { adminGetProperty, adminListCategories } from "@/lib/admin";
+import { BlocksEditor } from "@/components/admin/BlocksEditor";
 import { PropertyForm } from "@/components/admin/PropertyForm";
 import { PropertyPhotos } from "@/components/admin/PropertyPhotos";
+import type { ContentBlock } from "@/lib/types";
 
 export const metadata = { title: "Edit property" };
 
@@ -39,6 +41,34 @@ export default async function EditPropertyPage({
           <PropertyPhotos
             propertyId={property.id}
             gallery={(property.gallery as string[]) ?? []}
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-muted">
+          {property.category === "safari" ? "Cabins & rooms" : "Rooms & villas"}
+        </h2>
+        <div className="rounded-2xl border border-line bg-bg p-4">
+          <BlocksEditor
+            propertyId={property.id}
+            field="accommodations"
+            blocks={(property.accommodations as ContentBlock[]) ?? []}
+            noun="room"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-muted">
+          Dining
+        </h2>
+        <div className="rounded-2xl border border-line bg-bg p-4">
+          <BlocksEditor
+            propertyId={property.id}
+            field="dining"
+            blocks={(property.dining as ContentBlock[]) ?? []}
+            noun="venue"
           />
         </div>
       </section>

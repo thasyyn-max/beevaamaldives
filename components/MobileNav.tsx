@@ -47,6 +47,16 @@ const ITEMS = [
       </>
     ),
   },
+  {
+    href: "/explore",
+    label: "Explore",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="10" />
+        <path d="m16.2 7.8-2 6.3-6.4 2.1 2-6.3z" />
+      </>
+    ),
+  },
 ];
 
 export function MobileNav() {
@@ -58,7 +68,7 @@ export function MobileNav() {
       className="fixed inset-x-3 bottom-3 z-50 rounded-2xl border border-line bg-white/90 shadow-lg shadow-ink/10 backdrop-blur md:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-5">
         {ITEMS.map((item) => {
           const active =
             item.href === "/"

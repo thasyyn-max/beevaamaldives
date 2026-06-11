@@ -2,16 +2,17 @@ import { adminListEnquiries } from "@/lib/admin";
 import { StatusPill } from "@/components/admin/StatusPill";
 import { replyToEnquiry, setEnquiryStatus } from "../../actions";
 
-export const metadata = { title: "Enquiries" };
+export const metadata = { title: "Bookings" };
 
 export default async function AdminEnquiriesPage() {
   const enquiries = await adminListEnquiries();
 
   return (
     <div>
-      <h1 className="font-display text-2xl font-medium text-ink">Enquiries</h1>
+      <h1 className="font-display text-2xl font-medium text-ink">Bookings</h1>
       <p className="mt-1 text-sm text-muted">
-        Reply by email (marks as replied), or update the status.
+        Booking requests and enquiries — reply by email (marks as replied), or
+        update the status.
       </p>
 
       <div className="mt-4 space-y-3">

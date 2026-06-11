@@ -56,17 +56,6 @@ function csv(raw: FormDataEntryValue | null): string[] {
     .map((s) => s.trim())
     .filter(Boolean);
 }
-function parseJsonField(raw: FormDataEntryValue | null) {
-  const s = String(raw ?? "").trim();
-  if (!s) return [];
-  try {
-    const v = JSON.parse(s);
-    return Array.isArray(v) ? v : [];
-  } catch {
-    throw new Error("Invalid JSON in rooms/dining field");
-  }
-}
-
 export async function saveProperty(formData: FormData) {
   await requireAdmin();
   const db = createDataClient();
@@ -75,6 +64,8 @@ export async function saveProperty(formData: FormData) {
   if (!name) throw new Error("Name is required");
   const priceRaw = String(formData.get("from_price_usd") ?? "").trim();
 
+  // Rooms (accommodations) and dining are managed by their own editor —
+  // deliberately not part of this record so saving details never wipes them.
   const record = {
     name,
     slug: String(formData.get("slug") || slugify(name)),
@@ -84,8 +75,6 @@ export async function saveProperty(formData: FormData) {
     short_description: String(formData.get("short_description") ?? ""),
     tags: csv(formData.get("tags")),
     facilities: csv(formData.get("facilities")),
-    accommodations: parseJsonField(formData.get("accommodations")),
-    dining: parseJsonField(formData.get("dining")),
     from_price_usd: priceRaw ? Number(priceRaw) : null,
     status: formData.get("status") === "live" ? "live" : "draft",
   };
@@ -97,7 +86,13 @@ export async function saveProperty(formData: FormData) {
   } else {
     const { data, error } = await db
       .from("properties")
-      .insert({ ...record, gallery: [], cover: "" })
+      .insert({
+        ...record,
+        gallery: [],
+        cover: "",
+        accommodations: [],
+        dining: [],
+      })
       .select("id")
       .single();
     if (error) throw new Error(error.message);
@@ -169,6 +164,89 @@ export async function movePropertyPhoto(formData: FormData) {
   if (i < 0 || j < 0 || j >= gallery.length) return;
   [gallery[i], gallery[j]] = [gallery[j], gallery[i]];
   await saveGallery(propertyId, gallery);
+}
+
+/* --------------------- rooms & dining (content blocks) ------------------ */
+
+type BlockField = "accommodations" | "dining";
+type Block = { title: string; description: string; image: string };
+
+async function getBlocks(propertyId: string, field: BlockField): Promise<Block[]> {
+  const p = await adminGetProperty(propertyId);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return ((p as any)?.[field] as Block[]) ?? [];
+}
+
+async function saveBlocks(propertyId: string, field: BlockField, blocks: Block[]) {
+  const db = createDataClient();
+  const { error } = await db
+    .from("properties")
+    .update({ [field]: blocks })
+    .eq("id", propertyId);
+  if (error) throw new Error(error.message);
+  revalidateAll();
+}
+
+function assertField(field: string): BlockField {
+  if (field !== "accommodations" && field !== "dining")
+    throw new Error("Invalid field");
+  return field;
+}
+
+/** Add (index = -1) or update (index >= 0) a room/dining block. */
+export async function saveBlock(input: {
+  propertyId: string;
+  field: string;
+  index: number;
+  title: string;
+  description: string;
+  image: string;
+}) {
+  await requireAdmin();
+  const field = assertField(input.field);
+  const title = input.title.trim();
+  if (!title) throw new Error("Name is required");
+  if (input.image && !/^(https:\/\/|\/)/.test(input.image))
+    throw new Error("Image URL must start with https:// or /");
+  const blocks = await getBlocks(input.propertyId, field);
+  const block: Block = {
+    title,
+    description: input.description.trim(),
+    image: input.image.trim(),
+  };
+  if (input.index >= 0 && input.index < blocks.length) {
+    blocks[input.index] = block;
+  } else {
+    blocks.push(block);
+  }
+  await saveBlocks(input.propertyId, field, blocks);
+}
+
+export async function deleteBlock(input: {
+  propertyId: string;
+  field: string;
+  index: number;
+}) {
+  await requireAdmin();
+  const field = assertField(input.field);
+  const blocks = await getBlocks(input.propertyId, field);
+  blocks.splice(input.index, 1);
+  await saveBlocks(input.propertyId, field, blocks);
+}
+
+export async function moveBlock(input: {
+  propertyId: string;
+  field: string;
+  index: number;
+  direction: "up" | "down";
+}) {
+  await requireAdmin();
+  const field = assertField(input.field);
+  const blocks = await getBlocks(input.propertyId, field);
+  const j = input.direction === "up" ? input.index - 1 : input.index + 1;
+  if (input.index < 0 || j < 0 || j >= blocks.length) return;
+  [blocks[input.index], blocks[j]] = [blocks[j], blocks[input.index]];
+  await saveBlocks(input.propertyId, field, blocks);
 }
 
 /* -------------------------------- auth -------------------------------- */
