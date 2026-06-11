@@ -27,7 +27,7 @@ export default async function EnquirePage({
             {[
               "No prepayment to enquire",
               "Honest local advice on islands & transfers",
-              "Resorts, liveaboards & guesthouses",
+              "Resorts, safari boats & guesthouses",
             ].map((t) => (
               <li key={t} className="flex items-center gap-2">
                 <span className="text-brand">✓</span> {t}

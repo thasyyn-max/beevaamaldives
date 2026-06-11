@@ -14,7 +14,7 @@ mkdirSync(outDir, { recursive: true });
 // cat3=City Hotels (renamed to Guesthouses on the new site).
 const CATEGORY_OF = {
   resorts: [1, 3, 4, 5, 6, 8, 11],
-  liveaboards: [12, 14, 15, 19, 25, 26, 27, 28],
+  safari: [12, 14, 15, 19, 25, 26, 27, 28], // liveaboards on the old site
   guesthouses: [7, 13, 16, 17, 18, 20, 21, 22, 23, 24, 29],
 };
 const categoryForId = (id) => {
@@ -193,8 +193,8 @@ const categories = [
     tagline: "Private-island luxury — one island, one resort.",
   },
   {
-    slug: "liveaboards",
-    name: "Liveaboards",
+    slug: "safari",
+    name: "Safari",
     image: "/import/category/category_image_002.jpeg",
     tagline: "Sail the atolls — dive, surf and explore aboard.",
   },

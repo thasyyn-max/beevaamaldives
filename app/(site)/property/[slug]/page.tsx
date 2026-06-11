@@ -17,7 +17,7 @@ export async function generateMetadata({
 
 const CATEGORY_LABEL: Record<string, string> = {
   resorts: "Resort",
-  liveaboards: "Liveaboard",
+  safari: "Safari",
   guesthouses: "Guesthouse",
 };
 
@@ -96,7 +96,7 @@ export default async function PropertyPage({
           {p.accommodations.length > 0 && (
             <section className="mt-12">
               <h2 className="font-display text-xl font-medium">
-                {p.category === "liveaboards" ? "Cabins & rooms" : "Rooms & villas"}
+                {p.category === "safari" ? "Cabins & rooms" : "Rooms & villas"}
               </h2>
               <div className="mt-4 space-y-4">
                 {p.accommodations.map((a, i) => (

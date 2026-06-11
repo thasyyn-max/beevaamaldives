@@ -3,7 +3,7 @@ import type { Property } from "@/lib/types";
 
 const CATEGORY_LABEL: Record<string, string> = {
   resorts: "Resort",
-  liveaboards: "Liveaboard",
+  safari: "Safari",
   guesthouses: "Guesthouse",
 };
 

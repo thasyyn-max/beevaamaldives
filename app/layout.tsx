@@ -12,11 +12,11 @@ const sans = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Beevaa Maldives — Resorts, Liveaboards & Guesthouses",
+    default: "Beevaa Maldives — Resort, Safari & Guesthouse stays",
     template: "%s · Beevaa Maldives",
   },
   description:
-    "Your journey to tropical paradise. Hand-picked resorts, liveaboards and local island hotels — booked with a local Maldives team.",
+    "Your journey to tropical paradise. Hand-picked resorts, safari boats and guesthouses — booked with a local Maldives team.",
   icons: { icon: "/favicon.svg" },
 };
 

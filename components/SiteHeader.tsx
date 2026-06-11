@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 
 const NAV = [
-  { href: "/category/resorts", label: "Resorts" },
-  { href: "/category/liveaboards", label: "Liveaboards" },
-  { href: "/category/guesthouses", label: "Guesthouses" },
+  { href: "/category/resorts", label: "Resort" },
+  { href: "/category/safari", label: "Safari" },
+  { href: "/category/guesthouses", label: "Guesthouse" },
   { href: "/guide", label: "Maldives Guide" },
 ];
 

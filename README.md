@@ -1,9 +1,9 @@
 # Beevaa Maldives
 
 A mobile-first, modern-minimal website for **Beevaa Maldives** — a local travel agency
-offering **resorts, liveaboards and guesthouses** across the atolls.
+offering **resorts, safari boats and guesthouses** across the atolls.
 
-- **Public site**: category browsing (Resorts / Liveaboards / Guesthouses), rich
+- **Public site**: category browsing (Resort / Safari / Guesthouse), rich
   property pages (gallery, rooms & villas, dining, facilities), a Maldives guide,
   and an enquiry flow (WhatsApp + email, no prepayment).
 - **Admin panel** (`/admin`): enquiries inbox (reply by email), property management,

@@ -10,15 +10,15 @@ export function SiteFooter() {
           <Logo />
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
             Your journey to tropical paradise. A local team curating resorts,
-            liveaboards and island hotels.
+            safari boats and guesthouses.
           </p>
         </div>
         <div className="text-sm">
           <div className="font-semibold text-ink">Explore</div>
           <ul className="mt-3 space-y-2 text-muted">
-            <li><Link href="/category/resorts" className="hover:text-ink">Resorts</Link></li>
-            <li><Link href="/category/liveaboards" className="hover:text-ink">Liveaboards</Link></li>
-            <li><Link href="/category/guesthouses" className="hover:text-ink">Guesthouses</Link></li>
+            <li><Link href="/category/resorts" className="hover:text-ink">Resort</Link></li>
+            <li><Link href="/category/safari" className="hover:text-ink">Safari</Link></li>
+            <li><Link href="/category/guesthouses" className="hover:text-ink">Guesthouse</Link></li>
             <li><Link href="/guide" className="hover:text-ink">Maldives Guide</Link></li>
           </ul>
         </div>

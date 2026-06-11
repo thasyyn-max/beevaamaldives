@@ -6,7 +6,7 @@ export const metadata = { title: "Properties" };
 
 const LABEL: Record<string, string> = {
   resorts: "Resort",
-  liveaboards: "Liveaboard",
+  safari: "Safari",
   guesthouses: "Guesthouse",
 };
 

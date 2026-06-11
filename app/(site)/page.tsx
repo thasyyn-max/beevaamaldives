@@ -33,7 +33,7 @@ export default async function HomePage() {
                 Find your perfect island.
               </h1>
               <p className="animate-fade-up mt-4 max-w-xl text-base text-white/85">
-                Hand-picked resorts, liveaboards and local island hotels —
+                Hand-picked resorts, safari boats and guesthouses —
                 booked with a local team who knows every atoll.
               </p>
               <div className="animate-fade-up mt-7 flex flex-wrap gap-3">
@@ -117,7 +117,7 @@ export default async function HomePage() {
         <div className="grid gap-8 rounded-3xl bg-surface p-8 sm:grid-cols-3 sm:p-12">
           {[
             { t: "Local expertise", b: "Based in the Maldives — we know the islands, transfers and seasons first-hand." },
-            { t: "Best-value rates", b: "Direct relationships with resorts, liveaboards and guesthouses across the atolls." },
+            { t: "Best-value rates", b: "Direct relationships with resorts, safari boats and guesthouses across the atolls." },
             { t: "One team, end to end", b: "From your first question to your seaplane transfer, one team handles it all." },
           ].map((f) => (
             <div key={f.t}>
