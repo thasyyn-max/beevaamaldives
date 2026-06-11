@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   description:
     "Your journey to tropical paradise. Hand-picked resorts, liveaboards and local island hotels — booked with a local Maldives team.",
-  icons: { icon: "/logo.svg" },
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({
