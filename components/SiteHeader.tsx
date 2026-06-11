@@ -29,14 +29,6 @@ export function SiteHeader() {
           </Link>
         </div>
       </div>
-      {/* mobile nav */}
-      <div className="flex gap-5 overflow-x-auto border-t border-line px-4 py-2 text-sm font-medium text-muted no-scrollbar md:hidden">
-        {NAV.map((n) => (
-          <Link key={n.href} href={n.href} className="whitespace-nowrap">
-            {n.label}
-          </Link>
-        ))}
-      </div>
     </header>
   );
 }

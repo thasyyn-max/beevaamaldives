@@ -1,3 +1,4 @@
+import { MobileNav } from "@/components/MobileNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { WhatsappButton } from "@/components/WhatsappButton";
@@ -14,8 +15,10 @@ export default function SiteLayout({
   return (
     <>
       <SiteHeader />
-      <main className="flex-1">{children}</main>
+      {/* bottom padding clears the floating mobile nav */}
+      <main className="flex-1 pb-20 md:pb-0">{children}</main>
       <SiteFooter />
+      <MobileNav />
       <WhatsappButton />
     </>
   );
