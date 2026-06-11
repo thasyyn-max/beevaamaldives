@@ -5,7 +5,6 @@ const NAV = [
   { href: "/category/resorts", label: "Resort" },
   { href: "/category/safari", label: "Safari" },
   { href: "/category/guesthouses", label: "Guesthouse" },
-  { href: "/guide", label: "Maldives Guide" },
 ];
 
 export function SiteHeader() {
