@@ -36,14 +36,6 @@ export default async function HomePage() {
                 Hand-picked resorts, safari boats and guesthouses —
                 booked with a local team who knows every atoll.
               </p>
-              <div className="animate-fade-up mt-7 flex flex-wrap gap-3">
-                <Link
-                  href="/category/resorts"
-                  className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:bg-brand hover:text-white"
-                >
-                  Browse stays
-                </Link>
-              </div>
             </div>
           </div>
         </div>
