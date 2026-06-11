@@ -7,7 +7,7 @@ export const metadata = { title: "Properties" };
 const LABEL: Record<string, string> = {
   resorts: "Resort",
   liveaboards: "Liveaboard",
-  "city-hotels": "City Hotel",
+  guesthouses: "Guesthouse",
 };
 
 export default async function AdminPropertiesPage() {

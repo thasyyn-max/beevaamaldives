@@ -4,7 +4,7 @@ import type { Property } from "@/lib/types";
 const CATEGORY_LABEL: Record<string, string> = {
   resorts: "Resort",
   liveaboards: "Liveaboard",
-  "city-hotels": "City Hotel",
+  guesthouses: "Guesthouse",
 };
 
 export function PropertyCard({ property }: { property: Property }) {

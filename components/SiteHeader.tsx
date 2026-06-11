@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 const NAV = [
   { href: "/category/resorts", label: "Resorts" },
   { href: "/category/liveaboards", label: "Liveaboards" },
-  { href: "/category/city-hotels", label: "City Hotels" },
+  { href: "/category/guesthouses", label: "Guesthouses" },
   { href: "/guide", label: "Maldives Guide" },
 ];
 

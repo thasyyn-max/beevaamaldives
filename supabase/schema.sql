@@ -86,7 +86,7 @@ create policy "users read own profile" on profiles
 insert into categories (slug, name, tagline, image, sort_order) values
   ('resorts','Resorts','Private-island luxury — one island, one resort.','/import/category/category_image_001.jpg',1),
   ('liveaboards','Liveaboards','Sail the atolls — dive, surf and explore aboard.','/import/category/category_image_002.jpeg',2),
-  ('city-hotels','City Hotels','Stay local — guesthouses and hotels on inhabited islands.','/import/category/category_image_003.png',3)
+  ('guesthouses','Guesthouses','Stay local — guesthouses and hotels on inhabited islands.','/import/category/category_image_003.png',3)
 on conflict (slug) do update set
   name = excluded.name, tagline = excluded.tagline, image = excluded.image;
 

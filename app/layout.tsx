@@ -12,7 +12,7 @@ const sans = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Beevaa Maldives — Resorts, Liveaboards & City Hotels",
+    default: "Beevaa Maldives — Resorts, Liveaboards & Guesthouses",
     template: "%s · Beevaa Maldives",
   },
   description:

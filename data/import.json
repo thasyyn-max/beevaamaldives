@@ -13,8 +13,8 @@
       "tagline": "Sail the atolls — dive, surf and explore aboard."
     },
     {
-      "slug": "city-hotels",
-      "name": "City Hotels",
+      "slug": "guesthouses",
+      "name": "Guesthouses",
       "image": "/import/category/category_image_003.png",
       "tagline": "Stay local — guesthouses and hotels on inhabited islands."
     }
@@ -625,7 +625,7 @@
       "legacy_id": 7,
       "name": "Crystal Sands",
       "slug": "crystal-sands",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "North Male Atoll",
       "tags": [
         "All Inclusive",
@@ -1047,7 +1047,7 @@
       "legacy_id": 13,
       "name": "Equator Village",
       "slug": "equator-village",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "Addu City",
       "tags": [
         "All Inclusive",
@@ -1310,7 +1310,7 @@
       "legacy_id": 16,
       "name": "h78 Veli",
       "slug": "h78-veli",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "Male City",
       "tags": [
         "All Inclusive",
@@ -1376,7 +1376,7 @@
       "legacy_id": 17,
       "name": "H78 Maldives",
       "slug": "h78-maldives",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "Male City",
       "tags": [
         "All Inclusive",
@@ -1442,7 +1442,7 @@
       "legacy_id": 18,
       "name": "Maagiri Hotel",
       "slug": "maagiri-hotel",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "Male City",
       "tags": [
         "All Inclusive",
@@ -1578,7 +1578,7 @@
       "legacy_id": 20,
       "name": "Kaani Beach Hotel",
       "slug": "kaani-beach-hotel",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "South Male Atoll",
       "tags": [],
       "description": "Located on the vibrant Maafushi Island, Kaani Beach Hotel offers a serene beach escape surrounded by coconut palms. The hotel features sea view rooms with private balconies, all equipped with modern amenities including air conditioning, hot water showers, satellite TV, free Wi-Fi, mini bar, hair dryer, and a safe.\nGuests can enjoy a delicious buffet breakfast and dinner at the hotel's restaurant, relax on the rooftop terrace with loungers, and take part in a variety of entertainment, including karaoke.\nFor adventure seekers, the hotel offers a wide range of budget-friendly activities typically found in luxury resorts, such as fishing trips, snorkeling, visits to sandbanks, dolphin watching, and water sports. A floating bar is available just two minutes away with complimentary transfers.\nMaafushi Island is conveniently located 25 km south of Male International Airport, reachable in 30 minutes by speedboat or 90 minutes by regular ferry.",
@@ -1634,7 +1634,7 @@
       "legacy_id": 21,
       "name": "Kaani Grand Seaview | Maafushi | Maldives",
       "slug": "kaani-grand-seaview-maafushi-maldives",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "South Male Atoll",
       "tags": [],
       "description": "Located in South Male Atoll, just 25 km from Male City, Kaani Grand Seaview offers beachfront luxury with a spa, fitness center, and conference facilities.\nEach ocean view room features a private balcony, air conditioning, a personal safe, minibar, flat-screen TV with cable channels, and complimentary coffee/tea making facilities. Free toiletries and a hairdryer are also provided.\nThe hotel is directly opposite Bikini Beach, with an in-house restaurant serving both local and Western cuisine, paired with stunning lagoon views.\nGuests can take advantage of the 24-hour front desk, which offers airport transfers, luggage storage, and tour arrangements at the onsite excursion center. Popular activities in the area include snorkeling, diving, and cycling, with bicycle rentals available.\nThe nearest airport is Male International Airport, located 25 km away.",
@@ -1721,7 +1721,7 @@
       "legacy_id": 22,
       "name": "Kaani Village & Spa",
       "slug": "kaani-village-spa",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "South Male Atoll",
       "tags": [
         "All Inclusive",
@@ -1795,7 +1795,7 @@
       "legacy_id": 23,
       "name": "Kaani Palm Beach I Maafushi",
       "slug": "kaani-palm-beach-i-maafushi",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "South Male Atoll",
       "tags": [
         "All Inclusive",
@@ -1888,7 +1888,7 @@
       "legacy_id": 24,
       "name": "Kiha Beach",
       "slug": "kiha-beach",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "Baa Atoll",
       "tags": [
         "All Inclusive",
@@ -2387,7 +2387,7 @@
       "legacy_id": 29,
       "name": "iCom Marina",
       "slug": "icom-marina",
-      "category": "city-hotels",
+      "category": "guesthouses",
       "atoll": "North Male Atoll",
       "tags": [
         "All Inclusive",

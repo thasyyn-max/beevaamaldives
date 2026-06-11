@@ -1,6 +1,6 @@
 # Beevaa Maldives — Setup & Publishing Guide
 
-A modern, mobile-first site for Beevaa Maldives (resorts, liveaboards, city hotels).
+A modern, mobile-first site for Beevaa Maldives (resorts, liveaboards, guesthouses).
 **Total monthly cost: $0** on free tiers.
 
 The site works in stages — stop at any stage and it still works:

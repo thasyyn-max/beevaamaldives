@@ -10,11 +10,12 @@ const scrapeDir = join(root, "scrape");
 const outDir = join(root, "data");
 mkdirSync(outDir, { recursive: true });
 
-// Verified against category page <h1> titles: cat1=Resorts, cat2=Liveaboards, cat3=City Hotels
+// Verified against category page <h1> titles: cat1=Resorts, cat2=Liveaboards,
+// cat3=City Hotels (renamed to Guesthouses on the new site).
 const CATEGORY_OF = {
   resorts: [1, 3, 4, 5, 6, 8, 11],
   liveaboards: [12, 14, 15, 19, 25, 26, 27, 28],
-  "city-hotels": [7, 13, 16, 17, 18, 20, 21, 22, 23, 24, 29],
+  guesthouses: [7, 13, 16, 17, 18, 20, 21, 22, 23, 24, 29],
 };
 const categoryForId = (id) => {
   for (const [cat, ids] of Object.entries(CATEGORY_OF)) {
@@ -198,8 +199,8 @@ const categories = [
     tagline: "Sail the atolls — dive, surf and explore aboard.",
   },
   {
-    slug: "city-hotels",
-    name: "City Hotels",
+    slug: "guesthouses",
+    name: "Guesthouses",
     image: "/import/category/category_image_003.png",
     tagline: "Stay local — guesthouses and hotels on inhabited islands.",
   },

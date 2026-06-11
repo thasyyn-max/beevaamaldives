@@ -18,7 +18,7 @@ export function SiteFooter() {
           <ul className="mt-3 space-y-2 text-muted">
             <li><Link href="/category/resorts" className="hover:text-ink">Resorts</Link></li>
             <li><Link href="/category/liveaboards" className="hover:text-ink">Liveaboards</Link></li>
-            <li><Link href="/category/city-hotels" className="hover:text-ink">City Hotels</Link></li>
+            <li><Link href="/category/guesthouses" className="hover:text-ink">Guesthouses</Link></li>
             <li><Link href="/guide" className="hover:text-ink">Maldives Guide</Link></li>
           </ul>
         </div>
