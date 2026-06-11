@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { SearchOverlay } from "./SearchOverlay";
 
 const NAV = [
   { href: "/category/resorts", label: "Resort" },
@@ -64,6 +65,7 @@ export function SiteHeader() {
           </div>
         </nav>
         <div className="flex items-center gap-2">
+          <SearchOverlay />
           <Link
             href="/enquire"
             className="rounded-full bg-ink px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand"
