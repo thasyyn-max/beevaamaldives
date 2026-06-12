@@ -169,7 +169,13 @@ export async function movePropertyPhoto(formData: FormData) {
 /* --------------------- rooms & dining (content blocks) ------------------ */
 
 type BlockField = "accommodations" | "dining";
-type Block = { title: string; description: string; image: string };
+type Block = {
+  title: string;
+  description: string;
+  image: string;
+  beds?: string;
+  sleeps?: string;
+};
 
 async function getBlocks(propertyId: string, field: BlockField): Promise<Block[]> {
   const p = await adminGetProperty(propertyId);
@@ -201,6 +207,8 @@ export async function saveBlock(input: {
   title: string;
   description: string;
   image: string;
+  beds?: string;
+  sleeps?: string;
 }) {
   await requireAdmin();
   const field = assertField(input.field);
@@ -213,6 +221,8 @@ export async function saveBlock(input: {
     title,
     description: input.description.trim(),
     image: input.image.trim(),
+    beds: (input.beds ?? "").trim(),
+    sleeps: (input.sleeps ?? "").trim(),
   };
   if (input.index >= 0 && input.index < blocks.length) {
     blocks[input.index] = block;

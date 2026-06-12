@@ -9,6 +9,8 @@ export type ContentBlock = {
   title: string;
   description: string;
   image: string;
+  beds?: string; // e.g. "1 queen bed" — used for rooms
+  sleeps?: string; // e.g. "2" — max guests, used for rooms
 };
 
 export type Property = {

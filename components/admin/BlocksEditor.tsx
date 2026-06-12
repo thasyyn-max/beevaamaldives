@@ -93,6 +93,7 @@ export function BlocksEditor({
               initial={b}
               busy={busy}
               submitLabel={`Save ${noun}`}
+              showRoomFields={field === "accommodations"}
               onSubmit={(v) => run(() => saveBlock({ propertyId, field, index: i, ...v }))}
             />
           )}
@@ -109,9 +110,10 @@ export function BlocksEditor({
           </div>
           <BlockForm
             key="add"
-            initial={{ title: "", description: "", image: "" }}
+            initial={{}}
             busy={busy}
             submitLabel={`Add ${noun}`}
+            showRoomFields={field === "accommodations"}
             onSubmit={(v) => run(() => saveBlock({ propertyId, field, index: -1, ...v }))}
           />
         </div>
@@ -132,16 +134,26 @@ function BlockForm({
   initial,
   busy,
   submitLabel,
+  showRoomFields,
   onSubmit,
 }: {
-  initial: ContentBlock | { title: string; description: string; image: string };
+  initial: Partial<ContentBlock>;
   busy: boolean;
   submitLabel: string;
-  onSubmit: (v: { title: string; description: string; image: string }) => void;
+  showRoomFields?: boolean;
+  onSubmit: (v: {
+    title: string;
+    description: string;
+    image: string;
+    beds: string;
+    sleeps: string;
+  }) => void;
 }) {
-  const [title, setTitle] = useState(initial.title);
-  const [description, setDescription] = useState(initial.description);
-  const [image, setImage] = useState(initial.image);
+  const [title, setTitle] = useState(initial.title ?? "");
+  const [description, setDescription] = useState(initial.description ?? "");
+  const [image, setImage] = useState(initial.image ?? "");
+  const [beds, setBeds] = useState(initial.beds ?? "");
+  const [sleeps, setSleeps] = useState(initial.sleeps ?? "");
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
   const fileInput = useRef<HTMLInputElement>(null);
@@ -183,7 +195,7 @@ function BlockForm({
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        onSubmit({ title, description, image });
+        onSubmit({ title, description, image, beds, sleeps });
       }}
       className="space-y-3 border-t border-line p-3"
     >
@@ -191,6 +203,18 @@ function BlockForm({
         <label className={label}>Name *</label>
         <input required value={title} onChange={(e) => setTitle(e.target.value)} className={field} placeholder="Deluxe Beach Villa" />
       </div>
+      {showRoomFields && (
+        <div className="grid grid-cols-2 gap-3">
+          <div>
+            <label className={label}>Beds</label>
+            <input value={beds} onChange={(e) => setBeds(e.target.value)} className={field} placeholder="1 queen bed" />
+          </div>
+          <div>
+            <label className={label}>Sleeps</label>
+            <input value={sleeps} onChange={(e) => setSleeps(e.target.value)} className={field} placeholder="2" />
+          </div>
+        </div>
+      )}
       <div>
         <label className={label}>Description</label>
         <textarea rows={3} value={description} onChange={(e) => setDescription(e.target.value)} className={field} />
