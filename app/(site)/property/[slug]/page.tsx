@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FacilityIcons } from "@/components/FacilityIcons";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { PropertyTabs } from "@/components/PropertyTabs";
 import { Prose } from "@/components/Prose";
@@ -64,27 +63,8 @@ export default async function PropertyPage({
         <GalleryGrid images={p.gallery} name={p.name} />
       </div>
 
-      {p.facilities.length > 0 && (
-        <div className="mt-6 rounded-2xl border border-line bg-surface/60 p-4">
-          <FacilityIcons facilities={p.facilities} />
-        </div>
-      )}
-
       <div className="mt-8 grid gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          {p.tags.length > 0 && (
-            <div className="mb-6 flex flex-wrap gap-2">
-              {p.tags.map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-ink"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          )}
-
           <Prose text={p.description} />
 
           <PropertyTabs
@@ -92,6 +72,7 @@ export default async function PropertyPage({
             roomsLabel={p.category === "safari" ? "Cabins & rooms" : "Rooms & villas"}
             rooms={p.accommodations}
             includes={p.facilities}
+            tags={p.tags}
           />
 
           {p.dining.length > 0 && (

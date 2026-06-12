@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { FacilityIcons } from "@/components/FacilityIcons";
 import type { ContentBlock } from "@/lib/types";
 
 /**
@@ -13,11 +14,13 @@ export function PropertyTabs({
   roomsLabel,
   rooms,
   includes,
+  tags = [],
 }: {
   propertySlug: string;
   roomsLabel: string;
   rooms: ContentBlock[];
   includes: string[];
+  tags?: string[];
 }) {
   const router = useRouter();
   const [tab, setTab] = useState<"rooms" | "includes">("rooms");
@@ -118,17 +121,36 @@ export function PropertyTabs({
       )}
 
       {tab === "includes" && (
-        <ul className="mt-5 grid grid-cols-1 gap-x-6 gap-y-2.5 text-sm text-ink sm:grid-cols-2 lg:grid-cols-3">
-          {includes.length === 0 && (
-            <li className="text-muted">Details on request.</li>
+        <div className="mt-5 space-y-6">
+          {includes.length > 0 && (
+            <div className="rounded-2xl border border-line bg-surface/60 p-4">
+              <FacilityIcons facilities={includes} />
+            </div>
           )}
-          {includes.map((f) => (
-            <li key={f} className="flex items-start gap-2">
-              <span className="mt-0.5 text-brand">✓</span>
-              {f}
-            </li>
-          ))}
-        </ul>
+          {tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {tags.map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-ink"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          )}
+          <ul className="grid grid-cols-1 gap-x-6 gap-y-2.5 text-sm text-ink sm:grid-cols-2 lg:grid-cols-3">
+            {includes.length === 0 && (
+              <li className="text-muted">Details on request.</li>
+            )}
+            {includes.map((f) => (
+              <li key={f} className="flex items-start gap-2">
+                <span className="mt-0.5 text-brand">✓</span>
+                {f}
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </section>
   );
