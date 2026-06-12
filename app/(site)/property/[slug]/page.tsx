@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FacilityIcons } from "@/components/FacilityIcons";
 import { GalleryGrid } from "@/components/GalleryGrid";
+import { PropertyTabs } from "@/components/PropertyTabs";
 import { Prose } from "@/components/Prose";
 import { CONTACT } from "@/lib/config";
 import { getPropertyBySlug } from "@/lib/data";
@@ -86,82 +87,12 @@ export default async function PropertyPage({
 
           <Prose text={p.description} />
 
-          {p.facilities.length > 0 && (
-            <section className="mt-10">
-              <h2 className="font-display text-xl font-medium">Facilities</h2>
-              <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-muted sm:grid-cols-3">
-                {p.facilities.map((f) => (
-                  <li key={f} className="flex items-start gap-2">
-                    <span className="mt-0.5 text-brand">✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {p.accommodations.length > 0 && (
-            <section className="mt-12">
-              <h2 className="font-display text-xl font-medium">
-                {p.category === "safari" ? "Cabins & rooms" : "Rooms & villas"}
-              </h2>
-              <div className="mt-4 space-y-4">
-                {p.accommodations.map((a, i) => (
-                  <div
-                    key={i}
-                    className="flex flex-col overflow-hidden rounded-2xl border border-line sm:flex-row"
-                  >
-                    {a.image && (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={a.image}
-                        alt={a.title}
-                        loading="lazy"
-                        className="h-44 w-full object-cover sm:h-auto sm:w-56 sm:shrink-0"
-                      />
-                    )}
-                    <div className="flex flex-1 flex-col p-5">
-                      <h3 className="font-display text-lg font-medium">{a.title}</h3>
-                      {(a.beds || a.sleeps) && (
-                        <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-xs font-medium text-muted">
-                          {a.beds && (
-                            <span className="flex items-center gap-1.5">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" className="h-4 w-4 text-brand">
-                                <path d="M2 19v-7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v7M2 17h20M6 10V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3" />
-                              </svg>
-                              {a.beds}
-                            </span>
-                          )}
-                          {a.sleeps && (
-                            <span className="flex items-center gap-1.5">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" className="h-4 w-4 text-brand">
-                                <circle cx="12" cy="7" r="3.5" />
-                                <path d="M5 21v-2a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v2" />
-                              </svg>
-                              sleeps {a.sleeps}
-                            </span>
-                          )}
-                        </div>
-                      )}
-                      {a.description && (
-                        <p className="mt-1.5 text-sm leading-relaxed text-muted">
-                          {a.description}
-                        </p>
-                      )}
-                      <div className="mt-auto pt-3">
-                        <Link
-                          href={`/enquire?property=${p.slug}`}
-                          className="inline-block rounded-full border border-line px-4 py-1.5 text-xs font-semibold text-ink transition hover:border-brand hover:text-brand"
-                        >
-                          Check availability →
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+          <PropertyTabs
+            propertySlug={p.slug}
+            roomsLabel={p.category === "safari" ? "Cabins & rooms" : "Rooms & villas"}
+            rooms={p.accommodations}
+            includes={p.facilities}
+          />
 
           {p.dining.length > 0 && (
             <section className="mt-12">

@@ -6,9 +6,11 @@ import { useState } from "react";
 export function EnquiryForm({
   propertyId,
   propertyName,
+  rooms,
 }: {
   propertyId?: string;
   propertyName?: string;
+  rooms?: string;
 }) {
   const router = useRouter();
   const [form, setForm] = useState({
@@ -19,7 +21,7 @@ export function EnquiryForm({
     checkIn: "",
     checkOut: "",
     guests: "2",
-    message: "",
+    message: rooms ? `Interested in: ${rooms}` : "",
   });
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -61,6 +63,7 @@ export function EnquiryForm({
       {propertyName && (
         <div className="rounded-xl bg-brand-50 px-3.5 py-2.5 text-sm text-brand-ink">
           Enquiring about <b>{propertyName}</b>
+          {rooms && <span className="block text-xs">{rooms}</span>}
         </div>
       )}
       <div>

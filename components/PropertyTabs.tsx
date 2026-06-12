@@ -1,0 +1,135 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import type { ContentBlock } from "@/lib/types";
+
+/**
+ * Two-tab section for a property: selectable rooms (→ enquiry) and
+ * what's included. Deliberately minimal — no long descriptions.
+ */
+export function PropertyTabs({
+  propertySlug,
+  roomsLabel,
+  rooms,
+  includes,
+}: {
+  propertySlug: string;
+  roomsLabel: string;
+  rooms: ContentBlock[];
+  includes: string[];
+}) {
+  const router = useRouter();
+  const [tab, setTab] = useState<"rooms" | "includes">("rooms");
+  const [selected, setSelected] = useState<string[]>([]);
+
+  const toggle = (title: string) =>
+    setSelected((s) =>
+      s.includes(title) ? s.filter((t) => t !== title) : [...s, title]
+    );
+
+  function sendEnquiry() {
+    const q = new URLSearchParams({ property: propertySlug });
+    if (selected.length) q.set("rooms", selected.join(", "));
+    router.push(`/enquire?${q.toString()}`);
+  }
+
+  const tabBtn = (active: boolean) =>
+    `rounded-full px-5 py-2.5 text-sm font-semibold transition ${
+      active ? "bg-ink text-white" : "text-muted hover:text-ink"
+    }`;
+
+  return (
+    <section className="mt-12">
+      <div className="inline-flex rounded-full border border-line bg-surface p-1">
+        <button type="button" onClick={() => setTab("rooms")} className={tabBtn(tab === "rooms")}>
+          {roomsLabel}
+        </button>
+        <button type="button" onClick={() => setTab("includes")} className={tabBtn(tab === "includes")}>
+          Includes
+        </button>
+      </div>
+
+      {tab === "rooms" && (
+        <div className="mt-5">
+          {rooms.length === 0 && (
+            <p className="text-sm text-muted">Room details on request — send an enquiry.</p>
+          )}
+          <div className="grid gap-3 sm:grid-cols-2">
+            {rooms.map((r) => {
+              const active = selected.includes(r.title);
+              return (
+                <button
+                  key={r.title}
+                  type="button"
+                  onClick={() => toggle(r.title)}
+                  aria-pressed={active}
+                  className={`relative flex items-center gap-3 rounded-2xl border-2 p-3 text-left transition ${
+                    active ? "border-brand bg-brand-50" : "border-line hover:border-brand/50"
+                  }`}
+                >
+                  {r.image && (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      src={r.image}
+                      alt={r.title}
+                      loading="lazy"
+                      className="h-16 w-24 shrink-0 rounded-xl object-cover"
+                    />
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <div className="truncate text-sm font-semibold text-ink">{r.title}</div>
+                    <div className="mt-0.5 flex flex-wrap gap-x-3 text-xs text-muted">
+                      {r.beds && <span>🛏 {r.beds}</span>}
+                      {r.sleeps && <span>👤 sleeps {r.sleeps}</span>}
+                    </div>
+                  </div>
+                  <span
+                    className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-xs font-bold transition ${
+                      active
+                        ? "border-brand bg-brand text-white"
+                        : "border-line text-transparent"
+                    }`}
+                  >
+                    ✓
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="mt-5 flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              onClick={sendEnquiry}
+              className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand"
+            >
+              Send enquiry
+              {selected.length > 0 &&
+                ` · ${selected.length} room${selected.length > 1 ? "s" : ""}`}
+            </button>
+            <span className="text-xs text-muted">
+              {selected.length === 0
+                ? "Select rooms (optional) — we confirm availability & price."
+                : selected.join(" · ")}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {tab === "includes" && (
+        <ul className="mt-5 grid grid-cols-1 gap-x-6 gap-y-2.5 text-sm text-ink sm:grid-cols-2 lg:grid-cols-3">
+          {includes.length === 0 && (
+            <li className="text-muted">Details on request.</li>
+          )}
+          {includes.map((f) => (
+            <li key={f} className="flex items-start gap-2">
+              <span className="mt-0.5 text-brand">✓</span>
+              {f}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  );
+}
