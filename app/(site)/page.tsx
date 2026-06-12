@@ -46,7 +46,7 @@ export default async function HomePage() {
           </div>
         </div>
         {/* Mobile: swipeable rail with next-card peek; desktop: 3-col grid */}
-        <div className="-mx-4 mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 sm:pb-0">
+        <div className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto rounded-2xl pb-2 no-scrollbar sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0">
           {categories.map((c) => (
             <Link
               key={c.slug}
@@ -87,7 +87,7 @@ export default async function HomePage() {
           </Link>
         </div>
         {/* Mobile: swipeable rail with next-card peek; desktop: grid */}
-        <div className="-mx-4 mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:gap-y-8 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3">
+        <div className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto rounded-2xl pb-2 no-scrollbar sm:grid sm:grid-cols-2 sm:gap-x-5 sm:gap-y-8 sm:overflow-visible sm:pb-0 lg:grid-cols-3">
           {featured.map((p) => (
             <div key={p.id} className="w-[78%] shrink-0 snap-start sm:w-auto">
               <PropertyCard property={p} />
