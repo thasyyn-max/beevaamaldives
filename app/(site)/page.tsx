@@ -1,24 +1,23 @@
 import Link from "next/link";
+import { HeroSlider } from "@/components/HeroSlider";
 import { PropertyCard } from "@/components/PropertyCard";
-import { getBanners, getCategories, getFeaturedProperties } from "@/lib/data";
+import { getCategories, getFeaturedProperties, getHeroSlides } from "@/lib/data";
 
 export default async function HomePage() {
-  const [banners, categories, featured] = await Promise.all([
-    getBanners(),
+  const [slides, categories, featured] = await Promise.all([
+    getHeroSlides(),
     getCategories(),
     getFeaturedProperties(6),
   ]);
-  const hero = banners[0] ?? "/import/banner/banner_image_003.jpg";
 
   return (
     <div>
       {/* Hero */}
       <section className="relative">
         <div className="relative h-[78vh] min-h-[460px] w-full overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={hero} alt="" className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-ink/30" />
-          <div className="absolute inset-0 flex items-end">
+          <HeroSlider slides={slides} />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-ink/30" />
+          <div className="pointer-events-none absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6">
               <p className="animate-fade-up text-sm font-semibold uppercase tracking-[0.25em] text-white/80">
                 Your journey to tropical paradise

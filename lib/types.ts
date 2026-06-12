@@ -32,6 +32,14 @@ export type Property = {
   status: "draft" | "live";
 };
 
+export type HeroSlide = {
+  id: string;
+  kind: "image" | "video";
+  url: string;
+  poster: string;
+  sort_order: number;
+};
+
 export type Article = {
   id: string;
   slug: string;

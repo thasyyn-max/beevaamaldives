@@ -16,6 +16,7 @@ export default async function AdminPanelLayout({
   const nav = [
     { href: "/admin", label: "Dashboard" },
     { href: "/admin/enquiries", label: "Bookings" },
+    { href: "/admin/hero", label: "Hero" },
     { href: "/admin/properties", label: "Properties" },
   ];
 

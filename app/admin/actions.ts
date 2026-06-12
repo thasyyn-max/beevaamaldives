@@ -259,6 +259,58 @@ export async function moveBlock(input: {
   await saveBlocks(input.propertyId, field, blocks);
 }
 
+/* ------------------------------ hero slides ----------------------------- */
+
+export async function addHeroSlide(input: {
+  kind: "image" | "video";
+  url: string;
+  poster?: string;
+}) {
+  await requireAdmin();
+  if (!/^(https:\/\/|\/)/.test(input.url))
+    throw new Error("URL must start with https:// or /");
+  const db = createDataClient();
+  const { count } = await db
+    .from("hero_slides")
+    .select("id", { count: "exact", head: true });
+  if ((count ?? 0) >= 5) throw new Error("Maximum 5 slides — delete one first");
+  const { error } = await db.from("hero_slides").insert({
+    kind: input.kind,
+    url: input.url,
+    poster: input.poster ?? "",
+    sort_order: (count ?? 0) + 1,
+  });
+  if (error) throw new Error(error.message);
+  revalidateAll();
+}
+
+export async function deleteHeroSlide(id: string) {
+  await requireAdmin();
+  const db = createDataClient();
+  const { error } = await db.from("hero_slides").delete().eq("id", id);
+  if (error) throw new Error(error.message);
+  revalidateAll();
+}
+
+export async function moveHeroSlide(id: string, direction: "up" | "down") {
+  await requireAdmin();
+  const db = createDataClient();
+  const { data, error } = await db
+    .from("hero_slides")
+    .select("id")
+    .order("sort_order");
+  if (error) throw new Error(error.message);
+  const ids = (data ?? []).map((r) => r.id);
+  const i = ids.indexOf(id);
+  const j = direction === "up" ? i - 1 : i + 1;
+  if (i < 0 || j < 0 || j >= ids.length) return;
+  [ids[i], ids[j]] = [ids[j], ids[i]];
+  for (let k = 0; k < ids.length; k++) {
+    await db.from("hero_slides").update({ sort_order: k }).eq("id", ids[k]);
+  }
+  revalidateAll();
+}
+
 /* -------------------------------- auth -------------------------------- */
 
 export async function signOut() {

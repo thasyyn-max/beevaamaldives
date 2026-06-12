@@ -11,6 +11,7 @@ import type {
   Article,
   Category,
   Enquiry,
+  HeroSlide,
   Property,
   PropertyFilters,
 } from "./types";
@@ -19,6 +20,28 @@ export const isDemoMode = () => !isSupabaseConfigured();
 
 export async function getBanners(): Promise<string[]> {
   return demoBanners;
+}
+
+/* --------------------------------- hero slides ------------------------------- */
+
+export async function getHeroSlides(): Promise<HeroSlide[]> {
+  if (!isDemoMode()) {
+    const db = createDataClient();
+    const { data } = await db
+      .from("hero_slides")
+      .select("*")
+      .order("sort_order")
+      .limit(5);
+    if (data && data.length > 0) return data as HeroSlide[];
+  }
+  // Fallback: the bundled banner photos as image slides.
+  return demoBanners.map((url, i) => ({
+    id: `banner-${i}`,
+    kind: "image" as const,
+    url,
+    poster: "",
+    sort_order: i,
+  }));
 }
 
 /* --------------------------------- categories -------------------------------- */

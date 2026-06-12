@@ -57,6 +57,16 @@ create table if not exists enquiries (
   created_at timestamptz not null default now()
 );
 
+-- Home page hero carousel (max 5; photos or short muted videos)
+create table if not exists hero_slides (
+  id uuid primary key default gen_random_uuid(),
+  kind text not null default 'image' check (kind in ('image','video')),
+  url text not null,
+  poster text not null default '',
+  sort_order int not null default 0,
+  created_at timestamptz not null default now()
+);
+
 create table if not exists profiles (
   id uuid primary key references auth.users(id) on delete cascade,
   role text not null default 'admin' check (role in ('admin','owner')),
@@ -73,6 +83,9 @@ alter table properties enable row level security;
 alter table articles enable row level security;
 alter table enquiries enable row level security;
 alter table profiles enable row level security;
+alter table hero_slides enable row level security;
+
+create policy "public read hero slides" on hero_slides for select using (true);
 
 create policy "public read categories" on categories for select using (true);
 create policy "public read articles" on articles for select using (true);
