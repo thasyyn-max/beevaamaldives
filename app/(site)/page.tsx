@@ -1,18 +1,12 @@
 import Link from "next/link";
 import { PropertyCard } from "@/components/PropertyCard";
-import {
-  getArticles,
-  getBanners,
-  getCategories,
-  getFeaturedProperties,
-} from "@/lib/data";
+import { getBanners, getCategories, getFeaturedProperties } from "@/lib/data";
 
 export default async function HomePage() {
-  const [banners, categories, featured, articles] = await Promise.all([
+  const [banners, categories, featured] = await Promise.all([
     getBanners(),
     getCategories(),
     getFeaturedProperties(6),
-    getArticles(),
   ]);
   const hero = banners[0] ?? "/import/banner/banner_image_003.jpg";
 
@@ -114,56 +108,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Guide teaser */}
-      {articles.length > 0 && (
-        <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
-          <div className="flex items-end justify-between">
-            <h2 className="font-display text-2xl font-medium sm:text-3xl">
-              Maldives guide
-            </h2>
-            <Link href="/guide" className="text-sm font-semibold text-brand hover:text-brand-ink">
-              All articles →
-            </Link>
-          </div>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {articles.slice(0, 4).map((a) => (
-              <Link key={a.id} href={`/guide/${a.slug}`} className="group block">
-                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-surface">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={a.images[0] ?? "/import/about/about_image_001.jpg"}
-                    alt={a.title}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="mt-3 font-display text-lg font-medium group-hover:text-brand">
-                  {a.title}
-                </h3>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* CTA */}
-      <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
-        <div className="overflow-hidden rounded-3xl bg-ink px-8 py-14 text-center text-white sm:px-12">
-          <h2 className="font-display text-3xl font-medium sm:text-4xl">
-            Not sure where to start?
-          </h2>
-          <p className="mx-auto mt-3 max-w-lg text-white/80">
-            Tell us your dates and what you love — we&apos;ll design a Maldives
-            trip around you, with a quote in 24 hours.
-          </p>
-          <Link
-            href="/enquire"
-            className="mt-7 inline-block rounded-full bg-white px-7 py-3 text-sm font-semibold text-ink transition hover:bg-brand hover:text-white"
-          >
-            Start your enquiry
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }
