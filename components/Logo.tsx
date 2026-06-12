@@ -8,7 +8,7 @@ const RATIO = 299 / 123;
 export function Logo({
   className = "",
   tone = "ink",
-  height = 64,
+  height = 56,
 }: {
   className?: string;
   tone?: "ink" | "light";
