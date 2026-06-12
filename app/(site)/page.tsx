@@ -96,22 +96,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Why us */}
-      <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
-        <div className="grid gap-8 rounded-3xl bg-surface p-8 sm:grid-cols-3 sm:p-12">
-          {[
-            { t: "Local expertise", b: "Based in the Maldives — we know the islands, transfers and seasons first-hand." },
-            { t: "Best-value rates", b: "Direct relationships with resorts, safari boats and guesthouses across the atolls." },
-            { t: "One team, end to end", b: "From your first question to your seaplane transfer, one team handles it all." },
-          ].map((f) => (
-            <div key={f.t}>
-              <div className="font-display text-xl font-medium text-ink">{f.t}</div>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{f.b}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
     </div>
   );
 }
