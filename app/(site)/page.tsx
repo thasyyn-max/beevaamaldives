@@ -45,12 +45,13 @@ export default async function HomePage() {
             <p className="mt-1 text-muted">From private islands to safari boats.</p>
           </div>
         </div>
-        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+        {/* Mobile: swipeable rail with next-card peek; desktop: 3-col grid */}
+        <div className="-mx-4 mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 sm:pb-0">
           {categories.map((c) => (
             <Link
               key={c.slug}
               href={`/category/${c.slug}`}
-              className="group relative aspect-[3/4] overflow-hidden rounded-2xl sm:aspect-[4/5]"
+              className="group relative aspect-[3/4] w-[78%] shrink-0 snap-start overflow-hidden rounded-2xl sm:aspect-[4/5] sm:w-auto"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -85,9 +86,12 @@ export default async function HomePage() {
             View all →
           </Link>
         </div>
-        <div className="mt-6 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Mobile: swipeable rail with next-card peek; desktop: grid */}
+        <div className="-mx-4 mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:gap-y-8 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3">
           {featured.map((p) => (
-            <PropertyCard key={p.id} property={p} />
+            <div key={p.id} className="w-[78%] shrink-0 snap-start sm:w-auto">
+              <PropertyCard property={p} />
+            </div>
           ))}
         </div>
       </section>
