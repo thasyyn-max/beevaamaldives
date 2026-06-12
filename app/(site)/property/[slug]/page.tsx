@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { PropertyTabs } from "@/components/PropertyTabs";
-import { Prose } from "@/components/Prose";
 import { CONTACT } from "@/lib/config";
 import { getPropertyBySlug } from "@/lib/data";
 
@@ -65,14 +64,13 @@ export default async function PropertyPage({
 
       <div className="mt-8 grid gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <Prose text={p.description} />
-
           <PropertyTabs
             propertySlug={p.slug}
             roomsLabel={p.category === "safari" ? "Cabins & rooms" : "Rooms & villas"}
             rooms={p.accommodations}
             includes={p.facilities}
             tags={p.tags}
+            about={p.description}
           />
 
           {p.dining.length > 0 && (

@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FacilityIcons } from "@/components/FacilityIcons";
+import { Prose } from "@/components/Prose";
 import type { ContentBlock } from "@/lib/types";
 
 /**
@@ -15,16 +16,19 @@ export function PropertyTabs({
   rooms,
   includes,
   tags = [],
+  about = "",
 }: {
   propertySlug: string;
   roomsLabel: string;
   rooms: ContentBlock[];
   includes: string[];
   tags?: string[];
+  about?: string;
 }) {
   const router = useRouter();
   const [tab, setTab] = useState<"rooms" | "includes">("rooms");
   const [selected, setSelected] = useState<string[]>([]);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   const toggle = (title: string) =>
     setSelected((s) =>
@@ -43,7 +47,7 @@ export function PropertyTabs({
     }`;
 
   return (
-    <section className="mt-12">
+    <section>
       <div className="inline-flex rounded-full border border-line bg-surface p-1">
         <button type="button" onClick={() => setTab("rooms")} className={tabBtn(tab === "rooms")}>
           {roomsLabel}
@@ -150,6 +154,37 @@ export function PropertyTabs({
               </li>
             ))}
           </ul>
+
+          {about && (
+            <div>
+              <button
+                type="button"
+                onClick={() => setAboutOpen((o) => !o)}
+                aria-expanded={aboutOpen}
+                className="flex items-center gap-2 text-sm font-semibold text-brand transition hover:text-brand-ink"
+              >
+                <span className="flex h-5 w-5 items-center justify-center rounded-full border border-current text-[11px] font-bold">
+                  i
+                </span>
+                About this property
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  className={`h-3.5 w-3.5 transition ${aboutOpen ? "rotate-180" : ""}`}
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              {aboutOpen && (
+                <div className="mt-3 text-sm">
+                  <Prose text={about} />
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </section>
