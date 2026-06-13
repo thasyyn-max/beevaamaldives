@@ -67,10 +67,29 @@ export function HeroSlidesManager({ slides }: { slides: HeroSlide[] }) {
 
   async function addByUrl(e: React.FormEvent) {
     e.preventDefault();
-    if (!url) return;
-    const isVideo = /\.(mp4|webm|mov)(\?.*)?$/i.test(url);
+    const v = url.trim();
+    if (!v) return;
+
+    // Social/page links can't be used as a hero background — they're not a
+    // direct media file. Catch them here with clear guidance.
+    if (/(tiktok\.com|youtube\.com|youtu\.be|instagram\.com|facebook\.com|fb\.watch|vimeo\.com|pinterest\.)/i.test(v)) {
+      setError(
+        "That's a social-media page link, not a video file — it can't be used as a background. Download the actual video (an .mp4) and use “Choose file” to upload it instead."
+      );
+      return;
+    }
+
+    const isVideo = /\.(mp4|webm|mov)(\?.*)?$/i.test(v);
+    const isImage = /\.(jpe?g|png|webp|avif|gif)(\?.*)?$/i.test(v);
+    if (!isVideo && !isImage) {
+      setError(
+        "Paste a direct link to an image (.jpg/.png) or video (.mp4) file — or use “Choose file” to upload one."
+      );
+      return;
+    }
+
     await run(async () => {
-      await addHeroSlide({ kind: isVideo ? "video" : "image", url: url.trim() });
+      await addHeroSlide({ kind: isVideo ? "video" : "image", url: v });
       setUrl("");
     });
   }
