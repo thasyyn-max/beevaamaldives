@@ -93,3 +93,12 @@ export async function adminListCategories() {
   if (error) throw new Error(error.message);
   return data ?? [];
 }
+
+/* ------------------------------ articles ------------------------------ */
+
+export async function adminListArticles() {
+  const db = createDataClient();
+  const { data, error } = await db.from("articles").select("*").order("title");
+  if (error) throw new Error(error.message);
+  return data ?? [];
+}

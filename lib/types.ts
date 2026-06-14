@@ -26,6 +26,7 @@ export type Property = {
   facilities: string[];
   accommodations: ContentBlock[];
   dining: ContentBlock[];
+  experiences: string[]; // experience slugs this property offers (see lib/experiences)
   gallery: string[];
   cover: string;
   from_price_usd: number | null;

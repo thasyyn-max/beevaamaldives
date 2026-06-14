@@ -24,6 +24,8 @@ export const demoProperties: Property[] = (
   facilities: p.facilities ?? [],
   accommodations: p.accommodations ?? [],
   dining: p.dining ?? [],
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  experiences: ((p as any).experiences as string[]) ?? [],
   gallery: p.gallery?.length ? p.gallery : [p.cover],
   cover: p.cover,
   from_price_usd: p.from_price_usd ?? null,

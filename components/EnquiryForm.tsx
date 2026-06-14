@@ -7,12 +7,20 @@ export function EnquiryForm({
   propertyId,
   propertyName,
   rooms,
+  experiences,
 }: {
   propertyId?: string;
   propertyName?: string;
   rooms?: string;
+  experiences?: string;
 }) {
   const router = useRouter();
+  const prefill = [
+    rooms ? `Interested in: ${rooms}` : "",
+    experiences ? `Experiences: ${experiences}` : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
   const [form, setForm] = useState({
     guestName: "",
     guestEmail: "",
@@ -21,7 +29,7 @@ export function EnquiryForm({
     checkIn: "",
     checkOut: "",
     guests: "2",
-    message: rooms ? `Interested in: ${rooms}` : "",
+    message: prefill,
   });
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -63,7 +71,8 @@ export function EnquiryForm({
       {propertyName && (
         <div className="rounded-xl bg-brand-50 px-3.5 py-2.5 text-sm text-brand-ink">
           Enquiring about <b>{propertyName}</b>
-          {rooms && <span className="block text-xs">{rooms}</span>}
+          {rooms && <span className="block text-xs">Rooms: {rooms}</span>}
+          {experiences && <span className="block text-xs">Experiences: {experiences}</span>}
         </div>
       )}
       <div>

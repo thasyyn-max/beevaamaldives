@@ -75,6 +75,7 @@ export async function saveProperty(formData: FormData) {
     short_description: String(formData.get("short_description") ?? ""),
     tags: csv(formData.get("tags")),
     facilities: csv(formData.get("facilities")),
+    experiences: formData.getAll("experiences").map(String),
     from_price_usd: priceRaw ? Number(priceRaw) : null,
     status: formData.get("status") === "live" ? "live" : "draft",
   };
@@ -257,6 +258,33 @@ export async function moveBlock(input: {
   if (input.index < 0 || j < 0 || j >= blocks.length) return;
   [blocks[input.index], blocks[j]] = [blocks[j], blocks[input.index]];
   await saveBlocks(input.propertyId, field, blocks);
+}
+
+/* ----------------------------- experiences ------------------------------ */
+
+/** Edit an Explore experience's article: title, photo, description. */
+export async function saveExperience(input: {
+  slug: string;
+  title: string;
+  image: string;
+  description: string;
+}) {
+  await requireAdmin();
+  const title = input.title.trim();
+  if (!title) throw new Error("Title is required");
+  if (input.image && !/^(https:\/\/|\/)/.test(input.image))
+    throw new Error("Image URL must start with https:// or /");
+  const db = createDataClient();
+  const { error } = await db
+    .from("articles")
+    .update({
+      title,
+      images: input.image ? [input.image.trim()] : [],
+      body: input.description.trim(),
+    })
+    .eq("slug", input.slug);
+  if (error) throw new Error(error.message);
+  revalidateAll();
 }
 
 /* ------------------------------ hero slides ----------------------------- */

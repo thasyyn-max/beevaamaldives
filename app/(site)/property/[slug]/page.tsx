@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { PropertyTabs } from "@/components/PropertyTabs";
 import { CONTACT } from "@/lib/config";
-import { getPropertyBySlug } from "@/lib/data";
+import { getExperiences, getPropertyBySlug } from "@/lib/data";
 
 export async function generateMetadata({
   params,
@@ -29,6 +29,17 @@ export default async function PropertyPage({
   const { slug } = await params;
   const p = await getPropertyBySlug(slug);
   if (!p) notFound();
+
+  // Resolve the property's ticked experiences to their editable Explore content.
+  const allExperiences = p.experiences.length ? await getExperiences() : [];
+  const experiences = allExperiences
+    .filter((e) => p.experiences.includes(e.slug))
+    .map((e) => ({
+      slug: e.slug,
+      title: e.title,
+      image: e.images[0] ?? "",
+      description: e.body.split("\n").find((l) => l.trim().length > 20) ?? "",
+    }));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
@@ -71,6 +82,7 @@ export default async function PropertyPage({
             includes={p.facilities}
             tags={p.tags}
             about={p.description}
+            experiences={experiences}
           />
 
           {p.dining.length > 0 && (

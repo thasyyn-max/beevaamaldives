@@ -1,5 +1,6 @@
 import "server-only";
 import { isSupabaseConfigured } from "./config";
+import { EXPERIENCE_SLUGS } from "./experiences";
 import {
   demoArticles,
   demoBanners,
@@ -76,6 +77,7 @@ function mapProperty(row: any): Property {
     facilities: row.facilities ?? [],
     accommodations: row.accommodations ?? [],
     dining: row.dining ?? [],
+    experiences: row.experiences ?? [],
     gallery: row.gallery ?? [],
     cover: row.cover ?? "",
     from_price_usd: row.from_price_usd ?? null,
@@ -171,6 +173,14 @@ export async function getArticles(): Promise<Article[]> {
 export async function getArticleBySlug(slug: string): Promise<Article | null> {
   const articles = await getArticles();
   return articles.find((a) => a.slug === slug) ?? null;
+}
+
+/** The 3 Explore experiences, in order, resolved to their article content. */
+export async function getExperiences(): Promise<Article[]> {
+  const articles = await getArticles();
+  return EXPERIENCE_SLUGS.map((s) => articles.find((a) => a.slug === s)).filter(
+    Boolean
+  ) as Article[];
 }
 
 /* --------------------------------- enquiries --------------------------------- */

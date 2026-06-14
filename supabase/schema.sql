@@ -23,6 +23,7 @@ create table if not exists properties (
   facilities jsonb not null default '[]',
   accommodations jsonb not null default '[]',
   dining jsonb not null default '[]',
+  experiences jsonb not null default '[]', -- experience slugs (see lib/experiences)
   gallery jsonb not null default '[]',
   cover text not null default '',
   from_price_usd numeric(10,2),

@@ -1,4 +1,5 @@
 import { saveProperty } from "@/app/admin/actions";
+import { EXPERIENCES } from "@/lib/experiences";
 import type { Category, Property } from "@/lib/types";
 
 export function PropertyForm({
@@ -67,6 +68,29 @@ export function PropertyForm({
       <div className="sm:col-span-2">
         <label className={label}>Facilities (comma separated)</label>
         <textarea name="facilities" rows={2} defaultValue={(p?.facilities ?? []).join(", ")} className={field} />
+      </div>
+      <div className="sm:col-span-2">
+        <label className={label}>Experiences offered nearby</label>
+        <div className="flex flex-wrap gap-3">
+          {EXPERIENCES.map((exp) => (
+            <label
+              key={exp.slug}
+              className="flex cursor-pointer items-center gap-2 rounded-lg border border-line px-3 py-2 text-sm"
+            >
+              <input
+                type="checkbox"
+                name="experiences"
+                value={exp.slug}
+                defaultChecked={(p?.experiences ?? []).includes(exp.slug)}
+                className="h-4 w-4 accent-brand"
+              />
+              {exp.label}
+            </label>
+          ))}
+        </div>
+        <p className="mt-1 text-[11px] text-muted">
+          Ticked experiences appear on the property page (Experiences tab) and link to the Explore content.
+        </p>
       </div>
       <div className="sm:col-span-2">
         <button className="rounded-lg bg-ink px-5 py-2.5 text-sm font-bold text-white hover:bg-brand">

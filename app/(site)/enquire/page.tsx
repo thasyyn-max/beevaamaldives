@@ -9,9 +9,9 @@ export const metadata: Metadata = { title: "Enquire" };
 export default async function EnquirePage({
   searchParams,
 }: {
-  searchParams: Promise<{ property?: string; rooms?: string }>;
+  searchParams: Promise<{ property?: string; rooms?: string; experiences?: string }>;
 }) {
-  const { property, rooms } = await searchParams;
+  const { property, rooms, experiences } = await searchParams;
   const selected = property ? await getPropertyBySlug(property) : null;
 
   return (
@@ -52,6 +52,7 @@ export default async function EnquirePage({
               propertyId={selected?.id}
               propertyName={selected?.name}
               rooms={rooms}
+              experiences={experiences}
             />
           </Suspense>
         </div>
