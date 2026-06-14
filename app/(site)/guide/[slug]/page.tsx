@@ -25,8 +25,8 @@ export default async function ArticlePage({
   return (
     <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <nav className="mb-4 text-sm text-muted">
-        <Link href="/guide" className="hover:text-ink">
-          ← Maldives Guide
+        <Link href="/explore" className="hover:text-ink">
+          ← Explore
         </Link>
       </nav>
       <h1 className="font-display text-4xl font-medium leading-tight">

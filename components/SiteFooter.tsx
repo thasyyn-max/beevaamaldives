@@ -19,7 +19,7 @@ export function SiteFooter() {
             <li><Link href="/category/resorts" className="hover:text-ink">Resort</Link></li>
             <li><Link href="/category/safari" className="hover:text-ink">Safari</Link></li>
             <li><Link href="/category/guesthouses" className="hover:text-ink">Guesthouse</Link></li>
-            <li><Link href="/guide" className="hover:text-ink">Maldives Guide</Link></li>
+            <li><Link href="/explore" className="hover:text-ink">Explore</Link></li>
           </ul>
         </div>
         <div className="text-sm">
