@@ -2,14 +2,25 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Prose } from "@/components/Prose";
+import { SurfGuide } from "@/components/SurfGuide";
 import { getArticleBySlug } from "@/lib/data";
+
+const SURF_SLUG = "surfing-spots";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const a = await getArticleBySlug((await params).slug);
+  const { slug } = await params;
+  if (slug === SURF_SLUG) {
+    return {
+      title: "Surfing in the Maldives",
+      description:
+        "The complete Maldives surf guide — the best breaks atoll by atoll, when to go, how to read the forecast and how to get there.",
+    };
+  }
+  const a = await getArticleBySlug(slug);
   return { title: a ? a.title : "Guide" };
 }
 
@@ -19,6 +30,22 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+
+  // The surfing guide is a rich, self-contained page (renders regardless of
+  // whether the CMS/article row exists).
+  if (slug === SURF_SLUG) {
+    return (
+      <div>
+        <nav className="mx-auto max-w-5xl px-4 pt-6 text-sm text-muted sm:px-6">
+          <Link href="/explore" className="hover:text-ink">
+            ← Explore
+          </Link>
+        </nav>
+        <SurfGuide />
+      </div>
+    );
+  }
+
   const article = await getArticleBySlug(slug);
   if (!article) notFound();
 
