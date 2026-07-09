@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { DiveGuide } from "@/components/DiveGuide";
 import { Prose } from "@/components/Prose";
 import { SurfGuide } from "@/components/SurfGuide";
 import { getArticleBySlug } from "@/lib/data";
 
 const SURF_SLUG = "surfing-spots";
+const DIVE_SLUG = "diving-spots";
 
 export async function generateMetadata({
   params,
@@ -18,6 +20,13 @@ export async function generateMetadata({
       title: "Surfing in the Maldives",
       description:
         "The complete Maldives surf guide — the best breaks atoll by atoll, when to go, how to read the forecast and how to get there.",
+    };
+  }
+  if (slug === DIVE_SLUG) {
+    return {
+      title: "Diving in the Maldives",
+      description:
+        "The complete Maldives dive guide — the best dive sites and shipwrecks atoll by atoll, marine life, and UNESCO biosphere reserves.",
     };
   }
   const a = await getArticleBySlug(slug);
@@ -33,7 +42,7 @@ export default async function ArticlePage({
 
   // The surfing guide is a rich, self-contained page (renders regardless of
   // whether the CMS/article row exists).
-  if (slug === SURF_SLUG) {
+  if (slug === SURF_SLUG || slug === DIVE_SLUG) {
     return (
       <div>
         <nav className="mx-auto max-w-5xl px-4 pt-6 text-sm text-muted sm:px-6">
@@ -41,7 +50,7 @@ export default async function ArticlePage({
             ← Explore
           </Link>
         </nav>
-        <SurfGuide />
+        {slug === SURF_SLUG ? <SurfGuide /> : <DiveGuide />}
       </div>
     );
   }
