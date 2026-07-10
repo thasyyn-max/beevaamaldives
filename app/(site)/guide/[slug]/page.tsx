@@ -3,8 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DiveGuide } from "@/components/DiveGuide";
 import { Prose } from "@/components/Prose";
-import { ShipwreckGuide } from "@/components/ShipwreckGuide";
 import { SurfGuide } from "@/components/SurfGuide";
+import { WrecksSection } from "@/components/WrecksSection";
 import { getArticleBySlug } from "@/lib/data";
 
 const SURF_SLUG = "surfing-spots";
@@ -49,9 +49,9 @@ export default async function ArticlePage({
 }) {
   const { slug } = await params;
 
-  // The surfing, diving and shipwreck guides are rich, self-contained pages
-  // (they render regardless of whether the CMS/article row exists).
-  if (slug === SURF_SLUG || slug === DIVE_SLUG || slug === SHIPWRECK_SLUG) {
+  // The surfing and diving guides are rich, self-contained pages (they render
+  // regardless of whether the CMS/article row exists).
+  if (slug === SURF_SLUG || slug === DIVE_SLUG) {
     return (
       <div>
         <nav className="mx-auto max-w-5xl px-4 pt-6 text-sm text-muted sm:px-6">
@@ -59,13 +59,7 @@ export default async function ArticlePage({
             ← Explore
           </Link>
         </nav>
-        {slug === SURF_SLUG ? (
-          <SurfGuide />
-        ) : slug === DIVE_SLUG ? (
-          <DiveGuide />
-        ) : (
-          <ShipwreckGuide />
-        )}
+        {slug === SURF_SLUG ? <SurfGuide /> : <DiveGuide />}
       </div>
     );
   }
@@ -109,6 +103,8 @@ export default async function ArticlePage({
           ))}
         </div>
       )}
+
+      {slug === SHIPWRECK_SLUG && <WrecksSection />}
 
       <div className="mt-12 rounded-2xl bg-surface p-6 text-center">
         <p className="font-display text-xl font-medium">Ready to go?</p>

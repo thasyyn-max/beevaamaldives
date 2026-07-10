@@ -217,19 +217,6 @@ export const WRECKS: Wreck[] = [
   },
 ];
 
-export const SHIPWRECK_HERO = {
-  eyebrow: "Explore · Shipwrecks",
-  title: "Historic shipwrecks",
-  image: "/import/banner/banner_image_004.jpg",
-  intro:
-    "Discover the hidden side of the Maldives — where sunken ships become vibrant underwater habitats filled with life and colour. From purpose-sunk cargo ships to a Second World War oil tanker, these wrecks are now some of the atolls' richest artificial reefs.",
-};
-
-export const SHIPWRECK_OUTRO = {
-  lead: "Ready to explore the wrecks?",
-  body: "From beginner-friendly artificial reefs to advanced deep-water penetration dives, we'll match the wreck, season and liveaboard or resort to your experience level. Tell us what you want to explore and we'll build the trip around it.",
-};
-
 export const ATTRACTIONS_INTRO =
   "Three of the Maldives' atolls carry UNESCO Biosphere Reserve status — living laboratories of marine conservation and some of the richest waters you can dive.";
 
