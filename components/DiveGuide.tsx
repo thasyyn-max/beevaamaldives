@@ -6,8 +6,6 @@ import {
   DIVE_OUTRO,
   DIVE_SITES,
   DIVE_STATS,
-  WRECKS,
-  WRECKS_INTRO,
 } from "@/lib/dive-data";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -118,38 +116,6 @@ export function DiveGuide() {
                   )}
                 </div>
               )}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ------------------------------------------------ wrecks */}
-      <section className="mx-auto max-w-5xl px-4 pt-16 sm:px-6">
-        <SectionLabel>Wrecks &amp; Wonders</SectionLabel>
-        <h2 className="mt-2 font-display text-3xl font-medium">
-          Historic shipwrecks
-        </h2>
-        <p className="mt-3 max-w-3xl text-muted">{WRECKS_INTRO}</p>
-
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {WRECKS.map((wreck) => (
-            <div
-              key={wreck.name}
-              className="flex flex-col rounded-2xl border border-line p-5 transition hover:border-brand"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <h3 className="font-display text-lg font-medium text-ink">
-                  {wreck.name}
-                </h3>
-                {wreck.location && (
-                  <span className="shrink-0 rounded-full bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand">
-                    {wreck.location}
-                  </span>
-                )}
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                {wreck.description}
-              </p>
             </div>
           ))}
         </div>
