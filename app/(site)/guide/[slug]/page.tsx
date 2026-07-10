@@ -4,10 +4,12 @@ import { notFound } from "next/navigation";
 import { DiveGuide } from "@/components/DiveGuide";
 import { Prose } from "@/components/Prose";
 import { SurfGuide } from "@/components/SurfGuide";
+import { WrecksSection } from "@/components/WrecksSection";
 import { getArticleBySlug } from "@/lib/data";
 
 const SURF_SLUG = "surfing-spots";
 const DIVE_SLUG = "diving-spots";
+const SHIPWRECK_SLUG = "shipwreck";
 
 export async function generateMetadata({
   params,
@@ -26,7 +28,14 @@ export async function generateMetadata({
     return {
       title: "Diving in the Maldives",
       description:
-        "The complete Maldives dive guide — the best dive sites and shipwrecks atoll by atoll, marine life, and UNESCO biosphere reserves.",
+        "The complete Maldives dive guide — the best dive sites atoll by atoll, marine life, and UNESCO biosphere reserves.",
+    };
+  }
+  if (slug === SHIPWRECK_SLUG) {
+    return {
+      title: "Historic shipwrecks in the Maldives",
+      description:
+        "Dive the Maldives' historic shipwrecks — purpose-sunk cargo ships and a WWII oil tanker, now vibrant artificial reefs, atoll by atoll.",
     };
   }
   const a = await getArticleBySlug(slug);
@@ -40,8 +49,8 @@ export default async function ArticlePage({
 }) {
   const { slug } = await params;
 
-  // The surfing guide is a rich, self-contained page (renders regardless of
-  // whether the CMS/article row exists).
+  // The surfing and diving guides are rich, self-contained pages (they render
+  // regardless of whether the CMS/article row exists).
   if (slug === SURF_SLUG || slug === DIVE_SLUG) {
     return (
       <div>
@@ -94,6 +103,8 @@ export default async function ArticlePage({
           ))}
         </div>
       )}
+
+      {slug === SHIPWRECK_SLUG && <WrecksSection />}
 
       <div className="mt-12 rounded-2xl bg-surface p-6 text-center">
         <p className="font-display text-xl font-medium">Ready to go?</p>

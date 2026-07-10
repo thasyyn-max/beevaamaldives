@@ -47,6 +47,21 @@ input[type="date"] {
   min-height: 2.75rem;
 }
 
+/*
+  Stop iOS Safari from auto-zooming the whole page when a form field is
+  focused. Mobile browsers zoom in whenever a control's font-size is below
+  16px and never zoom back out, which reads as the site "zooming in" on tap.
+  Our form controls use text-sm (14px); keep that compact look on larger
+  screens and bump to 16px on phones so tapping a field no longer zooms.
+*/
+@media (max-width: 640px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
