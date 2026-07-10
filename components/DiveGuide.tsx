@@ -1,7 +1,5 @@
 import Link from "next/link";
 import {
-  ATTRACTIONS,
-  ATTRACTIONS_INTRO,
   DIVE_HERO,
   DIVE_OUTRO,
   DIVE_SITES,
@@ -116,33 +114,6 @@ export function DiveGuide() {
                   )}
                 </div>
               )}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ------------------------------------------------ unesco attractions */}
-      <section className="mx-auto max-w-5xl px-4 pt-16 sm:px-6">
-        <SectionLabel>UNESCO Biosphere Reserves</SectionLabel>
-        <h2 className="mt-2 font-display text-3xl font-medium">
-          Protected waters worth the trip
-        </h2>
-        <p className="mt-3 max-w-3xl text-muted">{ATTRACTIONS_INTRO}</p>
-
-        <div className="mt-8 grid gap-5 sm:grid-cols-3">
-          {ATTRACTIONS.map((a) => (
-            <div key={a.name} className="rounded-2xl bg-surface p-6">
-              <div className="flex items-baseline justify-between gap-2">
-                <h3 className="font-display text-xl font-medium text-ink">
-                  {a.name}
-                </h3>
-              </div>
-              <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-brand">
-                {a.since}
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                {a.description}
-              </p>
             </div>
           ))}
         </div>
