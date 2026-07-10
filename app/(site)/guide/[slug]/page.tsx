@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AttractionsSection } from "@/components/AttractionsSection";
 import { DiveGuide } from "@/components/DiveGuide";
 import { Prose } from "@/components/Prose";
 import { SurfGuide } from "@/components/SurfGuide";
@@ -104,7 +105,12 @@ export default async function ArticlePage({
         </div>
       )}
 
-      {slug === SHIPWRECK_SLUG && <WrecksSection />}
+      {slug === SHIPWRECK_SLUG && (
+        <>
+          <WrecksSection />
+          <AttractionsSection />
+        </>
+      )}
 
       <div className="mt-12 rounded-2xl bg-surface p-6 text-center">
         <p className="font-display text-xl font-medium">Ready to go?</p>
