@@ -183,7 +183,7 @@ export const SURF_REGIONS: SurfRegion[] = [
     name: "Central Atolls",
     intro:
       "The Central Atolls of the Maldives offer uncrowded waves, pristine barrels and a true island surf adventure. Located south of Malé, the Meemu, Thaa, Dhaalu and Laamu Atolls feature consistent reef breaks — including the world-class right-hander Ying Yang — with excellent surf charter and resort options to explore.",
-    spotMap: "/surf/map-central-spots.png",
+    spotMap: "/surf/map-central-spots.jpg",
     routeMap: "/surf/route-central.jpg",
     routeNote:
       "Reached by a 40-minute domestic flight, or a roughly 10-hour boat cruise, from MLE Airport.",
